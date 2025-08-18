@@ -2,7 +2,7 @@
 
 This style guide provides editorial guidelines for writing clear and consistent technical documentation for an audience of software developers and other technical practitioners.
 
-If you're new to the guide and looking for introductory topics about our style, then start with [Highlights](highlights.md), [Voice and tone](tone.md), and [Text-formatting summary](https://developers.google.com/style/text-formatting). Otherwise, use the guide as a reference document for specific questions. For example, you can look up terms in the [word list](https://developers.google.com/style/word-list).
+If you're new to the guide and looking for introductory topics about our style, then start with [Highlights](highlights.md), [Voice and tone](tone.md), and [Text-formatting summary](text-formatting.md). Otherwise, use the guide as a reference document for specific questions. For example, you can look up terms in the [word list](https://developers.google.com/style/word-list).
 
 ## Editorial resources
 
