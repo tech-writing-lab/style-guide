@@ -38,8 +38,8 @@ Here are some other style guides from the tech community:
 
 For guidance that applies only to Android or Google Cloud documentation, look for the following logos:
 
--  precedes terms and guidelines specific to Android documentation.
--  precedes terms and guidelines specific to Google Cloud documentation.
+- ![](images/android.png) precedes terms and guidelines specific to Android documentation.
+- ![](https://www.gstatic.com/images/branding/productlogos/google_cloud/v8/web-24dp/logo_google_cloud_color_1x_web_24dp.png) precedes terms and guidelines specific to Google Cloud documentation.
 
 ## Break the rules
 
