@@ -28,9 +28,9 @@ Reserve underlining for link text. For more information, see [Style link text](
 
 ## Code font
 
-Use `<code>` in HTML or ``` in Markdown to apply a monospace font and other styling to [code in text](https://developers.google.com/style/code-in-text), inline code, and user input.
+Use `<code>` in HTML or `` ` `` in Markdown to apply a monospace font and other styling to [code in text](https://developers.google.com/style/code-in-text), inline code, and user input.
 
-Use code blocks, `<pre>` or `````, for [code samples](https://developers.google.com/style/code-samples) or other blocks of code.
+Use code blocks, `<pre>` or `` ``` ``, for [code samples](https://developers.google.com/style/code-samples) or other blocks of code.
 
 Do not override or modify font styles inline.
 
