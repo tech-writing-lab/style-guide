@@ -54,7 +54,7 @@ For titles of shorter works——such as articles or episodes in a web series—
 
 Do not override global styles for [font type, size, or color](https://developers.google.com/style/fonts).
 
-Use [semantic HTML](https://developers.google.com/style/semantic-tagging) or Markdown to control the style of text on a page——for example, code tags in HTML (`<code>`) or backticks in Markdown (`\``)——instead of manually styling text with a monospace font.
+Use [semantic HTML](https://developers.google.com/style/semantic-tagging) or Markdown to control the style of text on a page——for example, code tags in HTML (`<code>`) or backticks in Markdown (`` ` ``)——instead of manually styling text with a monospace font.
 
 ## Other punctuation conventions
 
