@@ -48,5 +48,8 @@ CO_OP_TRANSLATOR_METADATA:
 | 更改了電話號碼格式的指導，建議使用破折號而非括號來將區號與號碼的其餘部分分開。 | [格式化電話號碼](https://developers.google.com/style/phone-numbers) |
 | 擴展並澄清了在大多數情況下避免使用縮寫*i.e.*、*e.g.*和*etc.*的建議。 | [縮寫](https://developers.google.com/style/abbreviations#dont-use),[逗號分隔列表](https://developers.google.com/style/lists#comma-separated-lists) |
 
-**免責聲明**：  
+---
+
+**免責聲明**：
+
 本文件使用 AI 翻譯服務 [Co-op Translator](https://github.com/Azure/co-op-translator) 進行翻譯。儘管我們努力確保準確性，但請注意，自動翻譯可能包含錯誤或不準確之處。應將原始語言的文件視為權威來源。對於關鍵信息，建議使用專業人工翻譯。我們對因使用此翻譯而產生的任何誤解或誤釋不承擔責任。
