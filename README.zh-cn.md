@@ -13,7 +13,7 @@
 - [英语](content/en/index.md)
 - [繁体中文 (台湾)](content/zh-tw/index.md)
 
-## 翻译是如何创建的
+## 🤖 翻译是如何创建的
 
 我曾尝试使用 [Co-op Translator](https://github.com/Azure/co-op-translator)，但它不符合翻译质量的要求。此外，我发现它的目录结构有点奇怪（如果你用过，你可能会明白我的意思）。因此，我使用其他的 AI 代理和翻译工具来生成翻译，主要是 Gemini CLI。
 
@@ -34,10 +34,10 @@
 
 每个语言代码都代表 [/content](content) 文件夹下的一个子文件夹。例如，繁体中文的翻译位于 [/content/zh-tw](content/zh-tw/) 文件夹中。
 
-## 贡献
+## 🙌 贡献
 
 如果你想帮助改进这个项目，欢迎创建 [issues](httpss://github.com/tech-writing-lab/style-guide/issues) 和拉取请求。
 
-## 许可证
+## 📜 许可证
 
 知识共享署名 4.0 国际许可协议 (CC BY 4.0)
