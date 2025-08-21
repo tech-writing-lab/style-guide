@@ -1,8 +1,14 @@
 # Google developer documentation style guide
 
+> Use the following links for specific language translations of this README file:
+>
+> - [English README](README.md)
+> - [Chinese (Traditional) README](README.zh-tw.md)
+> - [Chinese (Simplified) README](README.zh-cn.md)
+
 This documentation is compiled from [Google developer documentation style guide](https://developers.google.com/style).
 
-Start reading:
+To start reading the style guide, use the following links for specific language translations:
 
 - [English](content/en/index.md)
 - [Chinese (Traditional, TW)](content/zh-tw/index.md)
@@ -30,7 +36,7 @@ Each language code represents a subfolder under the [/content](content) folder. 
 
 ## Contribute
 
-If you would like to help improve this project, feel free to create issues and pull requests.
+If you would like to help improve this project, feel free to create [issues](https://github.com/tech-writing-lab/style-guide/issues)+ and pull requests.
 
 ## License
 
