@@ -1,6 +1,8 @@
 # Google developer documentation style guide
 
-*(In progress)*
+> [!NOTE]
+>
+> **In progress**: This style guide is not completed yet, thus you might hit some broken links. Free to submit bugs and suggestions via [Issues](/issues).
 
 ## Introduction
 
