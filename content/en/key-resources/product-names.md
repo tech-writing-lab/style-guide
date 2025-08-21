@@ -16,7 +16,6 @@ When you write about any product, follow the official capitalization for the nam
 - If an official name begins with a lowercase letter, then put it in lowercase even at the start of a sentence. But it's better to revise the sentence to avoid putting a lowercase word at the start, if possible.
 
   - 👍 Recommended: You can use macOS to run the app.
-
   - ❌ Not recommended: macOS can run the app.
 
 ### Feature names
