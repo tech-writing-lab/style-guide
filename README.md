@@ -1,12 +1,13 @@
 # Google developer documentation style guide
 
-This documentation is derived from [Google developer documentation style guide](https://developers.google.com/style).
+This documentation is compiled from [Google developer documentation style guide](https://developers.google.com/style).
 
-To start reading this guide, navigate to a subfolder under the [/content](content) folder, then open the index.md file.
+Start reading:
 
-For example, to read the English version of this guide, start from this link: [/content/en/index.md](content/en/index.md).
+- [English](content/en/index.md)
+- [Chinese (Traditional, TW)](content/zh-tw/index.md)
 
-## Generate translations
+## How these translations are created
 
 I tried [Co-op Translator](https://github.com/Azure/co-op-translator), but it doesn't meet the requirement for translation quality. In addition, I find the directory structure a bit odd (you might understand what I mean if you've used it). Therefore, I use other AI agents and translation tools to generate translations, mainly Gemini CLI.
 
