@@ -38,6 +38,16 @@ Each language code represents a subfolder under the [/content](content) folder. 
 
 If you would like to help improve this project, feel free to create [issues](httpss://github.com/tech-writing-lab/style-guide/issues)+ and pull requests.
 
+To start, here are some places that need help:
+
+- [computer-interfaces](content/en/computer-interfaces/)
+- [formatting](content/en/formatting/)
+- [grammar](content/en/grammar/)
+- [html-css](content/en/html-css/)
+- [linking](content/en/linking/)
+- [naming](content/en/naming/)
+- [punctuation](content/en/punctuation/)
+
 ## 📜 License
 
 Creative Commons Attribution 4.0 International License (CC BY 4.0)

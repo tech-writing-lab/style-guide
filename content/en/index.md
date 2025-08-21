@@ -32,6 +32,8 @@
 
 ## Language and grammar
 
+> This category [needs help](../../README.md#contribute).
+
 - [Abbreviations]
 - [Active voice]
 - [Anthropomorphism]
@@ -49,6 +51,8 @@
 
 ## Punctuation
 
+> This category [needs help](../../README.md#contribute).
+
 - [Colons]
 - [Commas]
 - [Dashes]
@@ -61,6 +65,8 @@
 - [Slashes]
 
 ## Formatting and organization
+
+> This category [needs help](../../README.md#contribute).
 
 - [Dates and times]
 - [Examples]
@@ -80,10 +86,14 @@
 
 ## Linking
 
+> This category [needs help](../../README.md#contribute).
+
 - [Cross-references and linking]
 - [Headings as link targets]
 
 ## Computer interfaces
+
+> This category [needs help](../../README.md#contribute).
 
 - [API reference code comments]
 - [Code in text]
