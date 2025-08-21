@@ -42,13 +42,13 @@ For other writing best practices, see the following resources:
 
 It's great to be polite, but using *please* in a set of instructions is overdoing the politeness.
 
-Recommended: To view the document, click **View**.
+- 👍 Recommended: To view the document, click **View**.
 
-Not recommended: To view the document, please click **View**.
+- ❌ Not recommended: To view the document, please click **View**.
 
-Recommended: For more information, see \[link to other document\].
+- 👍 Recommended: For more information, see \[link to other document\].
 
-Not recommended: For more information, please see \[link to other document\].
+- ❌ Not recommended: For more information, please see \[link to other document\].
 
 ## Examples
 

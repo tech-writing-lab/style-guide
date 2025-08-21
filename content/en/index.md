@@ -5,7 +5,7 @@
 - [About this guide](introduction/about.md)
 - [Highlights](introduction/highlights.md)
 - [What's new](introduction/whats-new.md)
-- [Philosophy of this style guide]
+- [Philosophy of this style guide](introduction/philosophy.md)
 
 ## Key resources
 
@@ -17,13 +17,13 @@
 
 - [Accessibility](general-principles/accessibility.md)
 - [Excessive claims](general-principles/excessive-claims.md)
-- [Future features]
-- [Global audience]
-- [Inclusive language]
-- [Jargon]
-- [Prescriptive documentation]
-- [Third-party content]
-- [Timeless documentation]
+- [Future features](general-principles/future-features.md)
+- [Global audience](general-principles/global-audience.md)
+- [Inclusive language](general-principles/inclusive-language.md)
+- [Jargon](general-principles/jargon.md)
+- [Prescriptive documentation](general-principles/prescriptive-documentation.md)
+- [Third-party content](general-principles/other-sources.md)
+- [Timeless documentation](general-principles/timeless-documentation.md)
 - [Voice and tone](general-principles/tone.md)
 
 ## Language and grammar
