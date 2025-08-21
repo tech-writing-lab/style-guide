@@ -15,8 +15,8 @@
 
 ## General principles
 
-- [Accessibility]
-- [Excessive claims]
+- [Accessibility](general-principles/accessibility.md)
+- [Excessive claims](general-principles/excessive-claims.md)
 - [Future features]
 - [Global audience]
 - [Inclusive language]
