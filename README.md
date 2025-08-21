@@ -2,9 +2,9 @@
 
 This documentation is derived from [Google developer documentation style guide](https://developers.google.com/style).
 
-## 🌐 Multi-Language Support
+To start reading this guide, navigate to a subfolder under the [/content](content) folder, then open the index.md file.
 
-(TODO, contributions are appreciated.)
+For example, to read the English version of this guide, start from this link: [/content/en/index.md](content/en/index.md).
 
 ## Generate translations
 
@@ -15,3 +15,22 @@ Workflow:
 1. Manually convert HTML pages to Markdown files. Specifically, copy the original web page's content to the clipboard, then paste it into the VS Code editor via the [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) extension.
 2. Review and edit the markdown file if needed.
 3. Copy the markdown files from `content/en/` folder to `content/[language-code]` folder, then translate those files.
+
+## 🌐 Supported language codes
+
+Currently supported language codes are listed in the table below:
+
+| Language | Code |
+| ---------|------|
+| English  | en |
+| Chinese (Traditional, TW) | zh-tw |
+
+Each language code represents a subfolder under the [/content](content) folder. For example, the translation for Traditional Chinese is in the [/content/zh-tw](content/zh-tw/) folder.
+
+## Contribute
+
+If you would like to help improve this project, feel free to create issues and pull requests.
+
+## License
+
+Creative Commons Attribution 4.0 International License (CC BY 4.0)
