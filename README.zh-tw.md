@@ -36,7 +36,7 @@
 
 ## 🙌 貢獻
 
-如果你想協助改進這個專案，歡迎建立 [issues](https://github.com/tech-writing-lab/style-guide/issues) 和 pull requests。
+如果你想協助改進這個專案，歡迎 [建立 issues](https://github.com/tech-writing-lab/style-guide/issues) 和 pull requests。
 
 ## 📜 授權
 

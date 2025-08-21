@@ -36,7 +36,7 @@ Each language code represents a subfolder under the [/content](content) folder. 
 
 ## 🙌 Contribute
 
-If you would like to help improve this project, feel free to [create issues](httpss://github.com/tech-writing-lab/style-guide/issues) and pull requests.
+If you would like to help improve this project, feel free to [create issues](https://github.com/tech-writing-lab/style-guide/issues) and pull requests.
 
 To start, here are some places that need help:
 

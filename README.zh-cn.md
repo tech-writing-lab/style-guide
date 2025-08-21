@@ -36,7 +36,7 @@
 
 ## 🙌 贡献
 
-如果你想帮助改进这个项目，欢迎创建 [issues](httpss://github.com/tech-writing-lab/style-guide/issues) 和拉取请求。
+如果你想帮助改进这个项目，欢迎 [创建 issues](https://github.com/tech-writing-lab/style-guide/issues) 和拉取请求。
 
 ## 📜 许可证
 
