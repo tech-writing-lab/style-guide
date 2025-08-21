@@ -6,7 +6,7 @@
 > - [Chinese (Traditional) README](README.zh-tw.md)
 > - [Chinese (Simplified) README](README.zh-cn.md)
 
-This documentation is compiled from [Google developer documentation style guide](https://developers.google.com/style).
+This documentation is compiled from [Google developer documentation style guide](https://developers.google.com/style), which is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 To start reading the style guide, use the following links for specific language translations:
 
@@ -50,4 +50,4 @@ To start, here are some places that need help:
 
 ## 📜 License
 
-Creative Commons Attribution 4.0 International License (CC BY 4.0)
+[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
