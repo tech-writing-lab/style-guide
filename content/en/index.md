@@ -34,7 +34,7 @@
 
 > This category [needs help](../../README.md#contribute).
 
-- [Abbreviations]
+- [Abbreviations](grammar/abbreviations.md)
 - [Active voice]
 - [Anthropomorphism]
 - [Articles (a, an, the)]
