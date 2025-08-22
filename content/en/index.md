@@ -2,7 +2,7 @@
 
 > [!NOTE]
 >
-> **In progress**: This style guide is not completed yet, thus you might hit some broken links. Free to submit bugs and suggestions via [Issues](https://github.com/tech-writing-lab/style-guide/issues).
+> **In progress**: This style guide is not completed yet, thus you might hit some broken links. Feel free to submit bugs and suggestions via [Issues](https://github.com/tech-writing-lab/style-guide/issues).
 
 ## Introduction
 
@@ -98,3 +98,4 @@
 - [API reference code comments]
 - [Code in text]
 - [Code samples]
+
