@@ -9,6 +9,7 @@ def fix_fetched_markdown(url: str, markdown_text: str) -> str:
     main_content = markdown_tools.convert_underline_headers_to_hash(main_content)
     main_content = markdown_tools.normalize_list_items(main_content)
     main_content = markdown_tools.convert_italic_underscore_to_star(main_content)
+    main_content = markdown_tools.add_emoji_to_recommendations(main_content)
 
     return main_content
 
