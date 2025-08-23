@@ -79,11 +79,29 @@ def convert_italic_underscore_to_star(md_text: str) -> str:
     Convert Markdown italic syntax from _text_ to *text*.
     Only converts single underscores that are used for italic.
     """
-    # (?<!_) 斷言左邊不是底線
-    # (?!_) 斷言右邊不是底線
-    # 捕捉中間至少一個非空白字元
-    pattern = re.compile(r'(?<!_)_(\S(.*?\S)?)_(?!_)')
-    return pattern.sub(r'*\1*', md_text)
+    # 使用正則表達式，找出以 _ 包住的內容，避免跨行
+    return re.sub(r'_(.+?)_', r'*\1*', md_text)
+
+
+def convert_list_asterisk_to_dash(md_text: str) -> str:
+    """
+    將 markdown 文件中以 * 開頭的清單項目改為 - 開頭。
+    保留縮排。
+    """
+    lines = md_text.splitlines()
+    converted_lines = []
+
+    for line in lines:
+        # 檢查是否為清單項目：前面可能有縮排，然後緊接著 *
+        stripped = line.lstrip()
+        indent = line[:len(line) - len(stripped)]
+        if stripped.startswith("* "):
+            # 改成 dash
+            converted_lines.append(indent + "- " + stripped[2:])
+        else:
+            converted_lines.append(line)
+
+    return "\n".join(converted_lines)
 
 
 def add_emoji_to_recommendations(markdown_text: str) -> str:
