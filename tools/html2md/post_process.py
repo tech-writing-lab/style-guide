@@ -1,3 +1,32 @@
+import markdown_tools
+
+def fix_fetched_markdown(url: str, markdown_text: str) -> str:
+    main_content = extract_main_content(markdown_text)
+    title = extract_title(markdown_text)
+    if title:
+        main_content = title + "\n\n" + f"> Source: {url}\n\n" + main_content
+
+    main_content = markdown_tools.convert_underline_headers_to_hash(main_content)
+    main_content = markdown_tools.normalize_list_items(main_content)
+    main_content = markdown_tools.convert_italic_underscore_to_star(main_content)
+
+    return main_content
+
+
+def extract_title(md_text: str) -> str:
+    """
+    Extracts the title from a markdown string.
+    The title is expected to be in the first line starting with 'Title: '.
+    Returns a markdown H1 heading, e.g., '# Abbreviations'.
+    """
+    for line in md_text.splitlines():
+        if line.strip().startswith("Title:"):
+            # 去掉 "Title:" 只保留後面的內容
+            title = line.split(":", 1)[1].strip()
+            return f"# {title}"
+    return ""
+
+
 def extract_main_content(markdown_text: str) -> str:
     """
     Extracts the main content from the given markdown text.
@@ -46,3 +75,4 @@ def extract_main_content(markdown_text: str) -> str:
             content_lines.append(line)
     
     return "\n".join(content_lines).strip()
+

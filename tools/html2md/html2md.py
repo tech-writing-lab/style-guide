@@ -1,6 +1,7 @@
 import requests
 import os
 import post_process
+import markdown_tools
 
 def auto_filename_from_url(url: str) -> str:    
     filename = url.rstrip("/").split("/")[-1] or "index"
@@ -18,14 +19,14 @@ def fetch_markdown(url: str, output_file: str):
         return
     
     markdown_text = response.text
-    main_content = post_process.extract_main_content(markdown_text)
+    fixed_markdown = post_process.fix_fetched_markdown(url, markdown_text)
 
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     # Save the file
     with open(output_file, "w", encoding="utf-8") as f:
-        f.write(main_content)
+        f.write(fixed_markdown)
     
     print(f"[OK] {url} → {os.path.abspath(output_file)}")
 

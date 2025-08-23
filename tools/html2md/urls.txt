@@ -1,2 +1,2 @@
 https://developers.google.com/style/abbreviations
-https://developers.google.com/style/voice
+# https://developers.google.com/style/voice
