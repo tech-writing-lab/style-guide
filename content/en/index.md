@@ -49,18 +49,16 @@
 
 ## Punctuation
 
-> This category [needs help](../../README.md#contribute).
-
-- [Colons]
-- [Commas]
-- [Dashes]
-- [Ellipses]
-- [Hyphens]
-- [Parentheses]
-- [Periods and end punctuation]
-- [Quotation marks]
-- [Semicolons]
-- [Slashes]
+- [Colons](punctuation/colons.md)
+- [Commas](punctuation/commas.md)
+- [Dashes](punctuation/dashes.md)
+- [Ellipses](punctuation/ellipses.md)
+- [Hyphens](punctuation/hyphens.md)
+- [Parentheses](punctuation/parentheses.md)
+- [Periods and end punctuation](punctuation/periods.md)
+- [Quotation marks](punctuation/quotation-marks.md)
+- [Semicolons](punctuation/semicolons.md)
+- [Slashes](punctuation/slashes.md)
 
 ## Formatting and organization
 
