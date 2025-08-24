@@ -32,22 +32,20 @@
 
 ## Language and grammar
 
-> This category [needs help](../../README.md#contribute).
-
 - [Abbreviations](grammar/abbreviations.md)
-- [Active voice]
-- [Anthropomorphism]
-- [Articles (a, an, the)]
-- [Capitalization]
-- [Contractions]
-- [Plurals in parentheses]
-- [Possessives]
-- [Prepositions]
-- [Present tense]
-- [Pronouns]
-- [Second person]
-- [Sentence structure]
-- [Verbs in reference documents]
+- [Active voice](grammar/voice.md)
+- [Anthropomorphism](grammar/anthropomorphism.md)
+- [Articles (a, an, the)](grammar/articles.md)
+- [Capitalization](grammar/capitalization.md)
+- [Contractions](grammar/contractions.md)
+- [Plurals in parentheses](grammar/plurals-parentheses.md)
+- [Possessives](grammar/possessives.md)
+- [Prepositions](grammar/prepositions.md)
+- [Present tense](grammar/tense.md)
+- [Pronouns](grammar/pronouns.md)
+- [Second person](grammar/person.md)
+- [Sentence structure](grammar/sentence-structure.md)
+- [Verbs in reference documents](grammar/reference-verbs.md)
 
 ## Punctuation
 
