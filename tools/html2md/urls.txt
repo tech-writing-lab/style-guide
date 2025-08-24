@@ -24,28 +24,29 @@
 # https://developers.google.com/style/dashes
 # https://developers.google.com/style/ellipses
 # https://developers.google.com/style/hyphens
-https://developers.google.com/style/parentheses
+# https://developers.google.com/style/parentheses
 # https://developers.google.com/style/periods
 # https://developers.google.com/style/quotation-marks
 # https://developers.google.com/style/semicolons
 # https://developers.google.com/style/slashes
 
 # Formatting and organization
-# https://developers.google.com/style/dates-times
-# https://developers.google.com/style/format-examples
-# https://developers.google.com/style/images
-# https://developers.google.com/style/footnotes
-# https://developers.google.com/style/headings
-# https://developers.google.com/style/italics-terms
-# https://developers.google.com/style/lists
-# https://developers.google.com/style/notices
-# https://developers.google.com/style/numbers
-# https://developers.google.com/style/paragraph-structure
-# https://developers.google.com/style/phone-numbers
-# https://developers.google.com/style/plural-single-letter
-# https://developers.google.com/style/procedures
-# https://developers.google.com/style/tables
-# https://developers.google.com/style/units-of-measure
+# Note that "images" and "lists" must be converted manually.
+https://developers.google.com/style/dates-times
+https://developers.google.com/style/format-examples
+https://developers.google.com/style/images
+https://developers.google.com/style/footnotes
+https://developers.google.com/style/headings
+https://developers.google.com/style/italics-terms
+https://developers.google.com/style/lists
+https://developers.google.com/style/notices
+https://developers.google.com/style/numbers
+https://developers.google.com/style/paragraph-structure
+https://developers.google.com/style/phone-numbers
+https://developers.google.com/style/plural-single-letter
+https://developers.google.com/style/procedures
+https://developers.google.com/style/tables
+https://developers.google.com/style/units-of-measure
 
 # Linking
 # https://developers.google.com/style/cross-references

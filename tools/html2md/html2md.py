@@ -21,14 +21,15 @@ def fetch_markdown(url: str, output_file: str):
         return
 
     markdown_text = response.text
-    fixed_markdown = post_process.fix_fetched_markdown(url, markdown_text)
-
-    # Ensure the output directory exists
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
     # For debugging: Save the original markdown text
     with open(f"{OUTPUT_FOLDER}/_org_{output_file}", "w", encoding="utf-8") as f:
         f.write(markdown_text)
+
+    fixed_markdown = post_process.fix_fetched_markdown(url, markdown_text)
+
+    # Ensure the output directory exists
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
     # Save the file
     with open(f"{OUTPUT_FOLDER}/{output_file}", "w", encoding="utf-8") as f:

@@ -109,6 +109,14 @@ def find_content_start(lines, toc_positions):
                     break
 
     if start_line < 1:
+        for i, line in enumerate(lines):
+            if line.strip().startswith("Markdown Content:"):
+                start_line = i + 1
+                content_started = True
+                break
+
+    if start_line < 1:
         raise ValueError("Could not determine the start of main content in the markdown text.")
+
     return start_line,content_started
 
