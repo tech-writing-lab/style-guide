@@ -2,3 +2,4 @@
 .venv
 .vscode
 __pycache__
+tools/html2md/output

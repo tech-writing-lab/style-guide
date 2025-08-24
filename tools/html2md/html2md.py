@@ -3,7 +3,9 @@ import os
 import post_process
 import markdown_tools
 
-def auto_filename_from_url(url: str) -> str:    
+OUTPUT_FOLDER = "output"
+
+def auto_filename_from_url(url: str) -> str:
     filename = url.rstrip("/").split("/")[-1] or "index"
     return filename + ".md"
 
@@ -17,17 +19,21 @@ def fetch_markdown(url: str, output_file: str):
     except requests.RequestException as e:
         print(f"[ERROR] Failed to fetch {url}: {e}")
         return
-    
+
     markdown_text = response.text
     fixed_markdown = post_process.fix_fetched_markdown(url, markdown_text)
 
     # Ensure the output directory exists
-    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+    # For debugging: Save the original markdown text
+    with open(f"{OUTPUT_FOLDER}/_org_{output_file}", "w", encoding="utf-8") as f:
+        f.write(markdown_text)
 
     # Save the file
-    with open(output_file, "w", encoding="utf-8") as f:
+    with open(f"{OUTPUT_FOLDER}/{output_file}", "w", encoding="utf-8") as f:
         f.write(fixed_markdown)
-    
+
     print(f"[OK] {url} → {os.path.abspath(output_file)}")
 
 def main():
@@ -35,17 +41,17 @@ def main():
     if not os.path.exists("urls.txt"):
         print("urls.txt not found.")
         return
-    
+
     with open("urls.txt", "r", encoding="utf-8") as f:
         urls = [line.strip() for line in f if line.strip() and not line.startswith("#")]
-    
+
     if not urls:
         print("No URLs found in urls.txt")
         return
-    
+
     for url in urls:
         output_file = auto_filename_from_url(url)
-        fetch_markdown(url, f"output/{output_file}")
+        fetch_markdown(url, output_file)
 
 if __name__ == "__main__":
     main()

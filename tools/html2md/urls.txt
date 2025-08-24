@@ -1,2 +1,18 @@
+# The web pages' URLs to be fetched as markdown file. See readme.md for how to do this.
+
+# Language and grammar
+# Note that these pages require manual edit after conversion: contractions, possessives
 https://developers.google.com/style/abbreviations
-# https://developers.google.com/style/voice
+https://developers.google.com/style/voice
+https://developers.google.com/style/anthropomorphism
+https://developers.google.com/style/articles
+https://developers.google.com/style/capitalization
+https://developers.google.com/style/contractions
+https://developers.google.com/style/plurals-parentheses
+https://developers.google.com/style/possessives
+https://developers.google.com/style/prepositions
+https://developers.google.com/style/tense
+https://developers.google.com/style/pronouns
+https://developers.google.com/style/person
+https://developers.google.com/style/sentence-structure
+https://developers.google.com/style/reference-verbs
