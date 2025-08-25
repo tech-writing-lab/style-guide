@@ -108,12 +108,40 @@ If the list doesn't need any additional context other than the heading that imme
 
 Introduce a list with a complete sentence, not a partial one that's completed by the list items. You can also use *the following* as a noun phrase (see [following](https://developers.google.com/style/word-list#following) in the word list).
 
-| ✅ Recommended | ❌ Not recommended |
-| --- | --- |
-| Use the **Submit** button for any of the following purposes: * To submit the form. * To indicate that you're done. * To allow the next person to enter their data. | Use the **Submit** button to: * Submit the form. * Indicate that you're done. * Allow the next person to enter their data. |
-| To get the USB driver, follow these steps: 1. Click **Tools> Android> SDK Manager**. 2. Select **Google USB Driver**, and then click **OK**. | To get the USB driver: 1. Click **Tools> Android> SDK Manager**. 2. Select **Google USB Driver**, and then click **OK**. |
-| If you need to add an instance manually, do the following: 1. Click **Create instance**. 2. For **Name**, enter a name. | If you need to add an instance manually: 1. Click **Create instance**. 2. For **Name**, enter a name. |
-| #### Objectives * Create an instance * Snapshot an instance * Delete an instance | #### Objectives In the following tutorial, you will complete the following tasks: * Create an instance * Snapshot an instance * Delete an instance |
+✅ Recommended:
+
+- Use the **Submit** button for any of the following purposes:
+  - To submit the form.
+  - To indicate that you're done.
+  - To allow the next person to enter their data.
+- To get the USB driver, follow these steps:
+  1. Click **Tools \> Android \> SDK Manager**.
+  2. Select **Google USB Driver**, and then click **OK**.
+- If you need to add an instance manually, do the following:
+  1. Click **Create instance**.
+  2. For **Name**, enter a name.
+- **Objectives**
+  - Create an instance
+  - Snapshot an instance
+  - Delete an instance
+
+❌ Not recommended:
+
+- Use the **Submit** button to:
+  - Submit the form.
+  - Indicate that you're done.
+  - Allow the next person to enter their data.
+- To get the USB driver:
+  1. Click **Tools \> Android \> SDK Manager**.
+  2. Select **Google USB Driver**, and then click **OK**.
+- If you need to add an instance manually:
+  1. Click Create instance.
+  2. For Name, enter a name.
+- **Objectives**
+  In the following tutorial, you will complete the following tasks:
+  - Create an instance
+  - Snapshot an instance
+  - Delete an instance
 
 For information about introducing sub-steps, see [Sub-steps in numbered procedures](https://developers.google.com/style/procedures#sublists).
 
@@ -151,7 +179,7 @@ End each list item with a period or other appropriate sentence-ending punctuatio
 
 If you end up with inconsistent punctuation in your list, then either rewrite your list to use [parallel construction](https://developers.google.com/style/lists#parallel) or add end punctuation to every list item for consistency.
 
-- ✅ Recommended:
+✅ Recommended:
 
 The following words are adjectives:
 
@@ -159,7 +187,7 @@ The following words are adjectives:
 - Small
 - Gratuitous
 
-- ✅ Recommended:
+✅ Recommended:
 
 The SDK supports the following UI elements:
 
@@ -167,7 +195,7 @@ The SDK supports the following UI elements:
 - Bulleted list
 - Button
 
-- ✅ Recommended:
+✅ Recommended:
 
 The API supports the following actions:
 
@@ -176,7 +204,7 @@ The API supports the following actions:
 - Update
 - Delete
 
-- ✅ Recommended:
+✅ Recommended:
 
 You can do any of the following by using the API:
 
@@ -187,15 +215,8 @@ You can do any of the following by using the API:
 
 ### Description lists
 
-Sometimes it's useful to add an explanatory phrase to a list item, which can affect the punctuation. In general, don't add an explanatory phrase to only a single list item; instead, use a description list, and provide explanatory phrases for all items.
-
-In most contexts, start each term (`dt` element) with a capital letter.
-
-Don't end the term with a period. Do generally put a period at the end of each `dd` ("description") element.
-
-| Recommended | Not recommended |
-| --- | --- |
-| The following words are adjectives: Big A short word.Relevant A fancy word.Gratuitous A long word.Purple A vibrant color. | The following words are adjectives: * Big * Relevant * Gratuitous * Purple—this is a color. |
+> [!NOTE]
+> Sorry! Because the formatting in the original text is difficult to represent in Markdown, this section is not provided. To view the original content, click here: [Description lists](https://developers.google.com/style/lists#description-lists)
 
 ### Description lists that use run-in headings
 
@@ -220,28 +241,32 @@ To end the descriptive text, punctuate as follows:
 
 Don't use a dash to set off a description from an item in a description list. For more information, see [Colons instead of dashes in lists](https://developers.google.com/style/dashes#colons-instead-of-dashes-in-description-lists).
 
-- ✅ Recommended:
+✅ Recommended:
 
-The following words are adjectives:
+> The following words are adjectives:
+>
+> - **Big**: a short word
+> - **Relevant**: a fancy word
+> - **Gratuitous**: a long word
+> - **Purple**: a vibrant color
 
-- **Big**: a short word
-- **Relevant**: a fancy word
-- **Gratuitous**: a long word
-- **Purple**: a vibrant color
+✅ Recommended:
 
-- ✅ Recommended:
+> The coffee shop has several great choices:
+>
+> - **Coffee**: latte, mocha, cappuccino, espresso, macchiato
+> - **Tea**: chai tea, chai latte, black tea, green tea, herbal tea
 
-The coffee shop has several great choices:
+✅ Recommended:
 
-- **Coffee**: latte, mocha, cappuccino, espresso, macchiato
-- **Tea**: chai tea, chai latte, black tea, green tea, herbal tea
+> Budget Airlines reduces your ticket cost in several ways:
+>
+> - **It increases fuel economy by reducing baggage weight**. By charging astronomical prices for anything larger than a wallet....
+> - **It carries more passengers per flight**. By reducing leg room to industry and medical minimums, it fits more seats....
 
-- ✅ Recommended:
+<br>
 
-Budget Airlines reduces your ticket cost in several ways:
-
-- **It increases fuel economy by reducing baggage weight**. By charging astronomical prices for anything larger than a wallet....
-- **It carries more passengers per flight**. By reducing leg room to industry and medical minimums, it fits more seats....
+> **Note:** The guidelines here about list punctuation differ from the Material Design guidelines. If you're writing UI text rather than prose documentation, then follow the Material Design guidelines.
 
 ## Comma-separated lists
 
