@@ -15,13 +15,21 @@
 
 ## 🤖 翻译是如何创建的
 
-我曾尝试使用 [Co-op Translator](https://github.com/Azure/co-op-translator)，但它不符合翻译质量的要求。此外，我发现它的目录结构有点奇怪（如果你用过，你可能会明白我的意思）。因此，我使用其他的 AI 代理和翻译工具来生成翻译，主要是 Gemini CLI。
+翻译流程分为两个阶段。首先必须把英文网页转存为 Markdown 文件，并完成校对。第二阶段则是利用 AI 工具将英文版的 Markdown 文件翻译成各个语言。
 
-工作流程：
+把英文网页转存为 Markdown 文件的过程比较费工夫，原因有二：
 
-1. 手动将 HTML 页面转换为 Markdown 文件。具体来说，将原始网页的内容复制到剪贴板，然后通过 [Markdown Paste](httpss://github.com/telesoho/vscode-markdown-paste-image) 扩展程序将其粘贴到 VS Code 编辑器中。
-2. 如有需要，审阅并编辑 markdown 文件。
-3. 将 markdown 文件从 `content/en/` 文件夹复制到 `content/[language-code]` 文件夹，然后翻译这些文件。
+抓取网页时，必须排除一些与主要内容无关的元素和文字。主要的方法有两种：
+
+手动将 HTML 页面转换为 Markdown 文件：将原始网页的内容复制到剪贴板，然后通过 Markdown Paste
+ 扩展功能粘贴到 VS Code 编辑器中。
+
+编写 Python 脚本来抓取网页内容并转存为 Markdown：详见 [tools/html2md](tools/html2md)。
+
+原文中有一些特殊排版是通过 HTML 实现的，而 Markdown 没有直接对应的语法。
+比如，在表格中使用列表项，以及 HTML 的 description list（dl、dt、和 dd 标签）。因此，在转换为 Markdown 格式的过程中，如果遇到这类棘手的排版格式，就会进行适当的改写或删减。
+
+原文的 Markdown 文件存放在 content/en/ 目录下。翻译成其他语言时，可以将该文件夹下的文件全部复制到 content/[language-code] 文件夹（例如 content/zh-tw），然后使用工具来翻译这些文件。
 
 ## 🌐 支持的语言代码
 

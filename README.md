@@ -15,13 +15,18 @@ To start reading the style guide, use the following links for specific language 
 
 ## 🤖 How these translations are created
 
-I tried [Co-op Translator](https://github.com/Azure/co-op-translator), but it doesn't meet the requirement for translation quality. In addition, I find the directory structure a bit odd (you might understand what I mean if you've used it). Therefore, I use other AI agents and translation tools to generate translations, mainly Gemini CLI.
+The translation process consists of two stages. First, the English web pages must be converted and saved as Markdown files, followed by proofreading. In the second stage, AI tools are used to translate the English Markdown files into different languages.
 
-Workflow:
+Converting English web pages into Markdown files takes more effort for two reasons:
 
-1. Manually convert HTML pages to Markdown files. Specifically, copy the original web page's content to the clipboard, then paste it into the VS Code editor via the [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) extension.
-2. Review and edit the markdown file if needed.
-3. Copy the markdown files from `content/en/` folder to `content/[language-code]` folder, then translate those files.
+- When capturing a web page, you need to exclude elements and text unrelated to the main content. There are two main approaches:
+
+  - Manually convert the HTML page to a Markdown file: copy the content of the original web page to the clipboard, then paste it into the VS Code editor using the [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) extension.
+  - Write a Python script to extract web page content and save it as Markdown: see [tools/html2md](tools/html2md).
+- Some special formatting in the original text is achieved with HTML, but Markdown has no direct equivalent.
+  For example, lists within tables and HTML description lists (`dl`, `dt`, and `dd` tags). Therefore, when converting to Markdown format, such tricky layouts are appropriately rewritten or omitted.
+
+The original Markdown files are stored in the `content/en/` directory. When translating into other languages, you can copy all the files under that directory to `content/[language-code]` (for example, `content/zh-tw`), and then use tools to translate these files.
 
 ## 🌐 Supported language codes
 
@@ -29,8 +34,8 @@ Currently supported language codes are listed in the table below:
 
 | Language | Code |
 | ---------|------|
-| English  | en |
-| Chinese (Traditional, TW) | zh-tw |
+| [English](content/en/index.md)  | en |
+| [Chinese (Traditional, TW)](content//zh-tw/index.md) | zh-tw |
 
 Each language code represents a subfolder under the [/content](content) folder. For example, the translation for Traditional Chinese is in the [/content/zh-tw](content/zh-tw/) folder.
 

@@ -15,13 +15,17 @@
 
 ## 🤖 翻譯是如何建立的
 
-我曾試過 [Co-op Translator](https://github.com/Azure/co-op-translator)，但它不符合翻譯品質的要求。此外，我發現它的目錄結構有點奇怪 (如果你用過，你可能會明白我的意思)。因此，我使用其他的 AI 代理和翻譯工具來產生翻譯，主要是 Gemini CLI。
+翻譯流程分為兩個階段，首先必須把英文的網頁轉存為 markdown 檔案，並完成校對。第二階段則是利用 AI 工具來將英文版的 markdown 檔案翻譯成個別語言。
 
-工作流程：
+把英文網頁轉存為 markdown 檔案的過程比較費工夫，原因有二：
 
-1. 手動將 HTML 頁面轉換為 Markdown 檔案。具體來說，將原始網頁的內容複製到剪貼簿，然後透過 [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) 擴充功能將其貼到 VS Code 編輯器中。
-2. 如有需要，檢閱並編輯 markdown 檔案。
-3. 將 markdown 檔案從 `content/en/` 資料夾複製到 `content/[language-code]` 資料夾，然後翻譯這些檔案。
+- 抓取網頁時，必須排除一些跟主要內容無關的元素和文字。主要的方法有兩種：
+  - 手動將 HTML 頁面轉換為 Markdown 檔案：將原始網頁的內容複製到剪貼簿，然後透過 [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) 擴充功能將其貼到 VS Code 編輯器中。
+  - 撰寫 Python script 來抓取網頁內容並轉存為 markdown：詳見 [tools/html2md](tools/html2md)。
+- 原文有一些特殊排版是以 HTML 達成，而 Markdown 沒有直接對應的語法。
+  比如說，在表格中使用清單項目，以及 HTML 的 description list (`dl`、`dt`、與 `dd` 標籤) 。因此，在轉換成 Markdown 格式的過程中，如果碰到這類棘手的排版格式，便會進行適當的改寫或刪減。
+
+原文的 markdown 檔案是放在 `content/en/` 目錄下。翻譯成其他語言時，可將該資料夾底下的檔案全部複製到 `content/[language-code]` 資料夾（例如 `content/zh-tw`），再使用工具來翻譯這些檔案。
 
 ## 🌐 支援的語言代碼
 
