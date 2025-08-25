@@ -15,21 +15,26 @@
 
 ## 🤖 翻译是如何创建的
 
-翻译流程分为两个阶段。首先必须把英文网页转存为 Markdown 文件，并完成校对。第二阶段则是利用 AI 工具将英文版的 Markdown 文件翻译成各个语言。
+翻译流程分为两个步骤。首先必须把英文网页转存为 Markdown 文件，并完成校对。一旦有了原文的 Markdown 文件，第二步就简单多了，只需利用 AI 工具将英文版的 Markdown 文件翻译成各个语言。
 
-把英文网页转存为 Markdown 文件的过程比较费工夫，原因有二：
+## 步骤一：把英文网页转存为 Markdown
 
-抓取网页时，必须排除一些与主要内容无关的元素和文字。主要的方法有两种：
+把英文网页转存为 Markdown 文件的过程比较费工夫，原因有二。
 
-手动将 HTML 页面转换为 Markdown 文件：将原始网页的内容复制到剪贴板，然后通过 Markdown Paste
- 扩展功能粘贴到 VS Code 编辑器中。
+首先，在抓取网页时，必须排除一些与主要内容无关的元素和文字。主要的方法有两种：
 
-编写 Python 脚本来抓取网页内容并转存为 Markdown：详见 [tools/html2md](tools/html2md)。
+- 手动将 HTML 页面转换为 Markdown 文件：将原始网页的内容复制到剪贴板，然后通过 [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) 扩展功能粘贴到 VS Code 编辑器中。
+- 编写 Python 脚本来抓取网页内容并转存为 Markdown：详见 [tools/html2md](tools/html2md)。
 
-原文中有一些特殊排版是通过 HTML 实现的，而 Markdown 没有直接对应的语法。
-比如，在表格中使用列表项，以及 HTML 的 description list（dl、dt、和 dd 标签）。因此，在转换为 Markdown 格式的过程中，如果遇到这类棘手的排版格式，就会进行适当的改写或删减。
+无论使用哪种方法，之后仍然免不了需要人工校对。
 
-原文的 Markdown 文件存放在 content/en/ 目录下。翻译成其他语言时，可以将该文件夹下的文件全部复制到 content/[language-code] 文件夹（例如 content/zh-tw），然后使用工具来翻译这些文件。
+另一个棘手的问题是，原文中有一些特殊排版是通过 HTML 实现的，而 Markdown 没有直接对应的语法。
+
+比如，在表格中使用列表项，以及 HTML 的 description list（`dl`、`dt`、和 `dd` 标签）。在转换为 Markdown 格式的过程中，如果遇到这类棘手的排版格式，可能需要进行改写甚至删减。
+
+## 步骤二：翻译 Markdown 文件
+
+原文的 Markdown 文件存放在 `content/en/` 目录下。翻译成其他语言时，可以将该文件夹下的文件全部复制到 `content/[language-code]` 文件夹（例如 `content/zh-tw`），然后使用工具来翻译这些文件。
 
 ## 🌐 支持的语言代码
 

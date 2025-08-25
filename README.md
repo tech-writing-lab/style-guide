@@ -15,18 +15,26 @@ To start reading the style guide, use the following links for specific language 
 
 ## 🤖 How these translations are created
 
-The translation process consists of two stages. First, the English web pages must be converted and saved as Markdown files, followed by proofreading. In the second stage, AI tools are used to translate the English Markdown files into different languages.
+The translation process consists of two steps. First, the English web pages must be converted and saved as Markdown files, followed by proofreading. Once the original Markdown files are ready, the second step is easier: simply use AI tools to translate the English Markdown files into different languages.
 
-Converting English web pages into Markdown files takes more effort for two reasons:
+## Step 1: Convert English web pages to Markdown
 
-- When capturing a web page, you need to exclude elements and text unrelated to the main content. There are two main approaches:
+The process of converting English web pages into Markdown files is relatively time-consuming for two reasons.
 
-  - Manually convert the HTML page to a Markdown file: copy the content of the original web page to the clipboard, then paste it into the VS Code editor using the [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) extension.
-  - Write a Python script to extract web page content and save it as Markdown: see [tools/html2md](tools/html2md).
-- Some special formatting in the original text is achieved with HTML, but Markdown has no direct equivalent.
-  For example, lists within tables and HTML description lists (`dl`, `dt`, and `dd` tags). Therefore, when converting to Markdown format, such tricky layouts are appropriately rewritten or omitted.
+First, when capturing a web page, you need to exclude elements and text that are unrelated to the main content. There are two main approaches:
 
-The original Markdown files are stored in the `content/en/` directory. When translating into other languages, you can copy all the files under that directory to `content/[language-code]` (for example, `content/zh-tw`), and then use tools to translate these files.
+- Manually convert the HTML page to a Markdown file: copy the content of the original web page to the clipboard, then paste it into the VS Code editor using the [Markdown Paste](https://github.com/telesoho/vscode-markdown-paste-image) extension.
+- Write a Python script to extract the web page content and save it as Markdown: see [tools/html2md](tools/html2md).
+
+Whichever method you choose, manual proofreading afterward is still unavoidable.
+
+Another tricky issue is that some special formatting in the original text is achieved with HTML, while Markdown has no direct equivalent.
+
+For example, list items within tables and HTML description lists (`dl`, `dt`, and `dd` tags). When converting to Markdown, if such tricky layouts are encountered, they may need to be rewritten or even removed.
+
+## Step 2: Translate Markdown files
+
+The original Markdown files are stored in the `content/en/` directory. When translating into other languages, you can copy all the files under that directory to the `content/[language-code]` folder (for example, `content/zh-tw`), and then use tools to translate these files.
 
 ## 🌐 Supported language codes
 
