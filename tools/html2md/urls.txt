@@ -32,25 +32,25 @@
 
 # Formatting and organization
 # Note that "images" and "lists" must be converted manually.
-https://developers.google.com/style/dates-times
-https://developers.google.com/style/format-examples
-https://developers.google.com/style/images
-https://developers.google.com/style/footnotes
-https://developers.google.com/style/headings
-https://developers.google.com/style/italics-terms
-https://developers.google.com/style/lists
-https://developers.google.com/style/notices
-https://developers.google.com/style/numbers
-https://developers.google.com/style/paragraph-structure
-https://developers.google.com/style/phone-numbers
-https://developers.google.com/style/plural-single-letter
-https://developers.google.com/style/procedures
-https://developers.google.com/style/tables
-https://developers.google.com/style/units-of-measure
+# https://developers.google.com/style/dates-times
+# https://developers.google.com/style/format-examples
+# https://developers.google.com/style/images
+# https://developers.google.com/style/footnotes
+# https://developers.google.com/style/headings
+# https://developers.google.com/style/italics-terms
+# https://developers.google.com/style/lists
+# https://developers.google.com/style/notices
+# https://developers.google.com/style/numbers
+# https://developers.google.com/style/paragraph-structure
+# https://developers.google.com/style/phone-numbers
+# https://developers.google.com/style/plural-single-letter
+# https://developers.google.com/style/procedures
+# https://developers.google.com/style/tables
+# https://developers.google.com/style/units-of-measure
 
 # Linking
-# https://developers.google.com/style/cross-references
-# https://developers.google.com/style/headings-targets
+https://developers.google.com/style/cross-references
+https://developers.google.com/style/headings-targets
 
 # Computer interfaces
 # https://developers.google.com/style/api-reference-comments

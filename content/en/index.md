@@ -62,30 +62,26 @@
 
 ## Formatting and organization
 
-> This category [needs help](../../README.md#contribute).
-
-- [Dates and times]
-- [Examples]
-- [Figures and other images]
-- [Footnotes]
-- [Headings and titles]
-- [Italics with terms]
-- [Lists]
-- [Notes and other notices]
-- [Numbers]
-- [Paragraphs]
-- [Phone numbers]
-- [Plural of a single letter]
-- [Procedures]
-- [Tables]
-- [Units of measurement]
+- [Dates and times](formatting/dates-times.md)
+- [Examples](formatting/format-examples.md)
+- [Figures and other images](formatting/images.md)
+- [Footnotes](formatting/footnotes.md)
+- [Headings and titles](formatting/headings.md)
+- [Italics with terms](formatting/italics-terms.md)
+- [Lists](formatting/lists.md)
+- [Notes and other notices](formatting/notices.md)
+- [Numbers](formatting/numbers.md)
+- [Paragraphs](formatting/paragraph-structure.md)
+- [Phone numbers](formatting/phone-numbers.md)
+- [Plural of a single letter](formatting/plural-single-letter.md)
+- [Procedures](formatting/procedures.md)
+- [Tables](formatting/tables.md)
+- [Units of measurement](formatting/units-of-measure.md)
 
 ## Linking
 
-> This category [needs help](../../README.md#contribute).
-
-- [Cross-references and linking]
-- [Headings as link targets]
+- [Cross-references and linking](linking/cross-references.md)
+- [Headings as link targets](linking/headings-targets.md)
 
 ## Computer interfaces
 
