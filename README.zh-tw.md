@@ -17,7 +17,7 @@
 
 翻譯流程分為兩個步驟，首先必須把英文的網頁轉存為 markdown 檔案，並完成校對。一旦有了原文的 Markdown 檔案，第二步就簡單多了，只要利用 AI 工具來將英文版的 markdown 檔案翻譯成個別語言。
 
-## 步驟一：把英文網頁轉存為 Markdown
+### 步驟一：把英文網頁轉存為 Markdown
 
 把英文網頁轉存為 markdown 檔案的過程比較費工夫，原因有二。
 
@@ -32,7 +32,7 @@
 
 比如說，在表格中使用清單項目，以及 HTML 的 description list (`dl`、`dt`、與 `dd` 標籤) 。在轉換成 Markdown 格式的過程中，如果碰到這類棘手的排版格式，可能需要進行改寫甚至刪減。
 
-## 步驟二：翻譯 Markdown 檔案
+### 步驟二：翻譯 Markdown 檔案
 
 原文的 markdown 檔案是放在 `content/en/` 目錄下。翻譯成其他語言時，可將該資料夾底下的檔案全部複製到 `content/[language-code]` 資料夾（例如 `content/zh-tw`），再使用工具來翻譯這些檔案。
 
