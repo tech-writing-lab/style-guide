@@ -17,7 +17,7 @@ To start reading the style guide, use the following links for specific language 
 
 The translation process consists of two steps. First, the English web pages must be converted and saved as Markdown files, followed by proofreading. Once the original Markdown files are ready, the second step is easier: simply use AI tools to translate the English Markdown files into different languages.
 
-## Step 1: Convert English web pages to Markdown
+### Step 1: Convert English web pages to Markdown
 
 The process of converting English web pages into Markdown files is relatively time-consuming for two reasons.
 
@@ -32,7 +32,7 @@ Another tricky issue is that some special formatting in the original text is ach
 
 For example, list items within tables and HTML description lists (`dl`, `dt`, and `dd` tags). When converting to Markdown, if such tricky layouts are encountered, they may need to be rewritten or even removed.
 
-## Step 2: Translate Markdown files
+### Step 2: Translate Markdown files
 
 The original Markdown files are stored in the `content/en/` directory. When translating into other languages, you can copy all the files under that directory to the `content/[language-code]` folder (for example, `content/zh-tw`), and then use tools to translate these files.
 
