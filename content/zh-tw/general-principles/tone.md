@@ -1,59 +1,59 @@
-# Voice and tone
+# 語氣與風格
 
-In your documents, aim for a voice and tone that's conversational, friendly, and respectful without using slang or being overly colloquial or frivolous; a voice that's casual and natural and approachable, not pedantic or pushy. Try to sound like a knowledgeable friend who understands what the developer wants to do.
+在您的文件中，力求一種對話式、友善且尊重的語氣與風格，但避免使用俚語或過於口語化、輕浮；一種隨和、自然、平易近人，而非學究式或咄咄逼人的語氣。試著聽起來像一位知識淵博的朋友，了解開發人員想做什麼。
 
-Don't try to write exactly the way you speak; you probably speak more colloquially and verbosely than you should write, at least for developer documentation. But aim for a conversational tone rather than a formal one.
+不要試圖完全按照您說話的方式寫作；您說話可能比您應該寫作的方式更口語化、更冗長，至少對於開發人員文件而言是如此。但要力求一種對話式的語氣，而非正式的語氣。
 
-Don't try to be super-entertaining, but also don't aim for super-dry. Be human, let your personality show, and be memorable. But remember that the primary purpose of the document is to provide information to someone who's looking for it and may be in a hurry.
+不要試圖變得非常有趣，但也不要追求極度枯燥。要有人情味，讓您的個性展現出來，並令人難忘。但請記住，文件的主要目的是為正在尋找資訊且可能很匆忙的人提供資訊。
 
-Consider that readers come from many different cultures and may have varying levels of ability reading English. As much as possible, avoid culturally specific references. Simple and consistent writing can also make it easier to translate documents into other languages. For more information, see [Writing for a global audience](https://developers.google.com/style/translation).
+請考量讀者來自許多不同的文化，且閱讀英文的能力可能各不相同。盡可能避免使用具有文化特定性的參考資料。簡單一致的寫作也可以讓文件更容易翻譯成其他語言。更多資訊，請參閱[為全球讀者撰寫](https://developers.google.com/style/translation)。
 
-For other writing best practices, see the following resources:
+關於其他寫作最佳實務，請參閱以下資源：
 
-- [Write accessible documentation](https://developers.google.com/style/accessibility)
-- [Write inclusive documentation](https://developers.google.com/style/inclusive-documentation)
+- [撰寫無障礙文件](https://developers.google.com/style/accessibility)
+- [撰寫具包容性的文件](https://developers.google.com/style/inclusive-documentation)
 
-## Some things to avoid where possible
+## 盡可能避免的一些事項
 
-- Buzzwords or [technical jargon](https://developers.google.com/style/jargon).
-- Being too cutesy.
-- [Ableist language](https://developers.google.com/style/inclusive-documentation#ableist-language) or figures of speech.
-- Placeholder phrases like *please note* and *at this time.*
-- Choppy or long-winded sentences.
-- Starting all sentences with the same phrase (such as *You can* or *To do*).
-- Current pop-culture references.
-- Exclamation marks, except in rare really exciting moments.
-- Wackiness, zaniness, and goofiness.
-- Mixing metaphors or taking a metaphor too far.
-- Phrasing that denigrates or insults any group of people.
-- Phrasing in terms of *let's* do something.
-- Using phrases like *simply*, *It's that simple*, *It's easy*, or *quickly* in a procedure.
-- Internet slang, or other [internet abbreviations](https://developers.google.com/style/abbreviations#dont-use) such as *[tl;dr](https://developers.google.com/style/word-list#tldr)* or *[ymmv](https://developers.google.com/style/word-list#ymmv)*.
+- 流行語或[技術行話](https://developers.google.com/style/jargon)。
+- 過於裝可愛。
+- [歧視身心障礙者的語言](https://developers.google.com/style/inclusive-documentation#ableist-language)或譬喻。
+- 預留位置片語，例如*請注意*和*此時*。
+- 斷斷續續或冗長的句子。
+- 所有句子都以相同的片語開頭（例如*您可以*或*若要*）。
+- 當前的流行文化參考。
+- 驚嘆號，除非在極少數真正令人興奮的時刻。
+- 古怪、滑稽和愚蠢。
+- 混合比喻或將比喻用得太過火。
+- 貶低或侮辱任何人群的措辭。
+- 以*讓我們*做某事的措辭。
+- 在程序中使用* просто*、*就這麼簡單*、*很容易*或*快速*等片語。
+- 網路俚語或其他[網路縮寫](https://developers.google.com/style/abbreviations#dont-use)，例如 *[tl;dr](https://developers.google.com/style/word-list#tldr)* 或 *[ymmv](https://developers.google.com/style/word-list#ymmv)*。
 
-## Some techniques and approaches to consider
+## 一些可以考慮的技巧和方法
 
-- If you're having trouble expressing something, step back and ask yourself, "What am I trying to say?" Often, the answer you give yourself reveals what you should be saying in the document.
-- If you're uncertain about your phrasing or tone, ask a colleague to take a look.
-- Try reading parts of your document out loud, or at least mouthing the words. Does it sound natural? Not every sentence has to sound natural when spoken; these are written documents. But if you come across a sentence that's awkward or confusing when spoken, consider whether you can make it more conversational.
-- Use transitions between sentences. Phrases like *Though* or *This way* can make paragraphs less stilted. (Then again, sometimes transitions like *However* or *Nonetheless* can make paragraphs more stilted.)
-- Even if you're having trouble hitting the right tone, make sure you're communicating useful information in a clear and direct way; that's the most important part.
+- 如果您在表達某件事時遇到困難，請退一步問自己：「我想說什麼？」通常，您給自己的答案會揭示您應該在文件中說些什麼。
+- 如果您不確定自己的措辭或語氣，請找一位同事看看。
+- 試著大聲朗讀文件的部分內容，或至少動動嘴唇。聽起來自然嗎？並非每個句子在說出來時都必須聽起來自然；這些是書面文件。但如果您遇到一個說出來時很尷尬或令人困惑的句子，請考慮是否可以讓它更具對話性。
+- 在句子之間使用過渡詞。*雖然*或*這樣*等片語可以讓段落不那麼生硬。（不過，有時*然而*或*儘管如此*等過渡詞會讓段落更生硬。）
+- 即使您在掌握正確的語氣方面遇到困難，也要確保您以清晰直接的方式傳達有用的資訊；這才是最重要的部分。
 
-## Politeness and use of *please*
+## 禮貌和 *please* 的使用
 
-It's great to be polite, but using *please* in a set of instructions is overdoing the politeness.
+有禮貌是件好事，但在指令中使用 *please* 會顯得過於客氣。
 
-- 👍 Recommended: To view the document, click **View**.
+- ✅ 建議：若要檢視文件，請按一下**檢視**。
 
-- ❌ Not recommended: To view the document, please click **View**.
+- ❌ 不建議：若要檢視文件，請按一下**檢視**。
 
-- 👍 Recommended: For more information, see \[link to other document\].
+- ✅ 建議：更多資訊，請參閱 [其他文件連結]。
 
-- ❌ Not recommended: For more information, please see \[link to other document\].
+- ❌ 不建議：更多資訊，請參閱 [其他文件連結]。
 
-## Examples
+## 範例
 
-| Too informal | Just about right | Too formal |
+| 太過非正式 | 恰到好處 | 太過正式 |
 | --- |  --- |  --- |
-| Dude! This API is totally awesome! | This API lets you collect data about what your users like. | The API documented by this page may enable the acquisition of information pertaining to user preferences. |
-| Just like a certain pop star, this call gets your *telephone* number. The easy way to ask for someone's digits! | To get the user's phone number, call `user.phoneNumber.get`. | The telephone number can be retrieved by the developer via the simple expedient of using the `get` method on the `user` object's `phoneNumber` property. |
-| Then---BOOM---just garbage-collect, and you're golden. | To clean up, call the `collectGarbage` method. | Please note that completion of the task requires the following prerequisite: executing an automated memory management function. |
+| 老兄！這個 API 真是太讚了！ | 這個 API 可讓您收集使用者喜好的資料。 | 本頁面記載的 API 可用於取得與使用者偏好相關的資訊。 |
+| 就像某位流行歌手一樣，這個呼叫會取得您的*電話*號碼。詢問某人電話號碼的簡單方法！ | 若要取得使用者的電話號碼，請呼叫 `user.phoneNumber.get`。 | 開發人員可透過在 `user` 物件的 `phoneNumber` 屬性上使用 `get` 方法的簡單權宜之計來擷取電話號碼。 |
+| 然後——砰——只要進行垃圾回收，就大功告成了。 | 若要清理，請呼叫 `collectGarbage` 方法。 | 請注意，完成此任務需要以下先決條件：執行自動記憶體管理功能。 |

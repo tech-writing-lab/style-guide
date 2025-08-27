@@ -1,5 +1,5 @@
-# Future features
+# 未來功能
 
-Avoid documenting future features or products, even in innocuous ways. Don't pre-announce anything in documentation unless it has been approved by your legal counsel.
+避免記錄未來的功能或產品，即使是以無傷大雅的方式。除非經過法務部門核准，否則請勿在文件中預先宣布任何事項。
 
-See also [Present tense](https://developers.google.com/style/tense) and [Timeless documentation](https://developers.google.com/style/timeless-documentation).
+另請參閱[現在式](https://developers.google.com/style/tense)和[雋永的文件](https://developers.google.com/style/timeless-documentation)。

@@ -1,48 +1,48 @@
-# Prescriptive documentation
+# 指導性文件
 
-Write prescriptive documentation.
+撰寫指導性文件。
 
-*Prescriptive* (or *opinionated*) documentation recommends a way to achieve tasks and accomplish goals. It tells the reader what to do instead of giving them a list of options to choose from. When a goal or task is complex and involves multiple approaches or products, prescriptive documentation recommends a path.
+*指導性*（或*觀點性*）文件會建議達成任務和目標的方法。它會告訴讀者該做什麼，而不是給他們一堆選項去選擇。當目標或任務很複雜，且涉及多種方法或產品時，指導性文件會建議一條路徑。
 
-Prescriptive writing affects several aspects of documentation:
+指導性寫作會影響文件的幾個方面：
 
-- **The purpose and structure of a document**. Prescriptive documentation states a clear, specific purpose. Headings and content are written with that purpose in mind.
-- **Example scenarios and procedures**. Scenarios and procedures reflect the use cases that are most likely relevant to the readers.
-- **Sample commands**. Prescriptive documentation provides commands and arguments that accomplish the task for the most common use case. For more information about documenting command-line options, see [Optional arguments in click-to-copy commands](https://developers.google.com/style/code-syntax#click-to-copy-commands).
+- **文件的目的和結構**。指導性文件會陳述一個清晰、具體的目的。標題和內容的撰寫都會以此目的為考量。
+- **範例情境和程序**。情境和程序會反映與讀者最可能相關的使用案例。
+- **範例指令**。指導性文件會提供能完成最常見使用案例任務的指令和引數。有關記錄命令列選項的更多資訊，請參閱[點擊複製指令中的可選引數](https://developers.google.com/style/code-syntax#click-to-copy-commands)。
 
-For instance, best practice documents are typically prescriptive documents. For an example, see [Operations best practices](https://cloud.google.com/architecture/security-foundations/operation-best-practices).
+例如，最佳實務文件通常是指導性文件。有關範例，請參閱[營運最佳實務](https://cloud.google.com/architecture/security-foundations/operation-best-practices)。
 
-## Word choice for recommendations and requirements
+## 建議和要求的用字選擇
 
-To indicate required or optional user actions or the outcomes of a process, select an appropriate auxiliary verb---for example, *must*, *can*, or *might*. Generally avoid the word *should*. The word can create ambiguity and uncertainty for readers and is thus problematic for prescriptive documentation. For example, if you're telling the reader what to do, *should* implies that the action is recommended but optional, which can leave the reader unsure about what to do.
+若要表示必要或可選的使用者動作或程序的結果，請選擇適當的助動詞——例如，*must*、*can* 或 *might*。通常避免使用 *should* 這個詞。這個詞會為讀者帶來歧義和不確定性，因此對於指導性文件來說是有問題的。例如，如果您正在告訴讀者該做什麼，*should* 意味著該動作是建議的但可選的，這會讓讀者不確定該怎麼做。
 
-To clarify what you mean, determine if an action is *required* versus *optional*, an outcome is *expected* versus *possible*, or a state is *actual* versus *recommended*.
+為了釐清您的意思，請確定一個動作是*必要的*還是*可選的*，一個結果是*預期的*還是*可能的*，或者一個狀態是*實際的*還是*建議的*。
 
-- **If an action is required**: use *must*, or rephrase the sentence so that it's a clear imperative instruction such as "Do the following before you continue."
-- **If an action is recommended**: use *We recommend ...* or *Google recommends ...*. You can use *should* if a recommended action is generally recognized. For example, "You should use a strong password ..." or "You should follow the principle of least privilege ...."
-- **If an action is optional**: use *can*. For example, "You can also use approach B to solve the same problem."
-- **If an outcome is expected**: describe the outcome in terms of what is expected. For example: "The process returns 10 items."
-- **If an outcome is possible**: use *might* or *can*. For example, "The process can take about 30 minutes."
-- **If a state is actual**: when you're describing the state of something, such as the value of a variable, avoid writing "The value should be true." Instead, clarify which of the following you mean:
+- **如果一個動作是必要的**：使用 *must*，或改寫句子，使其成為一個清晰的祈使句指令，例如「在繼續之前，請執行以下操作。」
+- **如果一個動作是建議的**：使用*我們建議...* 或 *Google 建議...*。如果一個建議的動作是普遍認可的，您可以使用 *should*。例如，「您應該使用一個強密碼...」或「您應該遵循最小權限原則...」。
+- **如果一個動作是可選的**：使用 *can*。例如，「您也可以使用方法 B 來解決相同的問題。」
+- **如果一個結果是預期的**：用預期的結果來描述結果。例如：「該程序會傳回 10 個項目。」
+- **如果一個結果是可能的**：使用 *might* 或 *can*。例如，「該程序可能需要大約 30 分鐘。」
+- **如果一個狀態是實際的**：當您在描述某個東西的狀態時，例如一個變數的值，避免寫「該值應該為 true」。相反地，請釐清您的意思：
 
-  - "You must set the value to true."
-  - "The server sets the value to true."
-  - "If the value is false, follow these steps to change it to true."
+  - 「您必須將該值設定為 true。」
+  - 「伺服器會將該值設定為 true。」
+  - 「如果該值為 false，請按照以下步驟將其變更為 true。」
 
-For information about clarifying who's performing an action, see [Active voice](https://developers.google.com/style/voice).
+有關釐清誰在執行一個動作的資訊，請參閱[主動語態](https://developers.google.com/style/voice)。
 
-- 👍 Recommended: Ensure that the Classroom Share Button conforms to our min-max size guidelines and related color/button templates.
+- ✅ 建議：確保 Classroom 分享按鈕符合我們的最小-最大尺寸準則和相關的顏色/按鈕範本。
 
-- 👍 Recommended: The column of the data table that the filter operates on.
+- ✅ 建議：篩選器操作的資料表欄位。
 
-- 👍 Recommended: Whether it's a brand new project or an existing one, perform the following steps.
+- ✅ 建議：無論是全新的專案還是現有的專案，都請執行以下步驟。
 
-- ❌ Not recommended: The Classroom Share Button should conform to our min-max size guidelines and related color and button templates.
+- ❌ 不建議：Classroom 分享按鈕應符合我們的最小-最大尺寸準則和相關的顏色和按鈕範本。
 
-- ❌ Not recommended: The column of the data table that the filter should operate on.
+- ❌ 不建議：篩選器應操作的資料表欄位。
 
-- ❌ Not recommended: Whether it's a brand new project or an existing one, here's what you should do.
+- ❌ 不建議：無論是全新的專案還是現有的專案，您都應該這麼做。
 
-## More resources
+## 更多資源
 
-- See also [can](https://developers.google.com/style/word-list#can), [could](https://developers.google.com/style/word-list#could), [may](https://developers.google.com/style/word-list#may), [might](https://developers.google.com/style/word-list#might), [must](https://developers.google.com/style/word-list#must), and [would](https://developers.google.com/style/word-list#would) in the word list.
+- 另請參閱詞彙表中的 [can](https://developers.google.com/style/word-list#can)、[could](https://developers.google.com/style/word-list#could)、[may](https://developers.google.com/style/word-list#may)、[might](https://developers.google.com/style/word-list#might)、[must](https://developers.google.com/style/word-list#must) 和 [would](https://developers.google.com/style/word-list#would)。

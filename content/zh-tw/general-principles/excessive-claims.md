@@ -1,26 +1,26 @@
-# Avoid excessive claims
+# 避免過度聲明
 
-In documentation, don't make excessive claims. An *excessive claim* is an assertion in the documentation that does any of the following:
+在文件中，請勿做出過度聲明。*過度聲明*是指文件中的斷言，其具有以下任何一種情況：
 
-- Makes a statement about performance or cost that isn't easily verifiable with data that's available to the reader.
-- Makes a statement about security that would be invalidated by a security incident.
-- Makes a statement that might be interpreted as subjective or even disparaging, especially about third-party products.
+-   對效能或成本的陳述，不易透過讀者可取得的資料來驗證。
+-   對安全性的陳述，會因安全性事件而失效。
+-   可能被解讀為主觀甚至貶抑的陳述，尤其是關於第三方產品。
 
-When you're assessing whether some text makes an excessive claim, take into account not just what's true today about a product's performance, cost, security, or functionality, but what might be true in the future.
+在評估某些文字是否構成過度聲明時，不僅要考慮產品目前的效能、成本、安全性或功能，還要考慮未來可能的情況。
 
-Consider the following guidelines:
+請考量以下準則：
 
-- When you describe products, avoid superlatives like *best*, *simplest*, *fastest*, *never*, and *always*. Similarly, be careful about words like *ensure* and *guarantee* and use them only when something can truly be ensured or guaranteed.
-- If you make specific performance claims---how fast a product is, how much storage it requires, and so on---make sure that you reference the source of your information.
-- If documentation claims that a product is secure, the documentation is invalid (and not credible) if someone succeeds in compromising the product. It's safer to suggest that a feature "helps with security" or "is designed for security" because those statements are true even if a security incident occurs.
-- A statement that you make about a competitive product might be untrue if you misinterpret how the product works, or later if the other company comes out with a new release.
+-   在描述產品時，避免使用最高級形容詞，例如*最好*、*最簡單*、*最快*、*絕不*和*總是*。同樣地，請謹慎使用*確保*和*保證*等詞語，僅在某件事可以真正被確保或保證時才使用。
+-   如果您提出具體的效能聲明——產品有多快、需要多少儲存空間等等——請務必參照您的資訊來源。
+-   如果文件聲稱某產品是安全的，但有人成功入侵該產品，則該文件是無效的（且不可信）。建議改為某功能「有助於安全性」或「為安全性而設計」，因為即使發生安全性事件，這些陳述仍然是真實的。
+-   您對競爭產品的陳述，如果您誤解了該產品的運作方式，或者稍後該公司推出新版本，都可能是不真實的。
 
-The safest approach is always to write factually and objectively, limiting what you say to verifiable information that will be true over the lifespan of your documentation.
+最安全的方法始終是如實、客觀地撰寫，將您所說的內容限制在可在文件生命週期內保持真實的可驗證資訊。
 
-- 👍 Recommended: Our product distributes datasets and computation in memory across a cluster, and therefore it can be faster for this scenario than ExampleCorporation's product. For more information, see [Performance comparison](https://www.google.com/).
+-   ✅ 建議：我們的產品將資料集和計算分散在叢集的記憶體中，因此在這種情況下，它可能比 ExampleCorporation 的產品更快。更多資訊，請參閱[效能比較](https://www.google.com/)。
 
-- ❌ Not recommended: Our product is faster than ExampleCorp's product.
+-   ❌ 不建議：我們的產品比 ExampleCorp 的產品快。
 
-- 👍 Recommended: Using our security product is part of an overall strategy that helps prevent account takeovers from phishing attacks.
+-   ✅ 建議：使用我們的安全性產品是整體策略的一部分，有助於防止網路釣魚攻擊造成的帳戶盜用。
 
-- ❌ Not recommended: Our security product prevents account takeovers from phishing attacks.
+-   ❌ 不建議：我們的安全性產品可防止網路釣魚攻擊造成的帳戶盜用。

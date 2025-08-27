@@ -1,27 +1,27 @@
-# Jargon
+# 行話
 
-Jargon is the specialized and often figurative terminology of a specific group to represent a larger concept---for example, *camel case*, *swim lane*, *break-glass procedure*, or *out-of-the-box*. Jargon can also include vaguely defined or overloaded terms like *solution*, *support*, or *workload*.
+行話是特定群體用來代表更大概念的專門且通常是比喻性的術語——例如，*camel case*（駝峰式命名）、*swim lane*（泳道）、*break-glass procedure*（緊急應變程序）或 *out-of-the-box*（開箱即用）。行話也可能包含定義模糊或過度使用的術語，例如 *solution*（解決方案）、*support*（支援）或 *workload*（工作負載）。
 
-Typically, the meaning of jargon isn't understood except by the specific group. For this reason, jargon can hamper our efforts to publish content that's clear, that reaches a [global audience](https://developers.google.com/style/translation) in multiple languages, that serves readers at various levels of product knowledge, and that's inclusive of different groups and cultures. For more information about writing with inclusivity and diversity in mind, see [Write inclusive documentation](https://developers.google.com/style/inclusive-documentation).
+通常，行話的意義只有特定群體才能理解。因此，行話可能會妨礙我們發布清晰、觸及多種語言的[全球讀者](https://developers.google.com/style/translation)、服務於不同產品知識水準的讀者，以及包容不同群體和文化的內容。有關以包容性和多樣性為考量進行寫作的更多資訊，請參閱[撰寫具包容性的文件](https://developers.google.com/style/inclusive-documentation)。
 
-However, some jargon is widely understood and accepted by our industry or by the intended audience of a document. It can be valuable to include jargon in a document when you know that readers search for those terms. If you're going to use jargon, consider the following questions:
+然而，有些行話在我們的行業或文件的目標讀者中被廣泛理解和接受。當您知道讀者會搜尋這些術語時，在文件中包含這些行話可能很有價值。如果您要使用行話，請考量以下問題：
 
-- **Can you write around the term?** If you don't need the term for search engine optimization (SEO), try writing around it. For example, instead of writing *Hold a post-mortem*, write *When the project is finished, review what processes worked or didn't work*. Instead of writing *Create a back-of-the-envelope design*, write *Use an informal design process*.
-- **Can you replace the term with a different, more specific term?** For example, the [word list](https://developers.google.com/style/word-list) for this style guide offers several replacement terms: *affected area* or *spatial impact* (for *blast radius*), *import* or *load* (for *ingest*), and *ready-made* or *pre-built* (for *off-the-shelf*). When a term on the word list is marked as "Don't use" (some jargon can be considered offensive, violent, or not inclusive), replace that term or write around it.
-- **Are you using the term only once in your document?** If so, describe the term in plain language and refer to it in parentheses, or link to a trusted definition.
+- **您能避開這個術語嗎？** 如果您不需要這個術語來進行搜尋引擎最佳化 (SEO)，請嘗試避開它。例如，與其寫*舉行事後檢討*，不如寫*專案結束後，檢討哪些流程有效或無效*。與其寫*建立一個粗略的設計*，不如寫*使用非正式的設計流程*。
+- **您能用另一個更具體的術語取代它嗎？** 例如，本風格指南的[詞彙表](https://developers.google.com/style/word-list)提供了幾個替代術語：*affected area* 或 *spatial impact*（用於 *blast radius*）、*import* 或 *load*（用於 *ingest*），以及 *ready-made* 或 *pre-built*（用於 *off-the-shelf*）。當詞彙表中的術語標示為「請勿使用」（某些行話可能被認為具有冒犯性、暴力或不具包容性）時，請取代該術語或避開它。
+- **您在文件中只使用一次這個術語嗎？** 如果是，請用淺顯的語言描述該術語，並在括號中提及它，或連結到一個可信的定義。
 
-  - 👍 Recommended: You then move the task to an earlier part of the process (also known as *shifting left*).
+  - ✅ 建議：然後您將任務移至流程的較早部分（也稱為*左移*）。
 
-  - 👍 Recommended: A [split-brain](https://en.wikipedia.org/wiki/Split-brain_(computing)) situation can develop.
+  - ✅ 建議：可能會出現[腦裂](https://en.wikipedia.org/wiki/Split-brain_(computing))的情況。
 
-- **Are you using the term throughout your document?** If so, briefly describe the term in parentheses on first reference, or link to a trusted definition.
+- **您在整份文件中都使用這個術語嗎？** 如果是，請在第一次提及時在括號中簡要描述該術語，或連結到一個可信的定義。
 
-  - 👍 Recommended: The application is in the same state as a *cold standby* (a backup or redundant system that's identical to a primary system).
+  - ✅ 建議：應用程式處於與*冷備援*（與主系統相同的備份或冗餘系統）相同的狀態。
 
-  - 👍 Recommended: A better approach is to use a pattern called a [*dead letter queue*](https://en.wikipedia.org/wiki/Dead_letter_queue).
+  - ✅ 建議：一個更好的方法是使用一種稱為[*無效信件佇列*](https://en.wikipedia.org/wiki/Dead_letter_queue)的模式。
 
-- **Is the term used in a command or code sample?** If so, use the words only in direct reference to the code items ([formatted as code](https://developers.google.com/style/code-in-text)), and make it clear what you're referring to.
+- **該術語是否用於指令或程式碼範例中？** 如果是，請僅在直接參照程式碼項目時使用這些詞語（[格式化為程式碼](https://developers.google.com/style/code-in-text)），並清楚說明您所參照的內容。
 
-  - 👍 Recommended: Add a user to the allowlist (`whitelist`) by entering the following: `whitelist adduser*EMAIL_ADDRESS*`.
+  - ✅ 建議：透過輸入以下內容將使用者新增至允許清單 (`whitelist`)：`whitelist adduser*EMAIL_ADDRESS*`。
 
-  - ❌ Not recommended: Add a user to the whitelist by entering the following: `whitelist adduser*EMAIL_ADDRESS*`.
+  - ❌ 不建議：透過輸入以下內容將使用者新增至白名單：`whitelist adduser*EMAIL_ADDRESS*`。

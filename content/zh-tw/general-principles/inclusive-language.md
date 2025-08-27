@@ -1,93 +1,93 @@
-# Write inclusive documentation
+# 撰寫具包容性的文件
 
-**Note**: This document includes references to terms that Google considers disrespectful or offensive. The terms are used here to provide usage guidance and alternative terms.
+**注意**：本文件包含 Google 認為不尊重或冒犯的術語。此處使用這些術語是為了提供用法指南和替代術語。
 
-We write our developer documentation with inclusivity and diversity in mind. This page is not an exhaustive reference, but provides some general guidelines and examples that illustrate some best practices for writing inclusive documentation.
+我們在撰寫開發人員文件時，會考量到包容性和多樣性。本頁面並非詳盡的參考資料，但提供了一些通用準則和範例，以說明撰寫具包-容性文件的一些最佳實務。
 
-For other writing best practices, see the following resources:
+關於其他寫作最佳實務，請參閱以下資源：
 
-- [Write for a global audience](https://developers.google.com/style/translation)
-- [Write accessible documentation](https://developers.google.com/style/accessibility)
-- [Voice and tone](https://developers.google.com/style/tone)
+- [為全球讀者撰寫](https://developers.google.com/style/translation)
+- [撰寫無障礙文件](https://developers.google.com/style/accessibility)
+- [語氣與風格](https://developers.google.com/style/tone)
 
-## Avoid ableist language
+## 避免使用歧視身心障礙者的語言
 
-When trying to achieve a [friendly and conversational tone](https://developers.google.com/style/tone), problematic ableist language might slip in. This can come in the form of figures of speech and other turns of phrase. Be sensitive to your word choice, especially when aiming for an informal tone. Ableist language includes words or phrases such as *crazy*, *insane*, *blind to* or *blind eye to*, *cripple*, *dumb*, and others. Choose alternative words depending on the context.
+在試圖達到[友善且對話式的語氣](https://developers.google.com/style/tone)時，可能會不經意地使用到有問題的歧視身心障礙者的語言。這可能以譬喻或其他措辭的形式出現。請對您的用字遣詞保持敏感，尤其是在追求非正式語氣時。歧視身心障礙者的語言包括*crazy*、*insane*、*blind to*或*blind eye to*、*cripple*、*dumb*等詞語或片語。請根據上下文選擇替代詞語。
 
-| 👍 Recommended | ❌ Not recommended |
+| ✅ 建議 | ❌ 不建議 |
 | --- |  --- |
-| Before launch, give everything a final check for completeness and clarity. | Before launch, give everything a final sanity-check. |
+| 在發布前，對所有內容進行最後的完整性和清晰度檢查。 | 在發布前，對所有內容進行最後的健全性檢查。 |
 | --- |  --- |
-| There are some baffling outliers in the data. | There are some crazy outliers in the data. |
-| It slows down the service, causing a poor user experience until the queue clears. | It cripples the service, causing a poor user experience until the queue clears. |
-| Replace the placeholder in this example with the appropriate value. | Replace the [dummy variable](https://developers.google.com/style/word-list#dummy-variable) in this example with the appropriate value. |
+| 資料中存在一些令人費解的異常值。 | 資料中存在一些瘋狂的異常值。 |
+| 這會減慢服務速度，在佇列清除前導致使用者體驗不佳。 | 這會癱瘓服務，在佇列清除前導致使用者體驗不佳。 |
+| 將此範例中的預留位置替換為適當的值。 | 將此範例中的[虛擬變數](https://developers.google.com/style/word-list#dummy-variable)替換為適當的值。 |
 
-## Avoid unnecessarily gendered language
+## 避免不必要的性別化語言
 
-In addition to being mindful of the [pronouns](https://developers.google.com/style/pronouns#gender-neutral-pronouns) used in narrative examples, be sensitive to other possible sources of gendered language.
+除了注意敘述性範例中使用的[代名詞](https://developers.google.com/style/pronouns#gender-neutral-pronouns)外，還要對其他可能的性別化語言來源保持敏感。
 
-| 👍 Recommended | ❌ Not recommended |
+| ✅ 建議 | ❌ 不建議 |
 | --- |  --- |
-| Equipment installation takes around 16 person-hours to complete. | Equipment installation takes around 16 man-hours to complete. |
+| 設備安裝大約需要 16 個人時才能完成。 | 設備安裝大約需要 16 個工時才能完成。 |
 | --- |  --- |
-| This API might be just what your globally conscious company needs to help all of humanity. | This API might be just what your globally conscious company needs to help all of mankind. |
+| 這個 API 可能正是您具有全球意識的公司幫助全人類所需要的。 | 這個 API 可能正是您具有全球意識的公司幫助全人類所需要的。 |
 
-## Avoid unnecessarily violent language
+## 避免不必要的暴力語言
 
-Avoid graphically violent or harmful terms. For example, avoid using the term *[STONITH](https://developers.google.com/style/word-list#stonith)*; instead, describe the process used to stop an errant node in context by using more specific terms.
+避免使用生動暴力或有害的術語。例如，避免使用 *[STONITH](https://developers.google.com/style/word-list#stonith)* 一詞；相反地，請使用更具體的術語，在上下文中描述用於停止異常節點的過程。
 
-If it's unavoidable and you must mention a violent or harmful term such as *STONITH*, mention it once when you first explain the relevant feature, but phrase it in a way that de-emphasizes the term.
+如果無法避免，且您必須提及暴力或有害的術語，例如 *STONITH*，請在您第一次解釋相關功能時提及一次，但措辭方式應淡化該術語。
 
-- 👍 Recommended: This might require you to fence failed nodes.
+- ✅ 建議：這可能需要您隔離故障節點。
 
-- 👍 Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).
+- ✅ 有時可以：這可能需要您隔離故障節點（有時稱為 STONITH）。
 
-When possible, avoid the use of figurative language that can be interpreted as violent, such as *hang* and *hit*. Although there might also be nonviolent interpretations for these terms, avoiding their use prevents unintentional harm that might be caused by the violent interpretations.
+盡可能避免使用可被解釋為暴力的比喻性語言，例如*hang*和*hit*。雖然這些術語也可能有非暴力的解釋，但避免使用它們可以防止暴力解釋可能造成的無意傷害。
 
-Avoid the use of figurative language that relates to the slaughter of animals. For example, avoid using the metaphor of pets versus cattle when comparing on-premises or stateful systems with stateless cloud systems.
+避免使用與屠宰動物相關的比喻性語言。例如，在比較本地部署或有狀態系統與無狀態雲端系統時，避免使用寵物與牛的比喻。
 
-## Write diverse and inclusive examples
+## 撰寫多樣化且具包容性的範例
 
-Use diverse names, genders, ages, and locations in examples. Keep the following advice in mind:
+在範例中使用多樣化的姓名、性別、年齡和地點。請記住以下建議：
 
-- Follow our [gender-neutral pronoun](https://developers.google.com/style/pronouns#gender-neutral-pronouns) guidance.
-- Avoid being too culturally specific to the US. Be mindful when referring to specific holidays (see also the word list entry for [*the holidays*](https://developers.google.com/style/word-list#holiday)), cultural practices, sports, and figures of speech. Being sensitive here also supports [writing for a global audience](https://developers.google.com/style/translation#culturally-specific).
-- Take care to [choose a diverse set of names](https://developers.google.com/style/examples#names) to help examples reflect the real world diversity of our audience, and see the guidance in that section of the guide for writing about fictional people.
-- When writing about older adults, avoid terms and figures of speech such as *the elderly*, *the aged*, *seniors*, *senior citizens*, or *80 years young*. Instead, use terms such as *older adults* or *aging population*, or mention the person's relative age or relationship to the other people in your example when those details are relevant.
+- 遵循我們的[性別中立代名詞](https://developers.google.com/style/pronouns#gender-neutral-pronouns)指南。
+- 避免過於美國文化特定。在提及特定節日（另請參閱[*the holidays*](https://developers.google.com/style/word-list#holiday)的詞彙表條目）、文化習俗、運動和譬喻時要小心。在此處保持敏感也有助於[為全球讀者撰寫](https://developers.google.com/style/translation#culturally-specific)。
+- 注意[選擇多樣化的姓名](https://developers.google.com/style/examples#names)，以幫助範例反映我們讀者在現實世界中的多樣性，並參閱該指南部分中關於撰寫虛構人物的指導。
+- 在撰寫關於年長者的文章時，避免使用*the elderly*、*the aged*、*seniors*、*senior citizens*或*80 years young*等術語和譬喻。相反地，請使用*older adults*或*aging population*等術語，或在相關時提及該人在範例中與其他人的相對年齡或關係。
 
-## Write about features and users in inclusive ways
+## 以具包容性的方式撰寫關於功能和使用者的文章
 
-Avoid referring to people in divisive ways. For example, instead of referring to people as *native speakers* or *non-native speakers* of English, consider whether your document needs to discuss this at all, and revise it to discuss the feature in terms that are relevant to anyone regardless of what languages they know.
+避免以分裂的方式提及人。例如，與其將人稱為英語的*母語人士*或*非母語人士*，不如考慮您的文件是否需要討論這一點，並將其修改為以與任何人相關的術語來討論該功能，無論他們懂什麼語言。
 
-Avoid using socially-charged terms for technical concepts where possible. For example, avoid terms such as [blacklist](https://developers.google.com/style/word-list#blacklist), [native](https://developers.google.com/style/word-list#native) feature, and [first-class citizen](https://wikipedia.org/wiki/First-class_citizen), even though these terms might still be widely used. Instead of *first-class*, consider other terms such as *core feature*, *built-in*, or *top-level*. Choose the best term for your context.
+盡可能避免對技術概念使用具有社會爭議的術語。例如，避免使用[blacklist](https://developers.google.com/style/word-list#blacklist)、[native](https://developers.google.com/style/word-list#native) feature 和 [first-class citizen](https://wikipedia.org/wiki/First-class_citizen) 等術語，即使這些術語可能仍被廣泛使用。與其使用 *first-class*，不如考慮其他術語，例如 *core feature*、*built-in* 或 *top-level*。為您的上下文選擇最佳術語。
 
-### Replace or write around non-inclusive terms
+### 取代或避開不具包容性的術語
 
-This section contains guidance about how to replace or write around a non-inclusive term. If a term is well established in the industry and replacing it could cause confusion, see [Replace established terms](https://developers.google.com/style/inclusive-documentation#replace). If a term occurs in code samples or keywords, see [Write around non-inclusive code terms](https://developers.google.com/style/inclusive-documentation#write-around). For information about avoiding non-inclusive jargon, see [Jargon](https://developers.google.com/style/jargon).
+本節包含有關如何取代或避開不具包-容性術語的指南。如果某個術語在業界根深蒂固，取代它可能會造成混淆，請參閱[取代既有術語](https://developers.google.com/style/inclusive-documentation#replace)。如果某個術語出現在程式碼範例或關鍵字中，請參閱[避開不具包容性的程式碼術語](https://developers.google.com/style/inclusive-documentation#write-around)。有關避免不具包容性行話的資訊，請參閱[行話](https://developers.google.com/style/jargon)。
 
-#### Replace established terms
+#### 取代既有術語
 
-Many non-inclusive terms are in wide use in the industry, such as *whitelist*. If replacing an established term could cause confusion for readers, you can directly refer to the non-inclusive term on the first use, and put it in parentheses. Then use the inclusive, replacement term throughout the rest of the document.
+許多不具包容性的術語在業界廣泛使用，例如 *whitelist*。如果取代一個既有術語可能會讓讀者感到困惑，您可以在第一次使用時直接提及該不具包容性的術語，並將其放在括號中。然後在文件的其餘部分使用具包容性的替代術語。
 
-- 👍 Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a *whitelist*). Anyone who isn't on the allowlist is blocked ...
+- ✅ 建議：為確保管理員收到通知，請將他們新增至允許清單（有時稱為 *whitelist*）。任何不在允許清單上的人都會被封鎖...
 
-- 👍 Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to ...
+- ✅ 建議：在此模型中，Jenkins 控制器（主機）處理 HTTP 請求。Jenkins 控制器的設計是為了...
 
-- 👍 Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor *cattle, not pets*).
+- ✅ 建議：在雲端架構中，伺服器被視為商品（有時會使用*牛，而非寵物*的比喻來描述）。
 
-In many cases, instead of directly replacing a word, you can rewrite to improve the clarity of a sentence. For example, instead of replacing the verb *whitelist* with *allowlist*, try rewriting the sentence.
+在許多情況下，與其直接取代一個詞，不如重寫以提高句子的清晰度。例如，與其用*allowlist*取代動詞*whitelist*，不如嘗試重寫句子。
 
-- 👍 Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.
+- ✅ 建議：您可以透過在欄位中輸入 CIDR 區塊而非單一地址，來允許來自某個 IP 地址範圍的請求。
 
-- ❌ Not recommended: You can allowlist a range of IP addresses by entering a CIDR block instead of a single address in the field.
+- ❌ 不建議：您可以透過在欄位中輸入 CIDR 區塊而非單一地址，來將某個 IP 地址範圍加入白名單。
 
-#### Write around non-inclusive code terms
+#### 避開不具包容性的程式碼術語
 
-In some cases, non-inclusive terms are embedded in code (or similar) as names or keywords, and you can't simply ignore those terms and use different terminology. What you can do, however, is *minimize* your use of the term (hence avoid propagating it as a term of art), while still providing clear documentation to your readers. Don't use a non-inclusive name or keyword unless it's in code font.
+在某些情況下，不具包容性的術語會以名稱或關鍵字的形式嵌入程式碼（或類似內容）中，您不能簡單地忽略這些術語並使用不同的術語。但是，您可以做的是*盡量減少*您對該術語的使用（從而避免將其作為術語傳播），同時仍為您的讀者提供清晰的文件。除非不具包容性的名稱或關鍵字在程式碼字體中，否則請勿使用。
 
-Following are scenarios for writing around non-inclusive terms that occur in code and keywords.
+以下是避開程式碼和關鍵字中出現的不具包容性術語的情境。
 
-One scenario is if you're documenting an existing system in which an entity is already named by using a non-inclusive term. For example, there might be a configuration file that includes the following cluster name:
+一種情境是，如果您正在記錄一個現有系統，其中一個實體已經使用不具包容性的術語命名。例如，可能有一個設定檔包含以下叢集名稱：
 
 ```text
 apiVersion: v1
@@ -95,37 +95,37 @@ kind: Config
 preferences: {}
 
 clusters:
-\- cluster:
+- cluster:
   name: master
-\- cluster:
-  name: replica\-1
+- cluster:
+  name: replica-1
 ```
 
-Another scenario is if your documentation includes a non-inclusive term that's an established keyword, such as the keyword `SLAVE` in dialects of SQL:
+另一種情境是，如果您的文件包含一個不具包容性的術語，而該術語是一個既定的關鍵字，例如 SQL 方言中的關鍵字 `SLAVE`：
 
 ```text
-START SLAVE UNTIL SQL\_AFTER\_MTS\_GAPS;
+START SLAVE UNTIL SQL_AFTER_MTS_GAPS;
 ```
 
-The first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.
+當您第一次參照使用不具包容性術語的程式碼項目時，您可以直接參照該術語，但請以程式碼字體格式化，並盡可能將其放在括號中。
 
-- 👍 Recommended: The configuration file helps you create a parent node (which is named `master` in the file).
+- ✅ 建議：設定檔可協助您建立父節點（在檔案中名為 `master`）。
 
-- 👍 Recommended: Start the replica by using the `START SLAVE` statement.
+- ✅ 建議：使用 `START SLAVE` 陳述式啟動複本。
 
-In subsequent mentions, use the preferred term (*parent node*, *replica*). If it's necessary to refer to the entity name or keyword, continue doing so only with code formatting.
+在後續的提及中，請使用偏好的術語（*父節點*、*複本*）。如果需要參照實體名稱或關鍵字，請繼續僅使用程式碼格式。
 
-## Avoid bias and harm when discussing disability and accessibility
+## 在討論身心障礙和無障礙時避免偏見和傷害
 
-Many developers create products with accessibility and disability in mind. When documenting these features, and when writing about people with disabilities or about accessibility, work to eliminate unintentional bias and harm. Take the time to educate yourself about the ways that the communities that you're writing about prefer to be identified and described before writing about them in your documentation.
+許多開發人員在創造產品時會考量到無障礙和身心障礙。在記錄這些功能，以及在撰寫關於身心障礙人士或無障礙的文章時，請努力消除無意的偏見和傷害。在您的文件中撰寫關於您所寫的社群之前，請花時間了解他們偏好如何被識別和描述。
 
-Some general guidelines in this area include the following:
+此領域的一些通用準則包括：
 
-- Don't describe people without disabilities as *normal* or *healthy*. This contributes to othering and alienation of people with disabilities by implying that they are abnormal or sick. Instead, use terms such as *nondisabled person*, *sighted person*, *hearing person*, *person without disabilities*, or *neurotypical person*.
-- Research the ways that the people in the communities that you're writing about prefer to be identified and use the terms that they prefer. In many cases, avoid terms that remove personhood or that define people by their disability. For example, avoid terms such as *the disabled* or *a quadriplegic*. Instead, use terms such as *people with disabilities* or *a quadriplegic person*.
+- 不要將沒有身心障礙的人描述為*正常*或*健康*。這會透過暗示他們不正常或生病，而導致對身心障礙人士的排斥和疏離。相反地，請使用*非身心障礙人士*、*有視力的人*、*有聽力的人*、*沒有身心障礙的人*或*神經典型的人*等術語。
+- 研究您正在撰寫的社群中的人偏好如何被識別，並使用他們偏好的術語。在許多情況下，避免使用消除人格或以其身心障礙來定義人的術語。例如，避免使用*the disabled*或*a quadriplegic*等術語。相反地，請使用*people with disabilities*或*a quadriplegic person*等術語。
 
-    However, many members of some communities prefer *identity-first language*---for example, that preference is common in autistic, blind, and Deaf communities. Capitalization of identities also can vary (for some perspectives, visit [Identity-First Language](https://autisticadvocacy.org/about-asan/identity-first-language/) and [Self-Identification in the Deaf Community](https://www.verywellhealth.com/deaf-culture-big-d-small-d-1046233)). Whenever possible, research and choose terms that respect the ways that people in the communities identify.
+    然而，某些社群的許多成員偏好*身分優先語言*——例如，這種偏好在自閉症、盲人和聾人社群中很常見。身分的大寫也可能有所不同（有關某些觀點，請造訪[身分優先語言](https://autisticadvocacy.org/about-asan/identity-first-language/)和[聾人社群的自我認同](https://www.verywellhealth.com/deaf-culture-big-d-small-d-1046233)）。盡可能研究並選擇尊重社群中人們認同方式的術語。
 
-- Use *see* to refer to links and cross-references. For more information, see [see](https://developers.google.com/style/word-list#see).
-- Avoid terms that reflect or project feelings and judgments about a person's disability, such as *victim of*, *suffering from*, or *wheelchair-bound*. Instead, use neutral terms such as *experiencing*, *living with*, or *uses a wheelchair*.
-- Avoid euphemisms or patronizing terms such as *physically challenged*, *special*, *differently abled*, or *handi-capable*.
+- 使用*請參閱*來參照連結和交叉參照。更多資訊，請參閱[請參閱](https://developers.google.com/style/word-list#see)。
+- 避免使用反映或投射對一個人的身心障礙的感受和判斷的術語，例如*victim of*、*suffering from*或*wheelchair-bound*。相反地，請使用中性的術語，例如*experiencing*、*living with*或*uses a wheelchair*。
+- 避免使用委婉語或帶有優越感的術語，例如*physically challenged*、*special*、*differently abled*或*handi-capable*。

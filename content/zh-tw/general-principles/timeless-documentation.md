@@ -1,36 +1,36 @@
-# Timeless documentation
+# 雋永的文件
 
-Timeless documentation is documentation that avoids words and phrases that anchor the documentation to a point in time or assume knowledge of prior or future products and features. In general, document the current version of a product or feature.
+雋永的文件是指避免使用將文件錨定在某個時間點，或假設讀者了解先前或未來產品和功能的詞語和片語。一般而言，請記錄產品或功能的目前版本。
 
-Timeless documentation is especially important for technical documents that might be read a long time after they are written. Words like *now*, *new*, and *currently* can render such documentation inaccurate, outdated, or unmeaningful. In contrast, timeless documentation focuses on how the product works right now---not on how it has changed from previous versions, and not how it might change in the future.
+雋永的文件對於技術文件尤其重要，因為這些文件可能會在撰寫後很長一段時間才被閱讀。*now*、*new* 和 *currently* 等詞語可能會使這類文件變得不準確、過時或毫無意義。相反地，雋永的文件著重於產品目前的運作方式——而不是它與先前版本的變化，也不是它未來可能的變化。
 
-| 👍 Recommended | ❌ Not recommended |
+| ✅ 建議 | ❌ 不建議 |
 | --- |  --- |
-| These subcommands let you interact with HTTP load balancing. | These new subcommands let you interact with HTTP load balancing. |
+| 這些子指令可讓您與 HTTP 負載平衡互動。 | 這些新的子指令可讓您與 HTTP 負載平衡互動。 |
 | --- |  --- |
-| The following command-line options aren't supported: | The following command-line options aren't currently supported: |
-| The emulator supports the following filters: | The emulator now supports the following filters: |
+| 不支援下列命令列選項： | 目前不支援下列命令列選項： |
+| 模擬器支援下列篩選器： | 模擬器現在支援下列篩選器： |
 
-If you're writing procedural or time-stamped content such as press releases, blog posts, or release notes, such time-based words and phrases are okay. For example, *new* is okay in a blog post that announces updates to a product: *Dataflow includes several new features.* Or, *soon* is okay in procedural content to emphasize a change in state after a user performs a step: *The VM goes offline soon after you send the shutdown command.* However, some of these words can become outdated or incorrect when used in product documentation to refer to a product's features and capabilities, so we recommend against using such words in that context.
+如果您正在撰寫程序性或有時間戳記的內容，例如新聞稿、部落格文章或版本說明，那麼使用這類基於時間的詞語和片語是可以的。例如，在宣布產品更新的部落格文章中，*new* 是可以的：*Dataflow 包含數個新功能。* 或者，在程序性內容中，*soon* 是可以的，用來強調使用者執行某個步驟後狀態的改變：*在您傳送關機指令後，虛擬機器很快就會離線。* 然而，在產品文件中，當用來指稱產品的功能和能力時，其中一些詞語可能會變得過時或不正確，因此我們建議在該情境下避免使用這類詞語。
 
-Writing timeless product documentation has the following value:
+撰寫雋永的產品文件具有以下價值：
 
-- It reduces the maintenance required to keep documentation up to date.
-- It avoids assuming the reader is familiar with earlier versions of the product.
+- 減少保持文件最新所需的維護工作。
+- 避免假設讀者熟悉產品的早期版本。
 
-## Words and phrases to avoid
+## 應避免的詞語和片語
 
-The following words and phrases can undermine timelessness in documentation:
+下列詞語和片語可能會破壞文件的雋永性：
 
-- **Words and phrases that make promises or project plans and strategies**. In the context of describing product or feature capabilities, words and phrases such as *at present*, *as of this writing*, or *eventually* can prematurely disclose plans for a product or feature, or they can inappropriately imply that a product or feature might change. In those cases, don't use such words and phrases.
+- **做出承諾或預測計畫和策略的詞語和片語**。在描述產品或功能能力的背景下，*at present*、*as of this writing* 或 *eventually* 等詞語和片語可能會過早地揭露產品或功能的計畫，或者可能會不當地暗示產品或功能可能會改變。在這些情況下，請勿使用這類詞語和片語。
 
-    For more information, see [Documenting future features](https://developers.google.com/style/future).
+    更多資訊，請參閱[記錄未來功能](https://developers.google.com/style/future)。
 
-- **Words and phrases that are implied**. At Google, we assume our documentation is current unless a specific release version is specified. Thus, words and phrases such as *currently* and *as of this writing* are implied by the existence of the documentation itself.
-- **Words and phrases that become outdated soon after publication**. Words such as *soon* and *latest* quickly become irrelevant.
-- **Words and phrases that assume prior knowledge of a product or feature**. If you must use words like *new*, give a reference point such as a date or version release number---for example, *The January 14, 2021 release of BigQuery includes a new resource panel.*
+- **隱含的詞語和片語**。在 Google，我們假設我們的文件是目前的，除非指定了特定的發行版本。因此，*currently* 和 *as of this writing* 等詞語和片語已由文件本身的存在所隱含。
+- **發布後很快就會過時的詞語和片語**。*soon* 和 *latest* 等詞語很快就會變得無關緊要。
+- **假設讀者對產品或功能有先備知識的詞語和片語**。如果您必須使用 *new* 之類的詞語，請提供一個參考點，例如日期或版本發行號碼——例如，*2021 年 1 月 14 日發行的 BigQuery 包含一個新的資源面板。*
 
-When describing product or feature capabilities in product and reference documentation, avoid the following words and phrases:
+在產品和參考文件中描述產品或功能能力時，請避免使用下列詞語和片語：
 
 - as of this writing
 - currently
