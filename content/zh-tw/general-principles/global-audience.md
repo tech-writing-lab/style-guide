@@ -40,40 +40,40 @@ The shorter the sentence, the easier it is to translate. English sentences can b
 
 - Avoid phrasal verbs when possible. A phrasal verb combines multiple words to form a single verb phrase. These verbs are also known as compound verbs. Try to substitute a simpler verb first. There might not be a better verb; for example, a few exceptions to this rule include *set up*, *log in*, and *sign in*.
 
-  - ✅ Recommended: This document uses the following terms:
+  - 👍 Recommended: This document uses the following terms:
 
   - ❌ Not recommended: This document makes use of the following terms:
 
 - Define abbreviations. Abbreviations can be confusing out of context, and they don't translate well. Spell things out whenever possible, at least the first time that you use a given term. For more information, see [Abbreviations](https://developers.google.com/style/abbreviations).
 - Don't use too many modifiers. In particular, don't use more than two nouns as modifiers of another noun.
 
-  - ✅ Recommended: A cloud-native DevSecOps pipeline in a hybrid environment
+  - 👍 Recommended: A cloud-native DevSecOps pipeline in a hybrid environment
 
   - ❌ Not recommended: A hybrid cloud-native DevSecOps pipeline
 
 - Don't misplace modifiers. For example, place a word like *only* immediately before the word or phrase that it relates to. If the meaning is still ambiguous, try rephrasing the sentence.
 
-  - ✅ Recommended: Request only one token.
+  - 👍 Recommended: Request only one token.
 
-  - ✅ Recommended: Request no more than one token.
+  - 👍 Recommended: Request no more than one token.
 
   - ❌ Not recommended: Only request one token.
 
 - Don't omit relative pronouns. To provide clarity and to avoid ambiguity, use relative pronouns such as *that* and *which*. For more information, see [Relative pronouns](https://developers.google.com/style/pronouns#relative-pronouns).
 
-  - ✅ Recommended: You can programmatically update the rules that you previously defined.
+  - 👍 Recommended: You can programmatically update the rules that you previously defined.
 
   - ❌ Not recommended: You can programmatically update the rules you previously defined.
 
 - Clarify antecedents. Using pronouns can get tricky when translators are working with small, unconnected strings of text. Help them out by making things as clear as possible. For example, if a pronoun is ambiguous, then replace it with the appropriate noun.
 
-  - ✅ Recommended: If you use the term *green beer* in an ad, then make sure that the ad is targeted.
+  - 👍 Recommended: If you use the term *green beer* in an ad, then make sure that the ad is targeted.
 
   - ❌ Not recommended: If you use the term *green beer* in an ad, then make sure that it's targeted.
 
 - Use helper words. Helper words such as *then*, *that*, and *of* are frequently left out of conversational English. Use these words to avoid ambiguity.
 
-    | ✅ Recommended | ❌ Not recommended |
+    | 👍 Recommended | ❌ Not recommended |
     | --- |  --- |
     | If the attribute key is not found, then the default value is returned. | If the attribute key is not found, the default value is returned. |
     | --- |  --- |
@@ -85,7 +85,7 @@ The shorter the sentence, the easier it is to translate. English sentences can b
 
 - Repeat a word if the redundancy improves comprehension.
 
-    | ✅ Recommended | ❌ Not recommended |
+    | 👍 Recommended | ❌ Not recommended |
     | --- |  --- |
     | If the VM has started and if you're able to connect... | If the VM has started and you're able to connect... |
     | --- |  --- |

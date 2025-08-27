@@ -4,7 +4,7 @@ Timeless documentation is documentation that avoids words and phrases that ancho
 
 Timeless documentation is especially important for technical documents that might be read a long time after they are written. Words like *now*, *new*, and *currently* can render such documentation inaccurate, outdated, or unmeaningful. In contrast, timeless documentation focuses on how the product works right now---not on how it has changed from previous versions, and not how it might change in the future.
 
-| ✅ Recommended | ❌ Not recommended |
+| 👍 Recommended | ❌ Not recommended |
 | --- |  --- |
 | These subcommands let you interact with HTTP load balancing. | These new subcommands let you interact with HTTP load balancing. |
 | --- |  --- |

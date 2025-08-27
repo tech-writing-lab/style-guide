@@ -31,7 +31,7 @@ For other writing best practices, see the following resources:
 - Place distinguishing and important information of a paragraph in the first sentence to aid in scannability.
 - Use clear and direct language. Avoid the use of double negatives and exceptions for exceptions.
 
-  - ✅ Recommended: You can continue without a path.
+  - 👍 Recommended: You can continue without a path.
   - ❌ Not recommended: A missing path won't prevent you from continuing.
 
 - Left-align text for readability. Don't center or full-justify text.
@@ -104,8 +104,8 @@ For more information, see [Tables](https://developers.google.com/style/tables).
 
 Introduce an interactive element (such as a button that expands and collapses) in the text preceding the element.
 
-- ✅ Recommended if practical: To see a list of requirements, expand the **Requirements** section.
-- ✅ Recommended: To see a list of requirements, click the arrow\_right expander arrow.
+- 👍 Recommended if practical: To see a list of requirements, expand the **Requirements** section.
+- 👍 Recommended: To see a list of requirements, click the arrow\_right expander arrow.
 
 ## Forms
 
@@ -139,20 +139,20 @@ Don't use color, size, location, or other visual cues as the primary way of comm
 - If you're using color, an icon, or outline thickness to convey state, then also provide a secondary cue, such as a change in the text label.
 - Refer to buttons and other elements by their label. For visual elements that have no text, don't try to describe the element. Instead, use the element's `[aria-label](https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html)` attribute if possible. For example:
 
-  - ✅ Recommended: Click **Save**.
-  - ✅ Recommended: Click **Notifications**.
+  - 👍 Recommended: Click **Save**.
+  - 👍 Recommended: Click **Notifications**.
   - ❌ Not recommended: Click the bell icon.
 
 - Don't use directional language to orient the reader, such as *above*, *below*, or *right-hand side*. This type of language doesn't work well for accessibility or for localization reasons. For example, what's on the right side for left-to-right languages appears on the left side for right-to-left languages.
 
 - Don't use directional language to refer to a position in a document. For example, the text isn't *below* if it's being read by a screen reader. Instead, use *earlier*, *preceding*, or *following*.
 
-  - ✅ Recommended: In the preceding diagram, clients run jobs on multi-team or single-team clusters.
+  - 👍 Recommended: In the preceding diagram, clients run jobs on multi-team or single-team clusters.
   - ❌ Not recommended: In the diagram above, clients run jobs on multi-team or single-team clusters.
 
 - If a [UI element](https://developers.google.com/style/ui-elements) is hard to find, [provide a screenshot](https://developers.google.com/style/images).
 
-  - ✅ Recommended: Click menu **Menu**.
+  - 👍 Recommended: Click menu **Menu**.
   - ❌ Not recommended: In the left-side panel, click the button with three lines.
 
 ## More resources

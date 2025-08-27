@@ -14,7 +14,7 @@ For other writing best practices, see the following resources:
 
 When trying to achieve a [friendly and conversational tone](https://developers.google.com/style/tone), problematic ableist language might slip in. This can come in the form of figures of speech and other turns of phrase. Be sensitive to your word choice, especially when aiming for an informal tone. Ableist language includes words or phrases such as *crazy*, *insane*, *blind to* or *blind eye to*, *cripple*, *dumb*, and others. Choose alternative words depending on the context.
 
-| ✅ Recommended | ❌ Not recommended |
+| 👍 Recommended | ❌ Not recommended |
 | --- |  --- |
 | Before launch, give everything a final check for completeness and clarity. | Before launch, give everything a final sanity-check. |
 | --- |  --- |
@@ -26,7 +26,7 @@ When trying to achieve a [friendly and conversational tone](https://developers.
 
 In addition to being mindful of the [pronouns](https://developers.google.com/style/pronouns#gender-neutral-pronouns) used in narrative examples, be sensitive to other possible sources of gendered language.
 
-| ✅ Recommended | ❌ Not recommended |
+| 👍 Recommended | ❌ Not recommended |
 | --- |  --- |
 | Equipment installation takes around 16 person-hours to complete. | Equipment installation takes around 16 man-hours to complete. |
 | --- |  --- |
@@ -38,9 +38,9 @@ Avoid graphically violent or harmful terms. For example, avoid using the term *
 
 If it's unavoidable and you must mention a violent or harmful term such as *STONITH*, mention it once when you first explain the relevant feature, but phrase it in a way that de-emphasizes the term.
 
-- ✅ Recommended: This might require you to fence failed nodes.
+- 👍 Recommended: This might require you to fence failed nodes.
 
-- ✅ Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).
+- 👍 Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).
 
 When possible, avoid the use of figurative language that can be interpreted as violent, such as *hang* and *hit*. Although there might also be nonviolent interpretations for these terms, avoiding their use prevents unintentional harm that might be caused by the violent interpretations.
 
@@ -69,15 +69,15 @@ This section contains guidance about how to replace or write around a non-inclus
 
 Many non-inclusive terms are in wide use in the industry, such as *whitelist*. If replacing an established term could cause confusion for readers, you can directly refer to the non-inclusive term on the first use, and put it in parentheses. Then use the inclusive, replacement term throughout the rest of the document.
 
-- ✅ Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a *whitelist*). Anyone who isn't on the allowlist is blocked ...
+- 👍 Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a *whitelist*). Anyone who isn't on the allowlist is blocked ...
 
-- ✅ Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to ...
+- 👍 Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to ...
 
-- ✅ Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor *cattle, not pets*).
+- 👍 Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor *cattle, not pets*).
 
 In many cases, instead of directly replacing a word, you can rewrite to improve the clarity of a sentence. For example, instead of replacing the verb *whitelist* with *allowlist*, try rewriting the sentence.
 
-- ✅ Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.
+- 👍 Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.
 
 - ❌ Not recommended: You can allowlist a range of IP addresses by entering a CIDR block instead of a single address in the field.
 
@@ -109,9 +109,9 @@ START SLAVE UNTIL SQL\_AFTER\_MTS\_GAPS;
 
 The first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.
 
-- ✅ Recommended: The configuration file helps you create a parent node (which is named `master` in the file).
+- 👍 Recommended: The configuration file helps you create a parent node (which is named `master` in the file).
 
-- ✅ Recommended: Start the replica by using the `START SLAVE` statement.
+- 👍 Recommended: Start the replica by using the `START SLAVE` statement.
 
 In subsequent mentions, use the preferred term (*parent node*, *replica*). If it's necessary to refer to the entity name or keyword, continue doing so only with code formatting.
 

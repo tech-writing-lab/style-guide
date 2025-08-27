@@ -17,10 +17,10 @@ Consider the following guidelines:
 
 The safest approach is always to write factually and objectively, limiting what you say to verifiable information that will be true over the lifespan of your documentation.
 
-- ✅ Recommended: Our product distributes datasets and computation in memory across a cluster, and therefore it can be faster for this scenario than ExampleCorporation's product. For more information, see [Performance comparison](https://www.google.com/).
+- 👍 Recommended: Our product distributes datasets and computation in memory across a cluster, and therefore it can be faster for this scenario than ExampleCorporation's product. For more information, see [Performance comparison](https://www.google.com/).
 
 - ❌ Not recommended: Our product is faster than ExampleCorp's product.
 
-- ✅ Recommended: Using our security product is part of an overall strategy that helps prevent account takeovers from phishing attacks.
+- 👍 Recommended: Using our security product is part of an overall strategy that helps prevent account takeovers from phishing attacks.
 
 - ❌ Not recommended: Our security product prevents account takeovers from phishing attacks.

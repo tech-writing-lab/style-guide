@@ -31,11 +31,11 @@ To clarify what you mean, determine if an action is *required* versus *option
 
 For information about clarifying who's performing an action, see [Active voice](https://developers.google.com/style/voice).
 
-- ✅ Recommended: Ensure that the Classroom Share Button conforms to our min-max size guidelines and related color/button templates.
+- 👍 Recommended: Ensure that the Classroom Share Button conforms to our min-max size guidelines and related color/button templates.
 
-- ✅ Recommended: The column of the data table that the filter operates on.
+- 👍 Recommended: The column of the data table that the filter operates on.
 
-- ✅ Recommended: Whether it's a brand new project or an existing one, perform the following steps.
+- 👍 Recommended: Whether it's a brand new project or an existing one, perform the following steps.
 
 - ❌ Not recommended: The Classroom Share Button should conform to our min-max size guidelines and related color and button templates.
 

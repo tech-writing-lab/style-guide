@@ -10,12 +10,12 @@ When you write about any product, follow the official capitalization for the nam
 
 - For example, if you're using Kubernetes-related terms, then follow the capitalization that's shown in the Kubernetes [Concepts documentation](https://kubernetes.io/docs/concepts/).
 
-  - 👍 Recommended in a Kubernetes context: A Job creates one or more Pods.
-  - 👍 Recommended: The Cloud Scheduler job publishes a message to a Pub/Sub topic at one-minute intervals.
+  - ✅ Recommended in a Kubernetes context: A Job creates one or more Pods.
+  - ✅ Recommended: The Cloud Scheduler job publishes a message to a Pub/Sub topic at one-minute intervals.
 
 - If an official name begins with a lowercase letter, then put it in lowercase even at the start of a sentence. But it's better to revise the sentence to avoid putting a lowercase word at the start, if possible.
 
-  - 👍 Recommended: You can use macOS to run the app.
+  - ✅ Recommended: You can use macOS to run the app.
   - ❌ Not recommended: macOS can run the app.
 
 ### Feature names
@@ -42,11 +42,11 @@ For information about forming possessives with product names, see [Product, fea
 
 Don't use *the* before a product name unless you're using the name to modify something else. *Do* use *the* before tool and API names.
 
-- 👍 Recommended: Using Cloud Datastore with Cloud Dataproc
-- 👍 Recommended: The Cloud Datastore options page
-- 👍 Recommended: The Google Cloud console
-- 👍 Recommended: The Transcoder API
-- 👍 Recommended: The `gcloud` CLI
+- ✅ Recommended: Using Cloud Datastore with Cloud Dataproc
+- ✅ Recommended: The Cloud Datastore options page
+- ✅ Recommended: The Google Cloud console
+- ✅ Recommended: The Transcoder API
+- ✅ Recommended: The `gcloud` CLI
 - ❌ Not recommended: Using the Cloud Datastore with Cloud Dataproc
 
 If you use a product name as a modifier with an indefinite article (*a* or *an*), pay close attention to which article precedes the product name.
