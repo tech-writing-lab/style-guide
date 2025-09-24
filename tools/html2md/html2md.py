@@ -3,7 +3,7 @@ import os
 import post_process
 import markdown_tools
 
-OUTPUT_FOLDER = "output"
+OUTPUT_FOLDER = "_output"
 
 def auto_filename_from_url(url: str) -> str:
     filename = url.rstrip("/").split("/")[-1] or "index"

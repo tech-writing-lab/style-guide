@@ -47,11 +47,11 @@ To convert HTML pages to markdown files, follow instructions below.
 
 ### 1. Edit `urls.txt`
 
-Include all source HTML URLs in `urls.txt`. 
+Include all source HTML URLs in `urls.txt`.
 
 - Each line should contain one URL.
-- Lines starting with # are treated as comments. 
- 
+- Lines starting with # are treated as comments.
+
 Example:
 
 ```text
@@ -79,3 +79,5 @@ https://example.com           → example.md
 https://www.python.org        → python.md
 https://.../start/            → index.md
 ```
+
+The generated markdown files will be stored in the **_output** folder. When copy or move them to the **/content/en/$subfolder**, ignore these files: **_org_*.md**.

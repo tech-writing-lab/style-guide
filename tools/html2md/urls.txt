@@ -69,3 +69,11 @@ https://developers.google.com/style/headings-targets
 # https://developers.google.com/style/examples
 # https://developers.google.com/style/filenames
 # https://developers.google.com/style/trademarks
+
+# Computer interfaces
+https://developers.google.com/style/api-reference-comments
+https://developers.google.com/style/code-in-text
+https://developers.google.com/style/code-samples
+https://developers.google.com/style/code-syntax
+https://developers.google.com/style/placeholders
+https://developers.google.com/style/ui-elements
