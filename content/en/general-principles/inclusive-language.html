@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Write inclusive documentation – Google Documentation Style Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-bd70415c6cea2b2e036a302946090e68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-d2a76c197eb8f8303d3798f69b12ee4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-bd70415c6cea2b2e036a302946090e68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Google Documentation Style Guide</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://github.com/tech-writing-lab/style-guide" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/en/general-principles/accessibility.html">General principles</a></li><li class="breadcrumb-item"><a href="../../../content/en/general-principles/inclusive-language.html">Inclusive language</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/highlights.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Highlights</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/whats-new.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What’s new</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/philosophy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Philosophy of this guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Key resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/word-list.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Word list</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/product-names.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Product names</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/text-formatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-formatting summary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">General principles</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/accessibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/excessive-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Excessive claims</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/future-features.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/global-audience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global audience</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/inclusive-language.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Inclusive language</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/jargon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jargon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/prescriptive-documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prescriptive documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/other-sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Third-party content</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/timeless-documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Timeless documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/tone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voice and tone</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Language and grammar</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/voice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Active voice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/anthropomorphism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anthropomorphism</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/articles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Articles (a, an, the)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/capitalization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capitalization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/contractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contractions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/plurals-parentheses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plurals in parentheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/possessives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Possessives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/prepositions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepositions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/tense.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Present tense</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/pronouns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pronouns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/person.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Second person</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/sentence-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sentence structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/reference-verbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Verbs in reference documents</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Punctuation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/colons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Colons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/commas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Commas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/dashes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/ellipses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ellipses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/hyphens.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hyphens</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/parentheses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parentheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/periods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Periods and end punctuation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/quotation-marks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quotation marks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/semicolons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Semicolons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/slashes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slashes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Formatting and organization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/dates-times.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dates and times</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/format-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/images.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figures and other images</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/footnotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Footnotes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/headings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headings and titles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/italics-terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Italics with terms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/lists.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lists</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/notices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes and other notices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numbers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/paragraph-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Paragraphs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/phone-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phone numbers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/plural-single-letter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plural of a single letter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/procedures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Procedures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/units-of-measure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Units of measurement</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Linking</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/linking/cross-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-references and linking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/linking/headings-targets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headings as link targets</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Computer interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/api-reference-comments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">API reference code comments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-in-text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code in text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-samples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code samples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-syntax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Command-line syntax</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/placeholders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Placeholder formatting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/ui-elements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UI elements and interaction</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">HTML and CSS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/semantic-tagging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HTML and semantic tagging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/html-formatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HTML formatting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/markdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown versus HTML</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Names and naming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example domains and names</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/filenames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Filenames</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/trademarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trademarks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#avoid-ableist-language" id="toc-avoid-ableist-language" class="nav-link active" data-scroll-target="#avoid-ableist-language">Avoid ableist language</a></li>
+  <li><a href="#avoid-unnecessarily-gendered-language" id="toc-avoid-unnecessarily-gendered-language" class="nav-link" data-scroll-target="#avoid-unnecessarily-gendered-language">Avoid unnecessarily gendered language</a></li>
+  <li><a href="#avoid-unnecessarily-violent-language" id="toc-avoid-unnecessarily-violent-language" class="nav-link" data-scroll-target="#avoid-unnecessarily-violent-language">Avoid unnecessarily violent language</a></li>
+  <li><a href="#write-diverse-and-inclusive-examples" id="toc-write-diverse-and-inclusive-examples" class="nav-link" data-scroll-target="#write-diverse-and-inclusive-examples">Write diverse and inclusive examples</a></li>
+  <li><a href="#write-about-features-and-users-in-inclusive-ways" id="toc-write-about-features-and-users-in-inclusive-ways" class="nav-link" data-scroll-target="#write-about-features-and-users-in-inclusive-ways">Write about features and users in inclusive ways</a>
+  <ul class="collapse">
+  <li><a href="#replace-or-write-around-non-inclusive-terms" id="toc-replace-or-write-around-non-inclusive-terms" class="nav-link" data-scroll-target="#replace-or-write-around-non-inclusive-terms">Replace or write around non-inclusive terms</a></li>
+  </ul></li>
+  <li><a href="#avoid-bias-and-harm-when-discussing-disability-and-accessibility" id="toc-avoid-bias-and-harm-when-discussing-disability-and-accessibility" class="nav-link" data-scroll-target="#avoid-bias-and-harm-when-discussing-disability-and-accessibility">Avoid bias and harm when discussing disability and accessibility</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/tech-writing-lab/style-guide/edit/main/content/en/general-principles/inclusive-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tech-writing-lab/style-guide/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/en/general-principles/accessibility.html">General principles</a></li><li class="breadcrumb-item"><a href="../../../content/en/general-principles/inclusive-language.html">Inclusive language</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Write inclusive documentation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Note</strong>: This document includes references to terms that Google considers disrespectful or offensive. The terms are used here to provide usage guidance and alternative terms.</p>
+<p>We write our developer documentation with inclusivity and diversity in mind. This page is not an exhaustive reference, but provides some general guidelines and examples that illustrate some best practices for writing inclusive documentation.</p>
+<p>For other writing best practices, see the following resources:</p>
+<ul>
+<li><a href="https://developers.google.com/style/translation">Write for a global audience</a></li>
+<li><a href="https://developers.google.com/style/accessibility">Write accessible documentation</a></li>
+<li><a href="https://developers.google.com/style/tone">Voice and tone</a></li>
+</ul>
+<section id="avoid-ableist-language" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-ableist-language">Avoid ableist language</h2>
+<p>When trying to achieve a&nbsp;<a href="https://developers.google.com/style/tone">friendly and conversational tone</a>, problematic ableist language might slip in. This can come in the form of figures of speech and other turns of phrase. Be sensitive to your word choice, especially when aiming for an informal tone. Ableist language includes words or phrases such as&nbsp;<em>crazy</em>,&nbsp;<em>insane</em>,&nbsp;<em>blind to</em>&nbsp;or&nbsp;<em>blind eye to</em>,&nbsp;<em>cripple</em>,&nbsp;<em>dumb</em>, and others. Choose alternative words depending on the context.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>✅ Recommended</th>
+<th>❌ Not recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Before launch, give everything a final check for completeness and clarity.</td>
+<td>Before launch, give everything a final sanity-check.</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>There are some baffling outliers in the data.</td>
+<td>There are some crazy outliers in the data.</td>
+</tr>
+<tr class="even">
+<td>It slows down the service, causing a poor user experience until the queue clears.</td>
+<td>It cripples the service, causing a poor user experience until the queue clears.</td>
+</tr>
+<tr class="odd">
+<td>Replace the placeholder in this example with the appropriate value.</td>
+<td>Replace the&nbsp;<a href="https://developers.google.com/style/word-list#dummy-variable">dummy variable</a>&nbsp;in this example with the appropriate value.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="avoid-unnecessarily-gendered-language" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-unnecessarily-gendered-language">Avoid unnecessarily gendered language</h2>
+<p>In addition to being mindful of the&nbsp;<a href="https://developers.google.com/style/pronouns#gender-neutral-pronouns">pronouns</a>&nbsp;used in narrative examples, be sensitive to other possible sources of gendered language.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>✅ Recommended</th>
+<th>❌ Not recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equipment installation takes around 16 person-hours to complete.</td>
+<td>Equipment installation takes around 16 man-hours to complete.</td>
+</tr>
+<tr class="even">
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>This API might be just what your globally conscious company needs to help all of humanity.</td>
+<td>This API might be just what your globally conscious company needs to help all of mankind.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="avoid-unnecessarily-violent-language" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-unnecessarily-violent-language">Avoid unnecessarily violent language</h2>
+<p>Avoid graphically violent or harmful terms. For example, avoid using the term&nbsp;<em><a href="https://developers.google.com/style/word-list#stonith">STONITH</a></em>; instead, describe the process used to stop an errant node in context by using more specific terms.</p>
+<p>If it’s unavoidable and you must mention a violent or harmful term such as&nbsp;<em>STONITH</em>, mention it once when you first explain the relevant feature, but phrase it in a way that de-emphasizes the term.</p>
+<ul>
+<li><p>✅ Recommended: This might require you to fence failed nodes.</p></li>
+<li><p>✅ Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).</p></li>
+</ul>
+<p>When possible, avoid the use of figurative language that can be interpreted as violent, such as&nbsp;<em>hang</em>&nbsp;and&nbsp;<em>hit</em>. Although there might also be nonviolent interpretations for these terms, avoiding their use prevents unintentional harm that might be caused by the violent interpretations.</p>
+<p>Avoid the use of figurative language that relates to the slaughter of animals. For example, avoid using the metaphor of pets versus cattle when comparing on-premises or stateful systems with stateless cloud systems.</p>
+</section>
+<section id="write-diverse-and-inclusive-examples" class="level2">
+<h2 class="anchored" data-anchor-id="write-diverse-and-inclusive-examples">Write diverse and inclusive examples</h2>
+<p>Use diverse names, genders, ages, and locations in examples. Keep the following advice in mind:</p>
+<ul>
+<li>Follow our&nbsp;<a href="https://developers.google.com/style/pronouns#gender-neutral-pronouns">gender-neutral pronoun</a>&nbsp;guidance.</li>
+<li>Avoid being too culturally specific to the US. Be mindful when referring to specific holidays (see also the word list entry for&nbsp;<a href="https://developers.google.com/style/word-list#holiday"><em>the holidays</em></a>), cultural practices, sports, and figures of speech. Being sensitive here also supports&nbsp;<a href="https://developers.google.com/style/translation#culturally-specific">writing for a global audience</a>.</li>
+<li>Take care to&nbsp;<a href="https://developers.google.com/style/examples#names">choose a diverse set of names</a>&nbsp;to help examples reflect the real world diversity of our audience, and see the guidance in that section of the guide for writing about fictional people.</li>
+<li>When writing about older adults, avoid terms and figures of speech such as&nbsp;<em>the elderly</em>,&nbsp;<em>the aged</em>,&nbsp;<em>seniors</em>,&nbsp;<em>senior citizens</em>, or&nbsp;<em>80 years young</em>. Instead, use terms such as&nbsp;<em>older adults</em>&nbsp;or&nbsp;<em>aging population</em>, or mention the person’s relative age or relationship to the other people in your example when those details are relevant.</li>
+</ul>
+</section>
+<section id="write-about-features-and-users-in-inclusive-ways" class="level2">
+<h2 class="anchored" data-anchor-id="write-about-features-and-users-in-inclusive-ways">Write about features and users in inclusive ways</h2>
+<p>Avoid referring to people in divisive ways. For example, instead of referring to people as&nbsp;<em>native speakers</em>&nbsp;or&nbsp;<em>non-native speakers</em>&nbsp;of English, consider whether your document needs to discuss this at all, and revise it to discuss the feature in terms that are relevant to anyone regardless of what languages they know.</p>
+<p>Avoid using socially-charged terms for technical concepts where possible. For example, avoid terms such as&nbsp;<a href="https://developers.google.com/style/word-list#blacklist">blacklist</a>,&nbsp;<a href="https://developers.google.com/style/word-list#native">native</a>&nbsp;feature, and&nbsp;<a href="https://wikipedia.org/wiki/First-class_citizen">first-class citizen</a>, even though these terms might still be widely used. Instead of&nbsp;<em>first-class</em>, consider other terms such as&nbsp;<em>core feature</em>,&nbsp;<em>built-in</em>, or&nbsp;<em>top-level</em>. Choose the best term for your context.</p>
+<section id="replace-or-write-around-non-inclusive-terms" class="level3">
+<h3 class="anchored" data-anchor-id="replace-or-write-around-non-inclusive-terms">Replace or write around non-inclusive terms</h3>
+<p>This section contains guidance about how to replace or write around a non-inclusive term. If a term is well established in the industry and replacing it could cause confusion, see&nbsp;<a href="https://developers.google.com/style/inclusive-documentation#replace">Replace established terms</a>. If a term occurs in code samples or keywords, see&nbsp;<a href="https://developers.google.com/style/inclusive-documentation#write-around">Write around non-inclusive code terms</a>. For information about avoiding non-inclusive jargon, see&nbsp;<a href="https://developers.google.com/style/jargon">Jargon</a>.</p>
+<section id="replace-established-terms" class="level4">
+<h4 class="anchored" data-anchor-id="replace-established-terms">Replace established terms</h4>
+<p>Many non-inclusive terms are in wide use in the industry, such as&nbsp;<em>whitelist</em>. If replacing an established term could cause confusion for readers, you can directly refer to the non-inclusive term on the first use, and put it in parentheses. Then use the inclusive, replacement term throughout the rest of the document.</p>
+<ul>
+<li><p>✅ Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a&nbsp;<em>whitelist</em>). Anyone who isn’t on the allowlist is blocked …</p></li>
+<li><p>✅ Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to …</p></li>
+<li><p>✅ Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor&nbsp;<em>cattle, not pets</em>).</p></li>
+</ul>
+<p>In many cases, instead of directly replacing a word, you can rewrite to improve the clarity of a sentence. For example, instead of replacing the verb&nbsp;<em>whitelist</em>&nbsp;with&nbsp;<em>allowlist</em>, try rewriting the sentence.</p>
+<ul>
+<li><p>✅ Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.</p></li>
+<li><p>❌ Not recommended: You can allowlist a range of IP addresses by entering a CIDR block instead of a single address in the field.</p></li>
+</ul>
+</section>
+<section id="write-around-non-inclusive-code-terms" class="level4">
+<h4 class="anchored" data-anchor-id="write-around-non-inclusive-code-terms">Write around non-inclusive code terms</h4>
+<p>In some cases, non-inclusive terms are embedded in code (or similar) as names or keywords, and you can’t simply ignore those terms and use different terminology. What you can do, however, is&nbsp;<em>minimize</em>&nbsp;your use of the term (hence avoid propagating it as a term of art), while still providing clear documentation to your readers. Don’t use a non-inclusive name or keyword unless it’s in code font.</p>
+<p>Following are scenarios for writing around non-inclusive terms that occur in code and keywords.</p>
+<p>One scenario is if you’re documenting an existing system in which an entity is already named by using a non-inclusive term. For example, there might be a configuration file that includes the following cluster name:</p>
+<pre class="text"><code>apiVersion: v1
+kind: Config
+preferences: {}
+
+clusters:
+\- cluster:
+  name: master
+\- cluster:
+  name: replica\-1</code></pre>
+<p>Another scenario is if your documentation includes a non-inclusive term that’s an established keyword, such as the keyword&nbsp;<code>SLAVE</code>&nbsp;in dialects of SQL:</p>
+<pre class="text"><code>START SLAVE UNTIL SQL\_AFTER\_MTS\_GAPS;</code></pre>
+<p>The first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.</p>
+<ul>
+<li><p>✅ Recommended: The configuration file helps you create a parent node (which is named&nbsp;<code>master</code>&nbsp;in the file).</p></li>
+<li><p>✅ Recommended: Start the replica by using the&nbsp;<code>START SLAVE</code>&nbsp;statement.</p></li>
+</ul>
+<p>In subsequent mentions, use the preferred term (<em>parent node</em>,&nbsp;<em>replica</em>). If it’s necessary to refer to the entity name or keyword, continue doing so only with code formatting.</p>
+</section>
+</section>
+</section>
+<section id="avoid-bias-and-harm-when-discussing-disability-and-accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-bias-and-harm-when-discussing-disability-and-accessibility">Avoid bias and harm when discussing disability and accessibility</h2>
+<p>Many developers create products with accessibility and disability in mind. When documenting these features, and when writing about people with disabilities or about accessibility, work to eliminate unintentional bias and harm. Take the time to educate yourself about the ways that the communities that you’re writing about prefer to be identified and described before writing about them in your documentation.</p>
+<p>Some general guidelines in this area include the following:</p>
+<ul>
+<li><p>Don’t describe people without disabilities as&nbsp;<em>normal</em>&nbsp;or&nbsp;<em>healthy</em>. This contributes to othering and alienation of people with disabilities by implying that they are abnormal or sick. Instead, use terms such as&nbsp;<em>nondisabled person</em>,&nbsp;<em>sighted person</em>,&nbsp;<em>hearing person</em>,&nbsp;<em>person without disabilities</em>, or&nbsp;<em>neurotypical person</em>.</p></li>
+<li><p>Research the ways that the people in the communities that you’re writing about prefer to be identified and use the terms that they prefer. In many cases, avoid terms that remove personhood or that define people by their disability. For example, avoid terms such as&nbsp;<em>the disabled</em>&nbsp;or&nbsp;<em>a quadriplegic</em>. Instead, use terms such as&nbsp;<em>people with disabilities</em>&nbsp;or&nbsp;<em>a quadriplegic person</em>.</p>
+<p>However, many members of some communities prefer&nbsp;<em>identity-first language</em>—for example, that preference is common in autistic, blind, and Deaf communities. Capitalization of identities also can vary (for some perspectives, visit&nbsp;<a href="https://autisticadvocacy.org/about-asan/identity-first-language/">Identity-First Language</a>&nbsp;and&nbsp;<a href="https://www.verywellhealth.com/deaf-culture-big-d-small-d-1046233">Self-Identification in the Deaf Community</a>). Whenever possible, research and choose terms that respect the ways that people in the communities identify.</p></li>
+<li><p>Use&nbsp;<em>see</em>&nbsp;to refer to links and cross-references. For more information, see&nbsp;<a href="https://developers.google.com/style/word-list#see">see</a>.</p></li>
+<li><p>Avoid terms that reflect or project feelings and judgments about a person’s disability, such as&nbsp;<em>victim of</em>,&nbsp;<em>suffering from</em>, or&nbsp;<em>wheelchair-bound</em>. Instead, use neutral terms such as&nbsp;<em>experiencing</em>,&nbsp;<em>living with</em>, or&nbsp;<em>uses a wheelchair</em>.</p></li>
+<li><p>Avoid euphemisms or patronizing terms such as&nbsp;<em>physically challenged</em>,&nbsp;<em>special</em>,&nbsp;<em>differently abled</em>, or&nbsp;<em>handi-capable</em>.</p></li>
+</ul>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/tech-writing-lab\.github\.io\/style-guide\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "tech-writing-lab/style-guide";
+    script.dataset.repoId = "R_kgDOPf9vDw";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOPf9vD84CudO0";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/tech-writing-lab/style-guide/edit/main/content/en/general-principles/inclusive-language.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tech-writing-lab/style-guide/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>最後更新： 2025-10-05</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

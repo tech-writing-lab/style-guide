@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>procedures – Google Documentation Style Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-bd70415c6cea2b2e036a302946090e68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-d2a76c197eb8f8303d3798f69b12ee4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-bd70415c6cea2b2e036a302946090e68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Google Documentation Style Guide</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://github.com/tech-writing-lab/style-guide" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/en/formatting/dates-times.html">Formatting and organization</a></li><li class="breadcrumb-item"><a href="../../../content/en/formatting/procedures.html">Procedures</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/highlights.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Highlights</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/whats-new.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What’s new</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/introduction/philosophy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Philosophy of this guide</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Key resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/word-list.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Word list</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/product-names.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Product names</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/key-resources/text-formatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Text-formatting summary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">General principles</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/accessibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/excessive-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Excessive claims</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/future-features.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/global-audience.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Global audience</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/inclusive-language.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Inclusive language</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/jargon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Jargon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/prescriptive-documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prescriptive documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/other-sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Third-party content</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/timeless-documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Timeless documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/general-principles/tone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Voice and tone</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Language and grammar</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/abbreviations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abbreviations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/voice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Active voice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/anthropomorphism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anthropomorphism</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/articles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Articles (a, an, the)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/capitalization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capitalization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/contractions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contractions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/plurals-parentheses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plurals in parentheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/possessives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Possessives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/prepositions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prepositions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/tense.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Present tense</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/pronouns.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pronouns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/person.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Second person</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/sentence-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sentence structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/grammar/reference-verbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Verbs in reference documents</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Punctuation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/colons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Colons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/commas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Commas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/dashes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/ellipses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ellipses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/hyphens.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hyphens</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/parentheses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parentheses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/periods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Periods and end punctuation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/quotation-marks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quotation marks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/semicolons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Semicolons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/punctuation/slashes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slashes</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Formatting and organization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/dates-times.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dates and times</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/format-examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Examples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/images.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Figures and other images</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/footnotes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Footnotes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/headings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headings and titles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/italics-terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Italics with terms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/lists.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lists</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/notices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Notes and other notices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numbers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/paragraph-structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Paragraphs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/phone-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Phone numbers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/plural-single-letter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plural of a single letter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/procedures.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Procedures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/formatting/units-of-measure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Units of measurement</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Linking</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/linking/cross-references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cross-references and linking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/linking/headings-targets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headings as link targets</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Computer interfaces</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/api-reference-comments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">API reference code comments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-in-text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code in text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-samples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code samples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/code-syntax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Command-line syntax</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/placeholders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Placeholder formatting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/computer-interfaces/ui-elements.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">UI elements and interaction</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">HTML and CSS</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/semantic-tagging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HTML and semantic tagging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/html-formatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HTML formatting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/html-css/markdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown versus HTML</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
+ <span class="menu-text">Names and naming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/examples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example domains and names</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/filenames.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Filenames</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/en/naming/trademarks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trademarks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#procedures" id="toc-procedures" class="nav-link active" data-scroll-target="#procedures">Procedures</a>
+  <ul class="collapse">
+  <li><a href="#introductory-sentences" id="toc-introductory-sentences" class="nav-link" data-scroll-target="#introductory-sentences">Introductory sentences</a></li>
+  <li><a href="#single-step-procedures" id="toc-single-step-procedures" class="nav-link" data-scroll-target="#single-step-procedures">Single-step procedures</a></li>
+  <li><a href="#sub-steps-in-numbered-procedures" id="toc-sub-steps-in-numbered-procedures" class="nav-link" data-scroll-target="#sub-steps-in-numbered-procedures">Sub-steps in numbered procedures</a></li>
+  <li><a href="#order-of-multiple-components-in-a-step" id="toc-order-of-multiple-components-in-a-step" class="nav-link" data-scroll-target="#order-of-multiple-components-in-a-step">Order of multiple components in a step</a></li>
+  <li><a href="#multi-action-procedures" id="toc-multi-action-procedures" class="nav-link" data-scroll-target="#multi-action-procedures">Multi-action procedures</a></li>
+  <li><a href="#multiple-procedures-for-the-same-task" id="toc-multiple-procedures-for-the-same-task" class="nav-link" data-scroll-target="#multiple-procedures-for-the-same-task">Multiple procedures for the same task</a></li>
+  <li><a href="#repetitive-procedures" id="toc-repetitive-procedures" class="nav-link" data-scroll-target="#repetitive-procedures">Repetitive procedures</a></li>
+  <li><a href="#optional-steps" id="toc-optional-steps" class="nav-link" data-scroll-target="#optional-steps">Optional steps</a></li>
+  <li><a href="#steps-that-say-where-to-complete-a-task" id="toc-steps-that-say-where-to-complete-a-task" class="nav-link" data-scroll-target="#steps-that-say-where-to-complete-a-task">Steps that say where to complete a task</a></li>
+  <li><a href="#steps-with-goals" id="toc-steps-with-goals" class="nav-link" data-scroll-target="#steps-with-goals">Steps with goals</a></li>
+  <li><a href="#steps-with-results-or-justifications" id="toc-steps-with-results-or-justifications" class="nav-link" data-scroll-target="#steps-with-results-or-justifications">Steps with results or justifications</a></li>
+  <li><a href="#summary-of-guidelines-for-writing-procedures" id="toc-summary-of-guidelines-for-writing-procedures" class="nav-link" data-scroll-target="#summary-of-guidelines-for-writing-procedures">Summary of guidelines for writing procedures</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/tech-writing-lab/style-guide/edit/main/content/en/formatting/procedures.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tech-writing-lab/style-guide/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/en/formatting/dates-times.html">Formatting and organization</a></li><li class="breadcrumb-item"><a href="../../../content/en/formatting/procedures.html">Procedures</a></li></ol></nav></header>
+
+
+
+
+
+<section id="procedures" class="level1">
+<h1>Procedures</h1>
+<blockquote class="blockquote">
+<p>Source: https://developers.google.com/style/procedures</p>
+</blockquote>
+<section id="introductory-sentences" class="level2">
+<h2 class="anchored" data-anchor-id="introductory-sentences">Introductory sentences</h2>
+<p>In most cases, introduce a procedure with an introductory sentence. This introductory sentence should provide context to the reader that isn’t part of the section heading. Don’t simply repeat the heading: if the heading explains what the procedure is, and no additional context is needed, then don’t include an introductory statement.</p>
+<p>The sentence can end with a colon or a period. Use a colon if it immediately precedes the procedure. Use a period if there’s more material (such as a note paragraph) between the introduction and the procedure.</p>
+<p>You can introduce a procedure with an imperative statement. Don’t introduce a procedure with a partial sentence that’s completed by the numbered steps.</p>
+<ul>
+<li><p>✅ Recommended: To customize the buttons, follow these steps:</p></li>
+<li><p>✅ Also recommended: Customize the buttons:</p></li>
+<li><p>✅ Also recommended: To customize the buttons, do the following:</p></li>
+<li><p>❌ Not recommended: To customize the buttons:</p></li>
+</ul>
+<p>For more information about introducing lists, see <a href="https://developers.google.com/style/lists#introductory-sentences-for-lists">Lists</a>.</p>
+</section>
+<section id="single-step-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="single-step-procedures">Single-step procedures</h2>
+<p>When a procedure consists of only one step, write the step in one sentence and format it as a <a href="https://developers.google.com/style/lists#numbered-lettered-bulleted-lists">bulleted list</a>.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ul>
+<li>To clear (flush) the entire log, click <strong>Clear logcat</strong>.</li>
+</ul>
+</blockquote>
+<p>❌ Not recommended:</p>
+<blockquote class="blockquote">
+<p>To clear (flush) the entire log, follow this step:</p>
+<ol type="1">
+<li>Click <strong>Clear logcat</strong>.</li>
+</ol>
+</blockquote>
+<p>❌ Also not recommended:</p>
+<blockquote class="blockquote">
+<p>To clear (flush) the entire log, follow this step:</p>
+<ul>
+<li>Click <strong>Clear logcat</strong>.</li>
+</ul>
+</blockquote>
+</section>
+<section id="sub-steps-in-numbered-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="sub-steps-in-numbered-procedures">Sub-steps in numbered procedures</h2>
+<p>In a numbered procedure, sub-steps are labeled with lowercase letters, and sub-sub-steps get lowercase Roman numerals.</p>
+<p>When a step has sub-steps, treat the step like an <a href="https://developers.google.com/style/procedures#introductory-sentences">introductory sentence</a>: put a colon or a period at the end of the step, as appropriate.</p>
+<p>For more information about lists, see <a href="https://developers.google.com/style/lists#introductory-sentences-for-lists">Lists</a>.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>To add a VM instance, do the following:
+<ol type="1">
+<li>Click <strong>Create instance</strong>.</li>
+<li>For <strong>Name</strong>, enter a name for the VM instance, and then do the following:
+<ol type="1">
+<li>For <strong>Region</strong>, specify where you want to deploy the VM instance.</li>
+<li>For <strong>Machine type</strong>, select an option.</li>
+</ol></li>
+<li>Click <strong>Create</strong>.</li>
+</ol></li>
+<li>To connect to the VM instance by using SSH, click <strong>SSH</strong>.</li>
+</ol>
+</blockquote>
+</section>
+<section id="order-of-multiple-components-in-a-step" class="level2">
+<h2 class="anchored" data-anchor-id="order-of-multiple-components-in-a-step">Order of multiple components in a step</h2>
+<p>To document a complex procedural step, use the following order:</p>
+<ol type="1">
+<li><p>Describe the action to take.</p></li>
+<li><p>List a command, if necessary.</p></li>
+<li><p>Explain any placeholders that are used in the command. For more information, see <a href="https://developers.google.com/style/placeholders">Formatting placeholders</a>.</p></li>
+<li><p>Explain the command in more detail, if necessary.</p></li>
+<li><p>List the output of the command, if necessary. For more information, see <a href="https://developers.google.com/style/code-syntax#output">Output from commands</a>.</p></li>
+<li><p>In a separate paragraph, explain <a href="https://developers.google.com/style/procedures#steps-with-results-or-justifications">the result of an action</a>, or any output, if necessary.</p></li>
+</ol>
+<p>The following example demonstrates the preceding order:</p>
+<ol type="1">
+<li><p>Plan the Terraform deployment:</p>
+<pre class="text"><code>terraform plan -out=NAME</code></pre>
+<p>Replace <code>NAME</code> with the name of your Terraform plan.</p>
+<p>The <code>terraform plan</code> command does the following:</p>
+<ol type="1">
+<li>Parses the Terraform configuration, building a list of resources to provision.</li>
+<li>Refreshes the current state of resources already provisioned in Google Cloud.</li>
+<li>Creates a plan to make the currently provisioned resources match the parsed configuration.</li>
+</ol>
+<p>The output is similar to the following:</p>
+<pre class="text"><code>  Plan: 26 to add, 0 to change, 0 to destroy.
+  This plan was saved to: NAME</code></pre></li>
+</ol>
+<p>The output shows what resources to add, change, or destroy.</p>
+</section>
+<section id="multi-action-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="multi-action-procedures">Multi-action procedures</h2>
+<p>In general, use one step for each action. However, you can combine small actions into one step <a href="https://developers.google.com/style/ui-elements#term-menus">by using angle brackets</a> (<code>&gt;</code>) for sequential menu selections.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>Next &gt; Finish</strong>.</li>
+</ol>
+</blockquote>
+<p>✅ Also recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>File &gt; New &gt; Document</strong>.</li>
+</ol>
+</blockquote>
+<p>Don’t make the steps too long. If they feel too long, consider splitting them into multiple steps.</p>
+</section>
+<section id="multiple-procedures-for-the-same-task" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-procedures-for-the-same-task">Multiple procedures for the same task</h2>
+<p>In general, if there’s more than one way to complete a task, then document one procedure that’s accessible for all readers. If all methods are accessible, pick the shortest and simplest approach if possible. If you need to document multiple ways to complete a task, then separate them in different pages, headings, or tabs.</p>
+<p>The following guidelines can help you choose which procedure to document:</p>
+<ul>
+<li>Choose a procedure that lets readers do all the steps by using only a keyboard.</li>
+<li>Choose the shortest procedure.</li>
+<li>Choose a procedure that uses a programming language that most of your audience is familiar with.</li>
+</ul>
+</section>
+<section id="repetitive-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="repetitive-procedures">Repetitive procedures</h2>
+<p>Avoid repeating procedures. Instead, reference those procedures and link to them.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Create a user as you did in the previous step.</li>
+</ol>
+</blockquote>
+<p>✅ Also recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li><a href="https://developers.google.com/style/procedures#">Create a user as you did in the previous step.</a></li>
+</ol>
+</blockquote>
+</section>
+<section id="optional-steps" class="level2">
+<h2 class="anchored" data-anchor-id="optional-steps">Optional steps</h2>
+<p>For an optional step, at the beginning of the step, type <em>Optional</em> followed by a colon.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Optional: Type an arbitrary string …</li>
+</ol>
+</blockquote>
+<p>❌ Not recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>(Optional) Type an arbitrary string …</li>
+</ol>
+</blockquote>
+</section>
+<section id="steps-that-say-where-to-complete-a-task" class="level2">
+<h2 class="anchored" data-anchor-id="steps-that-say-where-to-complete-a-task">Steps that say where to complete a task</h2>
+<p>Tell the reader where to complete an action—for example, in a particular tool or UI field—before you state the action.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>In Google Docs, click <strong>File&gt; New&gt; Document</strong>.</li>
+<li>In the Google Cloud console, go to the <strong>Monitoring</strong> page.</li>
+</ol>
+</blockquote>
+<p>❌ Not recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>File&gt; New&gt; Document</strong> in Google Docs.</li>
+<li>Go to the <strong>Monitoring</strong> page in the Google Cloud console.</li>
+</ol>
+</blockquote>
+<p>If a set of procedures is split across multiple headings, then in each procedure, restate where the reader completes the action. For example, if two procedures in a document take place in the console, then start both procedures with “In the console …”</p>
+</section>
+<section id="steps-with-goals" class="level2">
+<h2 class="anchored" data-anchor-id="steps-with-goals">Steps with goals</h2>
+<p>For some steps, it’s useful to state the goal that the step accomplishes.</p>
+<p>When a step includes a goal, state the goal before the action. This structure helps readers understand and complete the step more easily.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>To start a new document, click <strong>File&gt; New&gt; Document</strong>.</li>
+</ol>
+</blockquote>
+<p>❌ Not recommended:</p>
+<blockquote class="blockquote">
+<p>Click <strong>File&gt; New&gt; Document</strong> to start a new document.</p>
+</blockquote>
+<p>Sometimes, the preceding format can imply that the required step is optional. In such cases, use the following format:</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Start a new document: click <strong>File&gt; New&gt; Document</strong>.</li>
+</ol>
+</blockquote>
+<p>It’s usually clear within the context of a procedure whether a step is required. In such cases, the “To …” format is more natural than the colon format.</p>
+<p>To determine whether you need to use the colon format, consider how the goal of the step relates to the goal of the procedure. For example, in a procedure for creating a bar chart, a step with the goal “To create the chart” is clearly required. A step with the goal “To enhance the chart” is also unlikely to create confusion. But a step with the goal “To sort the data by date” might or might not be necessary. To clarify that the step isn’t optional, use “Sort the data by date:” instead.</p>
+</section>
+<section id="steps-with-results-or-justifications" class="level2">
+<h2 class="anchored" data-anchor-id="steps-with-results-or-justifications">Steps with results or justifications</h2>
+<p>Some steps consist of an action along with a resulting reaction that helps the reader navigate to the next step. State the action first and the result second. Keep the result in the same paragraph as the action. But also consider whether you can avoid repetitiveness and overwhelming the reader with too much bolding of UI elements.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>Run</strong>. The query results appear after the query runs.</li>
+</ol>
+</blockquote>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>Enter</strong>.</li>
+<li>In the <strong>New file</strong> dialog that appears, click <strong>Next</strong>.</li>
+</ol>
+</blockquote>
+<p>❌ Not recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Click <strong>Enter</strong>. The <strong>New file</strong> dialog appears.</li>
+<li>In the <strong>New file</strong> dialog, click <strong>Next</strong>.</li>
+</ol>
+</blockquote>
+<p>For information about describing output, see <a href="https://developers.google.com/style/code-syntax#output">Output from commands</a>.</p>
+<p>Other steps benefit from including a justification for why the step is important. State the action first and the justification second.</p>
+<p>✅ Recommended:</p>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Store the private key in a secure location. You need it later.</li>
+</ol>
+</blockquote>
+</section>
+<section id="summary-of-guidelines-for-writing-procedures" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-guidelines-for-writing-procedures">Summary of guidelines for writing procedures</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Guidance</th>
+<th>✅ Recommended</th>
+<th>❌ Not recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Make sure that the first sentence in a procedural step includes an imperative verb.</td>
+<td>Clone the repository that contains the sample data.</td>
+<td>You need the project ID later in this document. Retrieve the project ID.</td>
+</tr>
+<tr class="even">
+<td>Use complete sentences.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Use parallel structure and consistent verb form.</td>
+<td>Download the service account key to your local machine. Click <strong>More</strong>, and then click <strong>Download</strong>.</td>
+<td>Download the service account key to your local machine by clicking <strong>More</strong> and then clicking <strong>Download</strong> file.</td>
+</tr>
+<tr class="even">
+<td>For an optional step, type <em>Optional:</em> as the first word of the step.</td>
+<td>Optional: Type an arbitrary string…</td>
+<td>(Optional) Type an arbitrary string…</td>
+</tr>
+<tr class="odd">
+<td>Set the context (such as a tool or an environment) in which the reader performs a procedure. If there are multiple headings associated with a set of procedures, restate the context of the procedure in the first step, even if the context is the same as in the previous procedure.</td>
+<td>In Cloud Shell, connect to the development cluster. In the Google Cloud console, go to the <strong>BigQuery</strong> page.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Write in the order that the reader needs to follow. State the location of the action before stating the action.</td>
+<td>In Google Docs, click <strong>File&gt; New&gt; Document</strong>. In the Google Cloud console, go to the <strong>Monitoring</strong> page.</td>
+<td>Click <strong>File&gt; New&gt; Document</strong> in Google Docs. Go to the <strong>Monitoring</strong> page in the Google Cloud console.</td>
+</tr>
+<tr class="odd">
+<td>State the purpose or goal of the action before stating the action.</td>
+<td>To start a new document, click <strong>File&gt; New&gt; Document</strong>.</td>
+<td>Click <strong>File&gt; New&gt; Document</strong> to start a new document.</td>
+</tr>
+<tr class="even">
+<td>Don’t use directional language to orient the reader, such as <em>above</em>, <em>below</em>, or <em>right-hand side</em>. This type of language doesn’t work well for accessibility or for localization. If a UI element is hard to find, provide a screenshot. For information about documenting icons, see <a href="https://developers.google.com/style/ui-elements#buttons">Buttons and icons</a>.</td>
+<td>Click <strong>Menu</strong>. In the preceding diagram,… In the following diagram,…</td>
+<td>Click the button with three lines. In the above diagram, … In the diagram below, …</td>
+</tr>
+<tr class="odd">
+<td>Don’t use <em>please</em>.</td>
+<td>To open a document, click <strong>File&gt; Open</strong>.</td>
+<td>To open a document, please click <strong>File&gt; Open</strong>.</td>
+</tr>
+<tr class="even">
+<td>Avoid using <em>run the following command</em> to introduce code. Instead, focus on what the command does.</td>
+<td>In Cloud Shell, deploy the load generator:… Define a firewall rule to allow internal traffic:…</td>
+<td>In Cloud Shell, deploy the load generator by running the following command:… Run the following command:…</td>
+</tr>
+<tr class="odd">
+<td>If the reader must press <strong>Enter</strong> after a step, then include that instruction as part of the step.</td>
+<td>Click the search box, type <code>custom function</code>, and then press <strong>Enter</strong>.</td>
+<td>1. Click the search box and type <code>custom function</code>. 2. Press <strong>Enter</strong>.</td>
+</tr>
+<tr class="even">
+<td>Don’t include keyboard shortcuts.</td>
+<td>Copy the command, and then paste it…</td>
+<td>Press Ctrl+C, and then press Ctrl+V…</td>
+</tr>
+<tr class="odd">
+<td>When there’s more than one way to do something, give only the best way. Giving alternate ways can confuse readers.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>If your procedure includes code samples, see how to format <a href="https://developers.google.com/style/code-samples">code samples</a>.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>If your procedure includes commands, see how to format <a href="https://developers.google.com/style/code-syntax#formatting-a-command">commands</a>.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ensure that the reader has the information that they need in order to prepare for the task ahead of time. Having information in advance supports task management, executive functioning, memory, and emotional regulation.</td>
+<td>The following hardware and software are required:…</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Include as few steps as possible to complete the task. Limit interruptions in the path.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Focus on one reader decision at a time. Separate each instruction by making each instruction a separate list item.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/tech-writing-lab\.github\.io\/style-guide\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "tech-writing-lab/style-guide";
+    script.dataset.repoId = "R_kgDOPf9vDw";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOPf9vD84CudO0";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/tech-writing-lab/style-guide/edit/main/content/en/formatting/procedures.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/tech-writing-lab/style-guide/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>最後更新： 2025-10-05</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
