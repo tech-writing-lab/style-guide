@@ -1,4 +1,6 @@
-# Write for a global audience
+---
+title: Write for a global audience
+---
 
 We write our developer documentation in US English, but some of it is translated into languages other than English or is read by developers for whom English is not their primary language.
 

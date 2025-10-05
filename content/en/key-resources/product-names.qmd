@@ -1,4 +1,7 @@
-# Product names
+---
+title: Product names
+order: 2
+---
 
 This page describes how to use product names.
 

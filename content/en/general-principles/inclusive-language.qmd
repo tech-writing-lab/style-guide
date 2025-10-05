@@ -1,4 +1,6 @@
-# Write inclusive documentation
+---
+title: Write inclusive documentation
+---
 
 **Note**: This document includes references to terms that Google considers disrespectful or offensive. The terms are used here to provide usage guidance and alternative terms.
 

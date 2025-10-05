@@ -1,4 +1,7 @@
-# Philosophy of this style guide
+---
+title: Philosophy of this style guide
+order: 4
+---
 
 This document discusses some of the principles and philosophy behind this style guide.
 

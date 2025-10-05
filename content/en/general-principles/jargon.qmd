@@ -1,4 +1,6 @@
-# Jargon
+---
+title: Jargon
+---
 
 Jargon is the specialized and often figurative terminology of a specific group to represent a larger concept---for example, *camel case*, *swim lane*, *break-glass procedure*, or *out-of-the-box*. Jargon can also include vaguely defined or overloaded terms like *solution*, *support*, or *workload*.
 

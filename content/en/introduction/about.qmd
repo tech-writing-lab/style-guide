@@ -1,4 +1,7 @@
-# About this guide
+---
+title: About this guide
+order: 1
+---
 
 This style guide provides editorial guidelines for writing clear and consistent technical documentation for an audience of software developers and other technical practitioners.
 

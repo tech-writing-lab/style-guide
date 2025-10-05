@@ -1,4 +1,6 @@
-# Write accessible documentation
+---
+title: Write accessible documentation
+---
 
 We write our developer documentation with accessibility in mind. This page is not an exhaustive reference, but describes some general guidelines and examples that illustrate best practices to follow. The [World Health Organization](https://www.who.int/en/news-room/fact-sheets/detail/disability-and-health) estimates that 15% of the world's population (more than 1 billion people) have an accessibility need. When documentation is written with accessibility in mind, it improves the overall experience for all readers.
 

@@ -1,4 +1,6 @@
-# Avoid excessive claims
+---
+title: Avoid excessive claims
+---
 
 In documentation, don't make excessive claims. An *excessive claim* is an assertion in the documentation that does any of the following:
 

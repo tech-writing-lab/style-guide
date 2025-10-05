@@ -1,0 +1,26 @@
+/* 預設的 h3 會太靠近下方段落文字，這裡稍微加大一點，使用跟 h2 一樣的間距。 */
+h3, .h3 {
+  padding-bottom: 0.5rem;
+}
+
+/* TOC 的第二層項目內縮多少空間。預設為 1.2em。 */
+.sidebar nav[role=doc-toc] ul>li>ul>li>a {
+  padding-left: 1.8em;
+}
+
+/* sidebar 的 section 標題內縮多少空間。預設為 0.5em，改為 1em 更適用於中文字。*/
+.sidebar-section {
+    padding-left: 1em;
+}
+
+/* 調整所有表格下方距離，以免跟後續段落文字太靠近。 */
+table, table.table {
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+
+/* 圖片標題預設靠左，以下樣式可以改成置中。但須注意：標題置中十，文字若太長會導致折行，不好看。 */
+figcaption {
+  font-weight: 600;
+  /* text-align: center; */
+}

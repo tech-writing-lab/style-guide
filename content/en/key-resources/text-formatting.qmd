@@ -1,4 +1,7 @@
-# Text-formatting summary
+---
+title: Text-formatting summary
+order: 3
+---
 
 The page summarizes, and provides a quick reference for, many of the general text-formatting conventions covered elsewhere in the style guide. For more information, see [Visual formatting](https://developers.google.com/style/semantic-tagging#visual-formatting).
 

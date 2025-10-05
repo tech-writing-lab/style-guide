@@ -1,4 +1,6 @@
-# Prescriptive documentation
+---
+title: Prescriptive documentation
+---
 
 Write prescriptive documentation.
 

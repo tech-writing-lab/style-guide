@@ -1,0 +1,7 @@
+---
+title: Google Documentation Style Guide
+date-modified: 2025-10-05
+---
+
+**Origin:** <https://developers.google.com/style>
+

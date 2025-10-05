@@ -2,4 +2,6 @@
 .venv
 .vscode
 __pycache__
-_output
+/.quarto/
+**/*.quarto_ipynb
+_site
