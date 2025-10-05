@@ -1,371 +1,371 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/README.zh-tw.html</loc>
-    <lastmod>2025-10-05T15:20:41.414Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/index.html</loc>
-    <lastmod>2025-10-05T15:20:41.526Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/key-resources/word-list.html</loc>
-    <lastmod>2025-10-05T15:20:41.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/key-resources/product-names.html</loc>
-    <lastmod>2025-10-05T15:20:41.523Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/highlights.html</loc>
-    <lastmod>2025-10-05T15:20:41.519Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/index.html</loc>
-    <lastmod>2025-10-05T15:20:41.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/timeless-documentation.html</loc>
-    <lastmod>2025-10-05T15:20:41.514Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/other-sources.html</loc>
-    <lastmod>2025-10-05T15:20:41.513Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/inclusive-language.html</loc>
-    <lastmod>2025-10-05T15:20:41.512Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/future-features.html</loc>
-    <lastmod>2025-10-05T15:20:41.510Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/accessibility.html</loc>
-    <lastmod>2025-10-05T15:20:41.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/semicolons.html</loc>
-    <lastmod>2025-10-05T15:20:41.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/periods.html</loc>
-    <lastmod>2025-10-05T15:20:41.502Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/hyphens.html</loc>
-    <lastmod>2025-10-05T15:20:41.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/dashes.html</loc>
-    <lastmod>2025-10-05T15:20:41.497Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/colons.html</loc>
-    <lastmod>2025-10-05T15:20:41.495Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/filenames.html</loc>
-    <lastmod>2025-10-05T15:20:41.492Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/linking/headings-targets.html</loc>
-    <lastmod>2025-10-05T15:20:41.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/key-resources/word-list.html</loc>
-    <lastmod>2025-10-05T15:20:41.486Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/key-resources/product-names.html</loc>
-    <lastmod>2025-10-05T15:20:41.484Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/philosophy.html</loc>
-    <lastmod>2025-10-05T15:20:41.481Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/about.html</loc>
-    <lastmod>2025-10-05T15:20:41.477Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/semantic-tagging.html</loc>
-    <lastmod>2025-10-05T15:20:41.473Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/html-formatting.html</loc>
-    <lastmod>2025-10-05T15:20:41.471Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/tense.html</loc>
-    <lastmod>2025-10-05T15:20:41.468Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/reference-verbs.html</loc>
-    <lastmod>2025-10-05T15:20:41.466Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/prepositions.html</loc>
-    <lastmod>2025-10-05T15:20:41.464Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/plurals-parentheses.html</loc>
-    <lastmod>2025-10-05T15:20:41.462Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/contractions.html</loc>
-    <lastmod>2025-10-05T15:20:41.461Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/articles.html</loc>
-    <lastmod>2025-10-05T15:20:41.458Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/abbreviations.html</loc>
-    <lastmod>2025-10-05T15:20:41.456Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/timeless-documentation.html</loc>
-    <lastmod>2025-10-05T15:20:41.453Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/other-sources.html</loc>
-    <lastmod>2025-10-05T15:20:41.451Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/inclusive-language.html</loc>
-    <lastmod>2025-10-05T15:20:41.449Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/future-features.html</loc>
-    <lastmod>2025-10-05T15:20:41.448Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/accessibility.html</loc>
-    <lastmod>2025-10-05T15:20:41.445Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/tables.html</loc>
-    <lastmod>2025-10-05T15:20:41.442Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/plural-single-letter.html</loc>
-    <lastmod>2025-10-05T15:20:41.440Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/paragraph-structure.html</loc>
-    <lastmod>2025-10-05T15:20:41.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/notices.html</loc>
-    <lastmod>2025-10-05T15:20:41.436Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/italics-terms.html</loc>
-    <lastmod>2025-10-05T15:20:41.434Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/headings.html</loc>
-    <lastmod>2025-10-05T15:20:41.432Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/footnotes.html</loc>
-    <lastmod>2025-10-05T15:20:41.430Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/ui-elements.html</loc>
-    <lastmod>2025-10-05T15:20:41.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/code-syntax.html</loc>
-    <lastmod>2025-10-05T15:20:41.426Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/README.zh-cn.html</loc>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/code-in-text.html</loc>
-    <lastmod>2025-10-05T15:20:41.419Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/code-syntax.html</loc>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/api-reference-comments.html</loc>
-    <lastmod>2025-10-05T15:20:41.417Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/code-samples.html</loc>
-    <lastmod>2025-10-05T15:20:41.424Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/placeholders.html</loc>
-    <lastmod>2025-10-05T15:20:41.427Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/dates-times.html</loc>
-    <lastmod>2025-10-05T15:20:41.429Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/format-examples.html</loc>
-    <lastmod>2025-10-05T15:20:41.431Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/images.html</loc>
-    <lastmod>2025-10-05T15:20:41.433Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/lists.html</loc>
-    <lastmod>2025-10-05T15:20:41.435Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/numbers.html</loc>
-    <lastmod>2025-10-05T15:20:41.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/phone-numbers.html</loc>
-    <lastmod>2025-10-05T15:20:41.439Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/procedures.html</loc>
-    <lastmod>2025-10-05T15:20:41.441Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/units-of-measure.html</loc>
-    <lastmod>2025-10-05T15:20:41.443Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/excessive-claims.html</loc>
-    <lastmod>2025-10-05T15:20:41.446Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/global-audience.html</loc>
-    <lastmod>2025-10-05T15:20:41.448Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/timeless-documentation.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/jargon.html</loc>
-    <lastmod>2025-10-05T15:20:41.451Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/prescriptive-documentation.html</loc>
-    <lastmod>2025-10-05T15:20:41.452Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/other-sources.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/tone.html</loc>
-    <lastmod>2025-10-05T15:20:41.454Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/global-audience.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/anthropomorphism.html</loc>
-    <lastmod>2025-10-05T15:20:41.457Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/numbers.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/capitalization.html</loc>
-    <lastmod>2025-10-05T15:20:41.459Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/headings.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/person.html</loc>
-    <lastmod>2025-10-05T15:20:41.461Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/paragraph-structure.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/possessives.html</loc>
-    <lastmod>2025-10-05T15:20:41.463Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/phone-numbers.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/pronouns.html</loc>
-    <lastmod>2025-10-05T15:20:41.465Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/italics-terms.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/sentence-structure.html</loc>
-    <lastmod>2025-10-05T15:20:41.467Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/lists.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/voice.html</loc>
-    <lastmod>2025-10-05T15:20:41.469Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/markdown.html</loc>
-    <lastmod>2025-10-05T15:20:41.472Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/index.html</loc>
-    <lastmod>2025-10-05T15:20:41.476Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/highlights.html</loc>
-    <lastmod>2025-10-05T15:20:41.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/whats-new.html</loc>
-    <lastmod>2025-10-05T15:20:41.482Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/procedures.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/key-resources/text-formatting.html</loc>
-    <lastmod>2025-10-05T15:20:41.485Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/linking/cross-references.html</loc>
-    <lastmod>2025-10-05T15:20:41.488Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/key-resources/product-names.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/examples.html</loc>
-    <lastmod>2025-10-05T15:20:41.491Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/highlights.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/trademarks.html</loc>
-    <lastmod>2025-10-05T15:20:41.493Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/whats-new.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/commas.html</loc>
-    <lastmod>2025-10-05T15:20:41.496Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/html-formatting.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/ellipses.html</loc>
-    <lastmod>2025-10-05T15:20:41.498Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/semicolons.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/parentheses.html</loc>
-    <lastmod>2025-10-05T15:20:41.501Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/hyphens.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/periods.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/quotation-marks.html</loc>
-    <lastmod>2025-10-05T15:20:41.503Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/slashes.html</loc>
-    <lastmod>2025-10-05T15:20:41.506Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/ellipses.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/excessive-claims.html</loc>
-    <lastmod>2025-10-05T15:20:41.509Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/linking/headings-targets.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/global-audience.html</loc>
-    <lastmod>2025-10-05T15:20:41.511Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/index.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/jargon.html</loc>
-    <lastmod>2025-10-05T15:20:41.512Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/pronouns.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/voice.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/reference-verbs.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/anthropomorphism.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/articles.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/sentence-structure.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/capitalization.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/filenames.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/future-features.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/accessibility.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/inclusive-language.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/prescriptive-documentation.html</loc>
-    <lastmod>2025-10-05T15:20:41.514Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/tone.html</loc>
-    <lastmod>2025-10-05T15:20:41.515Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/about.html</loc>
-    <lastmod>2025-10-05T15:20:41.518Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/whats-new.html</loc>
-    <lastmod>2025-10-05T15:20:41.522Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/key-resources/text-formatting.html</loc>
-    <lastmod>2025-10-05T15:20:41.524Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/key-resources/product-names.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/about.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/index.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
   </url>
   <url>
     <loc>https://tech-writing-lab.github.io/style-guide/GEMINI.html</loc>
-    <lastmod>2025-10-05T15:20:41.410Z</lastmod>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
   </url>
   <url>
-    <loc>https://tech-writing-lab.github.io/style-guide/README.zh-cn.html</loc>
-    <lastmod>2025-10-05T15:20:41.413Z</lastmod>
+    <loc>https://tech-writing-lab.github.io/style-guide/index.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/README.zh-tw.html</loc>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/whats-new.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/introduction/highlights.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/key-resources/word-list.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/global-audience.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/other-sources.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/jargon.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/timeless-documentation.html</loc>
+    <lastmod>2025-10-05T15:26:08.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/zh-tw/general-principles/excessive-claims.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/trademarks.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/naming/examples.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/plurals-parentheses.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/contractions.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/person.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/prepositions.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/abbreviations.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/tense.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/grammar/possessives.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/linking/cross-references.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/colons.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/slashes.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/dashes.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/commas.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/punctuation/parentheses.html</loc>
+    <lastmod>2025-10-05T15:26:08.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/semantic-tagging.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/html-css/markdown.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/about.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/introduction/philosophy.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/key-resources/word-list.html</loc>
+    <lastmod>2025-10-05T15:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/dates-times.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/tables.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/notices.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/units-of-measure.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/images.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/format-examples.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/footnotes.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/formatting/plural-single-letter.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/tone.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/prescriptive-documentation.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/inclusive-language.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/accessibility.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/general-principles/future-features.html</loc>
+    <lastmod>2025-10-05T15:26:08.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/ui-elements.html</loc>
+    <lastmod>2025-10-05T15:26:08.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/placeholders.html</loc>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tech-writing-lab.github.io/style-guide/content/en/computer-interfaces/code-samples.html</loc>
+    <lastmod>2025-10-05T15:26:08.607Z</lastmod>
   </url>
 </urlset>
