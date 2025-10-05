@@ -1,6 +1,8 @@
 # Html2md
 
-Html2md is a script for converting HTML pages to markdown files using the [jina.ai Reader](https://jina.ai/reader/) service.
+> Note: This is not used anymore!
+
+Html2md contains Python scripts for converting HTML pages to markdown files using the [jina.ai Reader](https://jina.ai/reader/) service.
 
 You only need to list the target URLs in a text file named `urls.txt`, and the script will save each webpage as a `.md` file in the current directory.
 

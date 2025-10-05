@@ -1,0 +1,45 @@
+---
+title: What's new
+order: 3
+---
+
+
+This page provides a summary of significant changes to the style guide.
+
+> [!NOTE]
+> Only updates in 2025 are provided here. To see more, refer to the original [What's new](https://developers.google.com/style/whats-new).
+
+## May 8, 2025
+
+| New guidance or change | Page |
+| --- |  --- |
+| Removed outdated language that indicated that a list of options is treated differently than other unordered lists. | [Lists](https://developers.google.com/style/lists) |
+| --- |  --- |
+| Added a page about writing prescriptive documentation. | [Prescriptive documentation](https://developers.google.com/style/prescriptive-documentation),[Word list](https://developers.google.com/style/word-list#should) |
+| Removed guidance that said to include empty parentheses after method names. | [Code in text](https://developers.google.com/style/code-in-text) |
+| Changed footnotes guidance to recommend using numbers instead of symbols. | [Footnotes](https://developers.google.com/style/footnotes) |
+| Simplified contractions guidance, removing excess explanations and examples. | [Contractions](https://developers.google.com/style/contractions) |
+| Added examples to guidance about introducing sections of a document. | [Headings and titles](https://developers.google.com/style/headings) |
+| Added an example service account ID. | [Example domains and names](https://developers.google.com/style/examples) |
+| Simplified and clarified guidance about articles, including using articles before abbreviations and product names. | [Abbreviations](https://developers.google.com/style/abbreviations),[Articles (a, an, the)](https://developers.google.com/style/articles),[Product names](https://developers.google.com/style/product-names),[Word list](https://developers.google.com/style/word-list) |
+| Included a general explanation of why we don't document future features. | [Document future features](https://developers.google.com/style/future) |
+| Revised guidance to recommend using an abbreviation in a title or heading only if the abbreviation is the more commonly known version of the word. | [Headings and titles](https://developers.google.com/style/headings) |
+| Added a suggestion that when you use an imperative in running text, consider whether to write a procedure instead. | [Second person and first person](https://developers.google.com/style/person) |
+| Generalized existing guidance on what to do when jargon is part of a command or code sample. | [Jargon](https://developers.google.com/style/jargon) |
+| Consolidated guidance about cross-references and linking into one page. | [Cross-references and linking](https://developers.google.com/style/cross-references) |
+| Added some specific reasons why we avoid directional language when orienting the reader to information on a page. | [Write accessible documentation](https://developers.google.com/style/accessibility) |
+| Clarified that spacing around icons is a judgment call based on readability. | [UI elements and interaction](https://developers.google.com/style/ui-elements) |
+| Removed an example phone number. | [Example domains and names](https://developers.google.com/style/examples) |
+| Removed the word list entry for *property* because its usage heavily depends on the technical context. | [Word list](https://developers.google.com/style/word-list) |
+| New word list entries: *choose*, *confidential*, *sensitive*, *image*, *Fast Healthcare Interoperability Resources (FHIR)* | [Word list](https://developers.google.com/style/word-list) |
+
+## January 17, 2025
+
+| New guidance or change | Page |
+| --- |  --- |
+| Consolidated spelling guidance into the introduction to the word list. Extended guidance about how to use the preferred dictionary to determine which spelling to use for a word with multiple spellings. | [Word list](https://developers.google.com/style/word-list) |
+| --- |  --- |
+| Generalized guidance about when to use spaces or tabs for indentation in code samples. | [Code samples](https://developers.google.com/style/code-samples#guidelines) |
+| Changed guidance for formatting telephone numbers to recommend using dashes instead of parentheses to set the area code off from the rest of the number. | [Format phone numbers](https://developers.google.com/style/phone-numbers) |
+| Extended and clarified recommendation to avoid the abbreviations *i.e.*, *e.g.*, and *etc.* in most cases. | [Abbreviations](https://developers.google.com/style/abbreviations#dont-use),[Comma-separated lists](https://developers.google.com/style/lists#comma-separated-lists) |
+
