@@ -1,0 +1,161 @@
+project:
+  type: website
+  output-dir: ../../_site/en
+
+website:
+  sidebar:
+      contents:
+        - section: "Introduction"
+          contents:
+            - text: "About this guide"
+              href: introduction/about.qmd
+            - text: "Highlights"
+              href: introduction/highlights.qmd
+            - text: "What's new"
+              href: introduction/whats-new.qmd
+            - text: "Philosophy of this guide"
+              href: introduction/philosophy.qmd
+        - section: "Key resources"
+          contents: content/en/key-resources/*
+        - section: "General principles"
+          contents:
+            - text: "Accessibility"
+              href: general-principles/accessibility.qmd
+            - text: "Excessive claims"
+              href: general-principles/excessive-claims.qmd
+            - text: "Future features"
+              href: general-principles/future.qmd
+            - text: "Global audience"
+              href: general-principles/global-audience.qmd
+            - text: "Inclusive language"
+              href: general-principles/inclusive-language.qmd
+            - text: "Jargon"
+              href: general-principles/jargon.qmd
+            - text: "Prescriptive documentation"
+              href: general-principles/prescriptive-documentation.qmd
+            - text: "Third-party content"
+              href: general-principles/other-sources.qmd
+            - text: "Timeless documentation"
+              href: general-principles/timeless-documentation.qmd
+            - text: "Voice and tone"
+              href: general-principles/tone.qmd
+        - section: "Language and grammar"
+          contents:
+            - text: "Abbreviations"
+              href: grammar/abbreviations.qmd
+            - text: "Active voice"
+              href: grammar/voice.qmd
+            - text: "Anthropomorphism"
+              href: grammar/anthropomorphism.qmd
+            - text: "Articles (a, an, the)"
+              href: grammar/articles.qmd
+            - text: "Capitalization"
+              href: grammar/capitalization.qmd
+            - text: "Contractions"
+              href: grammar/contractions.qmd
+            - text: "Plurals in parentheses"
+              href: grammar/plurals-parentheses.qmd
+            - text: "Possessives"
+              href: grammar/possessives.qmd
+            - text: "Prepositions"
+              href: grammar/prepositions.qmd
+            - text: "Present tense"
+              href: grammar/tense.qmd
+            - text: "Pronouns"
+              href: grammar/pronouns.qmd
+            - text: "Second person"
+              href: grammar/person.qmd
+            - text: "Sentence structure"
+              href: grammar/sentence-structure.qmd
+            - text: "Verbs in reference documents"
+              href: grammar/reference-verbs.qmd
+        - section: "Punctuation"
+          contents:
+            - text: "Colons"
+              href: punctuation/colons.qmd
+            - text: "Commas"
+              href: punctuation/commas.qmd
+            - text: "Dashes"
+              href: punctuation/dashes.qmd
+            - text: "Ellipses"
+              href: punctuation/ellipses.qmd
+            - text: "Hyphens"
+              href: punctuation/hyphens.qmd
+            - text: "Parentheses"
+              href: punctuation/parentheses.qmd
+            - text: "Periods and end punctuation"
+              href: punctuation/periods.qmd
+            - text: "Quotation marks"
+              href: punctuation/quotation-marks.qmd
+            - text: "Semicolons"
+              href: punctuation/semicolons.qmd
+            - text: "Slashes"
+              href: punctuation/slashes.qmd
+        - section: "Formatting and organization"
+          contents:
+            - text: "Dates and times"
+              href: formatting/dates-times.qmd
+            - text: "Examples"
+              href: formatting/format-examples.qmd
+            - text: "Figures and other images"
+              href: formatting/images.qmd
+            - text: "Footnotes"
+              href: formatting/footnotes.qmd
+            - text: "Headings and titles"
+              href: formatting/headings.qmd
+            - text: "Italics with terms"
+              href: formatting/italics-terms.qmd
+            - text: "Lists"
+              href: formatting/lists.qmd
+            - text: "Notes and other notices"
+              href: formatting/notices.qmd
+            - text: "Numbers"
+              href: formatting/numbers.qmd
+            - text: "Paragraphs"
+              href: formatting/paragraph-structure.qmd
+            - text: "Phone numbers"
+              href: formatting/phone-numbers.qmd
+            - text: "Plural of a single letter"
+              href: formatting/plural-single-letter.qmd
+            - text: "Procedures"
+              href: formatting/procedures.qmd
+            - text: "Tables"
+              href: formatting/tables.qmd
+            - text: "Units of measurement"
+              href: formatting/units-of-measure.qmd
+        - section: "Linking"
+          contents:
+            - text: "Cross-references and linking"
+              href: linking/cross-references.qmd
+            - text: "Headings as link targets"
+              href: linking/headings-targets.qmd
+        - section: "Computer interfaces"
+          contents:
+            - text: "API reference code comments"
+              href: computer-interfaces/api-reference-comments.qmd
+            - text: "Code in text"
+              href: computer-interfaces/code-in-text.qmd
+            - text: "Code samples"
+              href: computer-interfaces/code-samples.qmd
+            - text: "Command-line syntax"
+              href: computer-interfaces/code-syntax.qmd
+            - text: "Placeholder formatting"
+              href: computer-interfaces/placeholders.qmd
+            - text: "UI elements and interaction"
+              href: computer-interfaces/ui-elements.qmd
+        - section: "HTML and CSS"
+          contents:
+            - text: "HTML and semantic tagging"
+              href: html-css/semantic-tagging.qmd
+            - text: "HTML formatting"
+              href: html-css/html-formatting.qmd
+            - text: "Markdown versus HTML"
+              href: html-css/markdown.qmd
+        - section: "Names and naming"
+          contents:
+            - text: "Example domains and names"
+              href: naming/examples.qmd
+            - text: "Filenames"
+              href: naming/filenames.qmd
+            - text: "Trademarks"
+              href: naming/trademarks.qmd

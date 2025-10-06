@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: ../_site
+  render:
+    - en
+
+website:
+  title: "Google Documentation Style Guide"
+  site-url: "https://tech-writing-lab.github.io/style-guide/"
+  repo-url: "https://github.com/tech-writing-lab/style-guide"
+  issue-url: "https://github.com/tech-writing-lab/style-guide/issues"
+  repo-actions: edit # 顯示 Edit this page 和 report issue
+  back-to-top-navigation: true
+  # google-analytics: "G-VGGH88LLN9"
+  navbar:
+    background: primary
+    search: true
+    tools:
+      - icon: github
+        href: "https://github.com/tech-writing-lab/style-guide"
+        text: GitHub
+
+  page-footer:
+    right: "最後更新： 2025-10-05"
+
+format:
+  html:
+    toc: true
+    toc-expand: 2
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    grid:
+      sidebar-width: 300px
+    css: styles.css
+    date-format: "YYYY-MM-DD"
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    code-overflow: wrap
+    # Note: English fonts must be first, otherwise single quote characters might be transformed to right curly quotes.
+    mainfont: Roboto, "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"
+    monofont: Menlo, Monaco, Consolas, SFMono-Regular, "Liberation Mono", "Courier New", monospace
+    comments:
+      giscus:
+        repo: tech-writing-lab/style-guide
