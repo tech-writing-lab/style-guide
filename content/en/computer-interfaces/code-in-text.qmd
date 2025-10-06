@@ -11,18 +11,18 @@ In ordinary text sentences (as opposed to, say, code samples), use code font to 
 To mark text as code font, use the following:
 
 - In HTML, use the `code` element.
-- In Markdown, use backticks (`\``).
+- In Markdown, use backticks (`` ` ``).
 
-For information about choosing HTML or Markdown, see [Markdown versus HTML](https://developers.google.com/style/markdown).
+For information about choosing HTML or Markdown, see [Markdown versus HTML](../html-css/markdown.qmd).
 
 This page explains how to format code in ordinary text sentences. For more information about formatting and explaining placeholders, command-line syntax, and code samples, see the following resources:
 
-- [Formatting placeholders](https://developers.google.com/style/placeholders)
-- [Documenting command-line syntax](https://developers.google.com/style/code-syntax)
-- [Code samples](https://developers.google.com/style/code-samples)
-- [Code style guides](https://developers.google.com/style/code-samples#coding)
-- [Formatting a heading or title](https://developers.google.com/style/headings#formatting-a-heading-or-title)
-- [Code text preceding colon](https://developers.google.com/style/colons#code-text-preceding-colon)
+- [Formatting placeholders](placeholders.qmd)
+- [Documenting command-line syntax](code-syntax.qmd)
+- [Code samples](code-samples.qmd)
+- [Code style guides](code-samples.qmd#coding)
+- [Formatting a heading or title](../formatting/headings.qmd#formatting-a-heading-or-title)
+- [Code text preceding colon](../punctuation/colons.qmd#code-text-preceding-colon)
 
 ## Some specific items to put in code font
 
@@ -53,7 +53,7 @@ The following table includes items that should be in code font, but it's not an 
 | Language keywords | The SQL statement contains the dataset table name after the `FROM` keyword in the format of `PROJECT*NAME.DATASET.TABLE*NAME`. |
 | [Method and function names](https://developers.google.com/style/code-in-text#methods) | The `ST*GEOPOINT` function uses the longitude and latitude of the Colosseum in Rome. To fetch the status of the job, call the `get*job_status` method. |
 | Namespace aliases | Use Config Sync to apply the package only to the `default` namespace. |
-| [Placeholder variables](https://developers.google.com/style/placeholders) | Replace `SUBNETWORK_NAME` with the resource ID of the private subnet that you want the blueprint to use. |
+| [Placeholder variables](placeholders.qmd) | Replace `SUBNETWORK_NAME` with the resource ID of the private subnet that you want the blueprint to use. |
 | Port numbers | Each member Pod must have a container that's listening on TCP port `50000`. |
 | Query parameter names and values | If you want to return all contents under a directory, use the `recursive=true` query parameter with your request. |
 | Strings (such as URLs or domain names) that are used in commands and code | In IAM, a condition can specify a page that only Human Resources admins can access—for example, `https://hr.example.com`. The `logID` field includes the domain `corpaudits.example.com`. |

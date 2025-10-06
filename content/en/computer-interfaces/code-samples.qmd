@@ -71,7 +71,7 @@ Not recommended (ending with a colon): The following code sample shows how to us
 
 For more information about how to introduce code samples, see [Document command-line syntax](https://developers.google.com/style/code-syntax).
 
-## Code style guides
+## Code style guides {#coding}
 
 The following public Google coding-style guides are available on GitHub:
 
