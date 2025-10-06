@@ -299,36 +299,256 @@
     ]
   },
   {
-    "objectID": "content/en/general-principles/excessive-claims.html",
-    "href": "content/en/general-principles/excessive-claims.html",
-    "title": "Avoid excessive claims",
+    "objectID": "content/en/general-principles/accessibility.html",
+    "href": "content/en/general-principles/accessibility.html",
+    "title": "Write accessible documentation",
     "section": "",
-    "text": "In documentation, don’t make excessive claims. An excessive claim is an assertion in the documentation that does any of the following:\n\nMakes a statement about performance or cost that isn’t easily verifiable with data that’s available to the reader.\nMakes a statement about security that would be invalidated by a security incident.\nMakes a statement that might be interpreted as subjective or even disparaging, especially about third-party products.\n\nWhen you’re assessing whether some text makes an excessive claim, take into account not just what’s true today about a product’s performance, cost, security, or functionality, but what might be true in the future.\nConsider the following guidelines:\n\nWhen you describe products, avoid superlatives like best, simplest, fastest, never, and always. Similarly, be careful about words like ensure and guarantee and use them only when something can truly be ensured or guaranteed.\nIf you make specific performance claims—how fast a product is, how much storage it requires, and so on—make sure that you reference the source of your information.\nIf documentation claims that a product is secure, the documentation is invalid (and not credible) if someone succeeds in compromising the product. It’s safer to suggest that a feature “helps with security” or “is designed for security” because those statements are true even if a security incident occurs.\nA statement that you make about a competitive product might be untrue if you misinterpret how the product works, or later if the other company comes out with a new release.\n\nThe safest approach is always to write factually and objectively, limiting what you say to verifiable information that will be true over the lifespan of your documentation.\n\n✅ Recommended: Our product distributes datasets and computation in memory across a cluster, and therefore it can be faster for this scenario than ExampleCorporation’s product. For more information, see Performance comparison.\n❌ Not recommended: Our product is faster than ExampleCorp’s product.\n✅ Recommended: Using our security product is part of an overall strategy that helps prevent account takeovers from phishing attacks.\n❌ Not recommended: Our security product prevents account takeovers from phishing attacks.\n\n\n\n\n Back to top",
+    "text": "We write our developer documentation with accessibility in mind. This page is not an exhaustive reference, but describes some general guidelines and examples that illustrate best practices to follow. The World Health Organization estimates that 15% of the world’s population (more than 1 billion people) have an accessibility need. When documentation is written with accessibility in mind, it improves the overall experience for all readers.\nFor other writing best practices, see the following resources:",
     "crumbs": [
       "General principles",
-      "Excessive claims"
+      "Accessibility"
     ]
   },
   {
-    "objectID": "content/en/general-principles/timeless-documentation.html",
-    "href": "content/en/general-principles/timeless-documentation.html",
-    "title": "Timeless documentation",
-    "section": "",
-    "text": "Timeless documentation is documentation that avoids words and phrases that anchor the documentation to a point in time or assume knowledge of prior or future products and features. In general, document the current version of a product or feature.\nTimeless documentation is especially important for technical documents that might be read a long time after they are written. Words like now, new, and currently can render such documentation inaccurate, outdated, or unmeaningful. In contrast, timeless documentation focuses on how the product works right now—not on how it has changed from previous versions, and not how it might change in the future.\nIf you’re writing procedural or time-stamped content such as press releases, blog posts, or release notes, such time-based words and phrases are okay. For example, new is okay in a blog post that announces updates to a product: Dataflow includes several new features. Or, soon is okay in procedural content to emphasize a change in state after a user performs a step: The VM goes offline soon after you send the shutdown command. However, some of these words can become outdated or incorrect when used in product documentation to refer to a product’s features and capabilities, so we recommend against using such words in that context.\nWriting timeless product documentation has the following value:",
+    "objectID": "content/en/general-principles/accessibility.html#general-dos-and-donts",
+    "href": "content/en/general-principles/accessibility.html#general-dos-and-donts",
+    "title": "Write accessible documentation",
+    "section": "General dos and don’ts",
+    "text": "General dos and don’ts\n\nDon’t use ableist language. Avoid bias and harm when discussing disability and accessibility. For more information, see Writing inclusive documentation.\nEnsure that readers can reach all parts of the document (including tabs, form-submission buttons, and interactive elements) by using only a keyboard, without a mouse or trackpad.\nUse a screen reader to test your documentation. This test can help you find accessibility issues in your content and is a good way to self-edit your content. To try out a screen reader, see List of screen readers.\nIn HTML, use semantic tagging. For example, use the em element only to indicate emphasis, not to indicate italics.\nIn HTML, prefer native elements over custom styles.\nAvoid unnecessary font formatting. (Screen readers explicitly describe text modifications.)\nIf you’re documenting a product that includes specialized accessibility features, then explicitly document those features. For example, the Google Cloud CLI (gcloud CLI) includes togglable accessibility features such as percentage progress bars and ASCII box rendering.\nDon’t force line breaks (hard returns) within sentences and paragraphs. Line breaks might not work well in resized windows or with enlarged text.\nAvoid when possible camel case and all caps. Some screen readers read capitalized letters individually, and some languages are unicase. Follow capitalization guidelines.\nDepending on the screen reader (or personal settings), not all punctuation marks are read. Make sure that the same meaning is conveyed to the reader without punctuation marks. For that reason, avoid when possible the use of exclamation marks, question marks, and semicolons.\nDon’t use & instead of and in headings, text, navigation, or tables of contents. However, it’s OK to use & when referencing UI elements that use &, or in table headings and diagram labels where space constraints require abbreviation. Of course, it’s fine to use & for technical purposes in code.",
     "crumbs": [
       "General principles",
-      "Timeless documentation"
+      "Accessibility"
     ]
   },
   {
-    "objectID": "content/en/general-principles/timeless-documentation.html#words-and-phrases-to-avoid",
-    "href": "content/en/general-principles/timeless-documentation.html#words-and-phrases-to-avoid",
-    "title": "Timeless documentation",
-    "section": "Words and phrases to avoid",
-    "text": "Words and phrases to avoid\nThe following words and phrases can undermine timelessness in documentation:\n\nWords and phrases that make promises or project plans and strategies. In the context of describing product or feature capabilities, words and phrases such as at present, as of this writing, or eventually can prematurely disclose plans for a product or feature, or they can inappropriately imply that a product or feature might change. In those cases, don’t use such words and phrases.\nFor more information, see Documenting future features.\nWords and phrases that are implied. At Google, we assume our documentation is current unless a specific release version is specified. Thus, words and phrases such as currently and as of this writing are implied by the existence of the documentation itself.\nWords and phrases that become outdated soon after publication. Words such as soon and latest quickly become irrelevant.\nWords and phrases that assume prior knowledge of a product or feature. If you must use words like new, give a reference point such as a date or version release number—for example, The January 14, 2021 release of BigQuery includes a new resource panel.\n\nWhen describing product or feature capabilities in product and reference documentation, avoid the following words and phrases:\n\nas of this writing\ncurrently\ndoes not yet\neventually\nexisting\nfuture, in the future\nlatest\nnew, newer\nnow\nold, older\npresently, at present\nsoon",
+    "objectID": "content/en/general-principles/accessibility.html#ease-of-reading",
+    "href": "content/en/general-principles/accessibility.html#ease-of-reading",
+    "title": "Write accessible documentation",
+    "section": "Ease of reading",
+    "text": "Ease of reading\n\nBreak up walls of text to aid in scannability. For example, separate paragraphs, create headings, and use lists.\nUse shorter sentences. Try to use fewer than 26 words per sentence.\nDefine acronyms and abbreviations on first usage and if they’re used infrequently.\nUse parallel writing structures for similar things. For example, start each list in the same format.\nPlace distinguishing and important information of a paragraph in the first sentence to aid in scannability.\nUse clear and direct language. Avoid the use of double negatives and exceptions for exceptions.\n\n✅ Recommended: You can continue without a path.\n❌ Not recommended: A missing path won’t prevent you from continuing.\n\nLeft-align text for readability. Don’t center or full-justify text.",
     "crumbs": [
       "General principles",
-      "Timeless documentation"
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#headings-and-titles",
+    "href": "content/en/general-principles/accessibility.html#headings-and-titles",
+    "title": "Write accessible documentation",
+    "section": "Headings and titles",
+    "text": "Headings and titles\nUse descriptive headings and titles because they help a reader navigate their browser and the page. It’s easier to jump between pages and sections of a page if the headings and titles are unique.\n\nUse a heading hierarchy.\nDon’t skip levels of the heading hierarchy. For example, put an h3 element only after an h2 element.\nTo change the visual formatting of a heading, use CSS rather than using a heading level that doesn’t fit the hierarchy.\nDon’t have empty headings or headings with no associated content.\nTag headings using heading elements. In HTML: h1, h2, and so on. In Markdown: #, ##, and so on.\nUse a level-1 heading for the page title or main content heading.\n\nFor more information and examples, see Headings and titles.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#links",
+    "href": "content/en/general-principles/accessibility.html#links",
+    "title": "Write accessible documentation",
+    "section": "Links",
+    "text": "Links\n\nUse meaningful link text. Links should make sense when read out of context.\nDon’t use click here or read this document. Some people who use screen readers jump from link to link to scan a page and need to understand what a link contains.\nUse see to refer to links and cross-references. For more information, see see.\nWhen a link does anything that the reader might not expect, such as downloading a file, opening in a new tab, or jumping to another section on the same page, explain that behavior when you link. For more information, see Explain unexpected link behavior.\nWhen possible, avoid adjacent links. Instead, put a character in between to separate them.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#lists",
+    "href": "content/en/general-principles/accessibility.html#lists",
+    "title": "Write accessible documentation",
+    "section": "Lists",
+    "text": "Lists\n\nIn a procedure, make each instruction a list item.\nUse lists to make it easier for the reader to follow the steps.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#images",
+    "href": "content/en/general-principles/accessibility.html#images",
+    "title": "Write accessible documentation",
+    "section": "Images",
+    "text": "Images\n\nFor every image, provide an alt attribute. For alt attributes that contain alt text, use alt text that adequately summarizes the intent of each image. If the image is purely decorative, use empty alt text.\nDon’t present new information in images. Always provide an equivalent text explanation with the image.\nDon’t repeat images unless absolutely necessary.\nDon’t use images of text, code samples, or terminal output. Use actual text.\nUse SVG instead of PNG if available. SVGs stay sharp when you zoom in on the image.\n\nFor more information, see Text associated with images.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#videos-recordings-and-gifs",
+    "href": "content/en/general-principles/accessibility.html#videos-recordings-and-gifs",
+    "title": "Write accessible documentation",
+    "section": "Videos, recordings, and GIFs",
+    "text": "Videos, recordings, and GIFs\n\nProvide captions, transcripts, or descriptions of audio and video content. For example, you can use the autocaption feature in YouTube.\nEnsure that captions can be translated into major languages.\nDon’t use flickering or flashing elements. They can cause anything from motion sickness to a seizure.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#buttons-and-icons",
+    "href": "content/en/general-principles/accessibility.html#buttons-and-icons",
+    "title": "Write accessible documentation",
+    "section": "Buttons and icons",
+    "text": "Buttons and icons\n\nFor form-submission buttons, use the native HTML button element.\nAn icon is a symbol or image that represents an object or a function. For information about using icons, see the Buttons and icons section of the “UI elements and interaction” page.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#ui-navigation",
+    "href": "content/en/general-principles/accessibility.html#ui-navigation",
+    "title": "Write accessible documentation",
+    "section": "UI navigation",
+    "text": "UI navigation\nWhen you use angle brackets (&gt;) to document menu paths, add an aria-label attribute to help screen readers interpret the brackets as “and then” instead of as “greater than” or “keyboard arrow right”. For more information and examples, see Menu bar.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#tables",
+    "href": "content/en/general-principles/accessibility.html#tables",
+    "title": "Write accessible documentation",
+    "section": "Tables",
+    "text": "Tables\n\nIntroduce tables in the text preceding the table because not all screen readers preannounce tables.\nUse table headings for the first column and the first row only. Use the th element.\nIf your tables include both row and column headings, then mark heading cells with the scope attribute.\nIf your tables have more than one row containing column headings, then use the headers attribute and make sure that the headings have unique IDs.\nAvoid when possible tables in the middle of a numbered procedure.\nDon’t merge cells. Don’t use colspan or rowspan attributes.\nDon’t use tables unless it’s the best method to present your information. Tables are challenging for screen readers. For more information, see List or table.\nDon’t present new information in tables through images or symbols alone; always provide a descriptive alt attribute for the image or symbol. For more information, see Alt text.\n\nFor more information, see Tables.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#interactive-elements",
+    "href": "content/en/general-principles/accessibility.html#interactive-elements",
+    "title": "Write accessible documentation",
+    "section": "Interactive elements",
+    "text": "Interactive elements\nIntroduce an interactive element (such as a button that expands and collapses) in the text preceding the element.\n\n✅ Recommended if practical: To see a list of requirements, expand the Requirements section.\n✅ Recommended: To see a list of requirements, click the arrow_right expander arrow.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#forms",
+    "href": "content/en/general-principles/accessibility.html#forms",
+    "title": "Write accessible documentation",
+    "section": "Forms",
+    "text": "Forms\n\nLabel every input field by using a label element.\nPlace labels outside of fields.\nWhen you’re creating an error message for form validation, clearly state what went wrong and how to fix it—for example: “Name is a required field.”",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#custom-css-and-javascript",
+    "href": "content/en/general-principles/accessibility.html#custom-css-and-javascript",
+    "title": "Write accessible documentation",
+    "section": "Custom CSS and JavaScript",
+    "text": "Custom CSS and JavaScript\nTry to use your site’s standard styles and standard JavaScript code as much as possible. However, if you do use custom styles or code, then follow these guidelines:\n\nPick colors that respect accessible color contrast ratios (4.5:1 for text).\nDon’t use visibility:hidden or display:none. Both styles hide information from screen readers.\nAvoid when possible using mouseover events. But if you do use them, then add alternate focus and blur events for keyboard users.\nEnsure that any ordering and positioning defined in styles reflects the DOM and the reading order (such as left to right and top to bottom) of your page.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#document-rendering",
+    "href": "content/en/general-principles/accessibility.html#document-rendering",
+    "title": "Write accessible documentation",
+    "section": "Document rendering",
+    "text": "Document rendering\nMake sure that your document conveys all the information that you intended when you view it in the following contexts:\n\nWithout sound\nUsing only sound\nWithout images, including animation\nWithout color\nUsing a keyboard\nWith screen magnification\nWithout punctuation\n\nDon’t use color, size, location, or other visual cues as the primary way of communicating information.\n\nIf you’re using color, an icon, or outline thickness to convey state, then also provide a secondary cue, such as a change in the text label.\nRefer to buttons and other elements by their label. For visual elements that have no text, don’t try to describe the element. Instead, use the element’s [aria-label](https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html) attribute if possible. For example:\n\n✅ Recommended: Click Save.\n✅ Recommended: Click Notifications.\n❌ Not recommended: Click the bell icon.\n\nDon’t use directional language to orient the reader, such as above, below, or right-hand side. This type of language doesn’t work well for accessibility or for localization reasons. For example, what’s on the right side for left-to-right languages appears on the left side for right-to-left languages.\nDon’t use directional language to refer to a position in a document. For example, the text isn’t below if it’s being read by a screen reader. Instead, use earlier, preceding, or following.\n\n✅ Recommended: In the preceding diagram, clients run jobs on multi-team or single-team clusters.\n❌ Not recommended: In the diagram above, clients run jobs on multi-team or single-team clusters.\n\nIf a UI element is hard to find, provide a screenshot.\n\n✅ Recommended: Click menu Menu.\n❌ Not recommended: In the left-side panel, click the button with three lines.",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/accessibility.html#more-resources",
+    "href": "content/en/general-principles/accessibility.html#more-resources",
+    "title": "Write accessible documentation",
+    "section": "More resources",
+    "text": "More resources\n\nGoogle’s main accessibility page\nWeb Content Accessibility Guidelines (WCAG) 2.0\nWeb Accessibility Initiative (WAI)\nUsing ARIA\nWeb Accessibility Tutorials",
+    "crumbs": [
+      "General principles",
+      "Accessibility"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html",
+    "href": "content/en/general-principles/inclusive-language.html",
+    "title": "Write inclusive documentation",
+    "section": "",
+    "text": "Note: This document includes references to terms that Google considers disrespectful or offensive. The terms are used here to provide usage guidance and alternative terms.\nWe write our developer documentation with inclusivity and diversity in mind. This page is not an exhaustive reference, but provides some general guidelines and examples that illustrate some best practices for writing inclusive documentation.\nFor other writing best practices, see the following resources:",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#avoid-ableist-language",
+    "href": "content/en/general-principles/inclusive-language.html#avoid-ableist-language",
+    "title": "Write inclusive documentation",
+    "section": "Avoid ableist language",
+    "text": "Avoid ableist language\nWhen trying to achieve a friendly and conversational tone, problematic ableist language might slip in. This can come in the form of figures of speech and other turns of phrase. Be sensitive to your word choice, especially when aiming for an informal tone. Ableist language includes words or phrases such as crazy, insane, blind to or blind eye to, cripple, dumb, and others. Choose alternative words depending on the context.\n\n\n\n✅ Recommended\n❌ Not recommended\n\n\n\n\nBefore launch, give everything a final check for completeness and clarity.\nBefore launch, give everything a final sanity-check.\n\n\n—\n—\n\n\nThere are some baffling outliers in the data.\nThere are some crazy outliers in the data.\n\n\nIt slows down the service, causing a poor user experience until the queue clears.\nIt cripples the service, causing a poor user experience until the queue clears.\n\n\nReplace the placeholder in this example with the appropriate value.\nReplace the dummy variable in this example with the appropriate value.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-gendered-language",
+    "href": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-gendered-language",
+    "title": "Write inclusive documentation",
+    "section": "Avoid unnecessarily gendered language",
+    "text": "Avoid unnecessarily gendered language\nIn addition to being mindful of the pronouns used in narrative examples, be sensitive to other possible sources of gendered language.\n\n\n\n\n\n\n\n✅ Recommended\n❌ Not recommended\n\n\n\n\nEquipment installation takes around 16 person-hours to complete.\nEquipment installation takes around 16 man-hours to complete.\n\n\n—\n—\n\n\nThis API might be just what your globally conscious company needs to help all of humanity.\nThis API might be just what your globally conscious company needs to help all of mankind.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-violent-language",
+    "href": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-violent-language",
+    "title": "Write inclusive documentation",
+    "section": "Avoid unnecessarily violent language",
+    "text": "Avoid unnecessarily violent language\nAvoid graphically violent or harmful terms. For example, avoid using the term STONITH; instead, describe the process used to stop an errant node in context by using more specific terms.\nIf it’s unavoidable and you must mention a violent or harmful term such as STONITH, mention it once when you first explain the relevant feature, but phrase it in a way that de-emphasizes the term.\n\n✅ Recommended: This might require you to fence failed nodes.\n✅ Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).\n\nWhen possible, avoid the use of figurative language that can be interpreted as violent, such as hang and hit. Although there might also be nonviolent interpretations for these terms, avoiding their use prevents unintentional harm that might be caused by the violent interpretations.\nAvoid the use of figurative language that relates to the slaughter of animals. For example, avoid using the metaphor of pets versus cattle when comparing on-premises or stateful systems with stateless cloud systems.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#write-diverse-and-inclusive-examples",
+    "href": "content/en/general-principles/inclusive-language.html#write-diverse-and-inclusive-examples",
+    "title": "Write inclusive documentation",
+    "section": "Write diverse and inclusive examples",
+    "text": "Write diverse and inclusive examples\nUse diverse names, genders, ages, and locations in examples. Keep the following advice in mind:\n\nFollow our gender-neutral pronoun guidance.\nAvoid being too culturally specific to the US. Be mindful when referring to specific holidays (see also the word list entry for the holidays), cultural practices, sports, and figures of speech. Being sensitive here also supports writing for a global audience.\nTake care to choose a diverse set of names to help examples reflect the real world diversity of our audience, and see the guidance in that section of the guide for writing about fictional people.\nWhen writing about older adults, avoid terms and figures of speech such as the elderly, the aged, seniors, senior citizens, or 80 years young. Instead, use terms such as older adults or aging population, or mention the person’s relative age or relationship to the other people in your example when those details are relevant.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#write-about-features-and-users-in-inclusive-ways",
+    "href": "content/en/general-principles/inclusive-language.html#write-about-features-and-users-in-inclusive-ways",
+    "title": "Write inclusive documentation",
+    "section": "Write about features and users in inclusive ways",
+    "text": "Write about features and users in inclusive ways\nAvoid referring to people in divisive ways. For example, instead of referring to people as native speakers or non-native speakers of English, consider whether your document needs to discuss this at all, and revise it to discuss the feature in terms that are relevant to anyone regardless of what languages they know.\nAvoid using socially-charged terms for technical concepts where possible. For example, avoid terms such as blacklist, native feature, and first-class citizen, even though these terms might still be widely used. Instead of first-class, consider other terms such as core feature, built-in, or top-level. Choose the best term for your context.\n\nReplace or write around non-inclusive terms\nThis section contains guidance about how to replace or write around a non-inclusive term. If a term is well established in the industry and replacing it could cause confusion, see Replace established terms. If a term occurs in code samples or keywords, see Write around non-inclusive code terms. For information about avoiding non-inclusive jargon, see Jargon.\n\nReplace established terms\nMany non-inclusive terms are in wide use in the industry, such as whitelist. If replacing an established term could cause confusion for readers, you can directly refer to the non-inclusive term on the first use, and put it in parentheses. Then use the inclusive, replacement term throughout the rest of the document.\n\n✅ Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a whitelist). Anyone who isn’t on the allowlist is blocked …\n✅ Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to …\n✅ Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor cattle, not pets).\n\nIn many cases, instead of directly replacing a word, you can rewrite to improve the clarity of a sentence. For example, instead of replacing the verb whitelist with allowlist, try rewriting the sentence.\n\n✅ Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.\n❌ Not recommended: You can allowlist a range of IP addresses by entering a CIDR block instead of a single address in the field.\n\n\n\nWrite around non-inclusive code terms\nIn some cases, non-inclusive terms are embedded in code (or similar) as names or keywords, and you can’t simply ignore those terms and use different terminology. What you can do, however, is minimize your use of the term (hence avoid propagating it as a term of art), while still providing clear documentation to your readers. Don’t use a non-inclusive name or keyword unless it’s in code font.\nFollowing are scenarios for writing around non-inclusive terms that occur in code and keywords.\nOne scenario is if you’re documenting an existing system in which an entity is already named by using a non-inclusive term. For example, there might be a configuration file that includes the following cluster name:\napiVersion: v1\nkind: Config\npreferences: {}\n\nclusters:\n\\- cluster:\n  name: master\n\\- cluster:\n  name: replica\\-1\nAnother scenario is if your documentation includes a non-inclusive term that’s an established keyword, such as the keyword SLAVE in dialects of SQL:\nSTART SLAVE UNTIL SQL\\_AFTER\\_MTS\\_GAPS;\nThe first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.\n\n✅ Recommended: The configuration file helps you create a parent node (which is named master in the file).\n✅ Recommended: Start the replica by using the START SLAVE statement.\n\nIn subsequent mentions, use the preferred term (parent node, replica). If it’s necessary to refer to the entity name or keyword, continue doing so only with code formatting.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/inclusive-language.html#avoid-bias-and-harm-when-discussing-disability-and-accessibility",
+    "href": "content/en/general-principles/inclusive-language.html#avoid-bias-and-harm-when-discussing-disability-and-accessibility",
+    "title": "Write inclusive documentation",
+    "section": "Avoid bias and harm when discussing disability and accessibility",
+    "text": "Avoid bias and harm when discussing disability and accessibility\nMany developers create products with accessibility and disability in mind. When documenting these features, and when writing about people with disabilities or about accessibility, work to eliminate unintentional bias and harm. Take the time to educate yourself about the ways that the communities that you’re writing about prefer to be identified and described before writing about them in your documentation.\nSome general guidelines in this area include the following:\n\nDon’t describe people without disabilities as normal or healthy. This contributes to othering and alienation of people with disabilities by implying that they are abnormal or sick. Instead, use terms such as nondisabled person, sighted person, hearing person, person without disabilities, or neurotypical person.\nResearch the ways that the people in the communities that you’re writing about prefer to be identified and use the terms that they prefer. In many cases, avoid terms that remove personhood or that define people by their disability. For example, avoid terms such as the disabled or a quadriplegic. Instead, use terms such as people with disabilities or a quadriplegic person.\nHowever, many members of some communities prefer identity-first language—for example, that preference is common in autistic, blind, and Deaf communities. Capitalization of identities also can vary (for some perspectives, visit Identity-First Language and Self-Identification in the Deaf Community). Whenever possible, research and choose terms that respect the ways that people in the communities identify.\nUse see to refer to links and cross-references. For more information, see see.\nAvoid terms that reflect or project feelings and judgments about a person’s disability, such as victim of, suffering from, or wheelchair-bound. Instead, use neutral terms such as experiencing, living with, or uses a wheelchair.\nAvoid euphemisms or patronizing terms such as physically challenged, special, differently abled, or handi-capable.",
+    "crumbs": [
+      "General principles",
+      "Inclusive language"
     ]
   },
   {
@@ -4028,267 +4248,47 @@
     ]
   },
   {
-    "objectID": "content/en/general-principles/inclusive-language.html",
-    "href": "content/en/general-principles/inclusive-language.html",
-    "title": "Write inclusive documentation",
-    "section": "",
-    "text": "Note: This document includes references to terms that Google considers disrespectful or offensive. The terms are used here to provide usage guidance and alternative terms.\nWe write our developer documentation with inclusivity and diversity in mind. This page is not an exhaustive reference, but provides some general guidelines and examples that illustrate some best practices for writing inclusive documentation.\nFor other writing best practices, see the following resources:",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#avoid-ableist-language",
-    "href": "content/en/general-principles/inclusive-language.html#avoid-ableist-language",
-    "title": "Write inclusive documentation",
-    "section": "Avoid ableist language",
-    "text": "Avoid ableist language\nWhen trying to achieve a friendly and conversational tone, problematic ableist language might slip in. This can come in the form of figures of speech and other turns of phrase. Be sensitive to your word choice, especially when aiming for an informal tone. Ableist language includes words or phrases such as crazy, insane, blind to or blind eye to, cripple, dumb, and others. Choose alternative words depending on the context.\n\n\n\n✅ Recommended\n❌ Not recommended\n\n\n\n\nBefore launch, give everything a final check for completeness and clarity.\nBefore launch, give everything a final sanity-check.\n\n\n—\n—\n\n\nThere are some baffling outliers in the data.\nThere are some crazy outliers in the data.\n\n\nIt slows down the service, causing a poor user experience until the queue clears.\nIt cripples the service, causing a poor user experience until the queue clears.\n\n\nReplace the placeholder in this example with the appropriate value.\nReplace the dummy variable in this example with the appropriate value.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-gendered-language",
-    "href": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-gendered-language",
-    "title": "Write inclusive documentation",
-    "section": "Avoid unnecessarily gendered language",
-    "text": "Avoid unnecessarily gendered language\nIn addition to being mindful of the pronouns used in narrative examples, be sensitive to other possible sources of gendered language.\n\n\n\n\n\n\n\n✅ Recommended\n❌ Not recommended\n\n\n\n\nEquipment installation takes around 16 person-hours to complete.\nEquipment installation takes around 16 man-hours to complete.\n\n\n—\n—\n\n\nThis API might be just what your globally conscious company needs to help all of humanity.\nThis API might be just what your globally conscious company needs to help all of mankind.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-violent-language",
-    "href": "content/en/general-principles/inclusive-language.html#avoid-unnecessarily-violent-language",
-    "title": "Write inclusive documentation",
-    "section": "Avoid unnecessarily violent language",
-    "text": "Avoid unnecessarily violent language\nAvoid graphically violent or harmful terms. For example, avoid using the term STONITH; instead, describe the process used to stop an errant node in context by using more specific terms.\nIf it’s unavoidable and you must mention a violent or harmful term such as STONITH, mention it once when you first explain the relevant feature, but phrase it in a way that de-emphasizes the term.\n\n✅ Recommended: This might require you to fence failed nodes.\n✅ Sometimes okay: This might require you to fence failed nodes (sometimes referred to as STONITH).\n\nWhen possible, avoid the use of figurative language that can be interpreted as violent, such as hang and hit. Although there might also be nonviolent interpretations for these terms, avoiding their use prevents unintentional harm that might be caused by the violent interpretations.\nAvoid the use of figurative language that relates to the slaughter of animals. For example, avoid using the metaphor of pets versus cattle when comparing on-premises or stateful systems with stateless cloud systems.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#write-diverse-and-inclusive-examples",
-    "href": "content/en/general-principles/inclusive-language.html#write-diverse-and-inclusive-examples",
-    "title": "Write inclusive documentation",
-    "section": "Write diverse and inclusive examples",
-    "text": "Write diverse and inclusive examples\nUse diverse names, genders, ages, and locations in examples. Keep the following advice in mind:\n\nFollow our gender-neutral pronoun guidance.\nAvoid being too culturally specific to the US. Be mindful when referring to specific holidays (see also the word list entry for the holidays), cultural practices, sports, and figures of speech. Being sensitive here also supports writing for a global audience.\nTake care to choose a diverse set of names to help examples reflect the real world diversity of our audience, and see the guidance in that section of the guide for writing about fictional people.\nWhen writing about older adults, avoid terms and figures of speech such as the elderly, the aged, seniors, senior citizens, or 80 years young. Instead, use terms such as older adults or aging population, or mention the person’s relative age or relationship to the other people in your example when those details are relevant.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#write-about-features-and-users-in-inclusive-ways",
-    "href": "content/en/general-principles/inclusive-language.html#write-about-features-and-users-in-inclusive-ways",
-    "title": "Write inclusive documentation",
-    "section": "Write about features and users in inclusive ways",
-    "text": "Write about features and users in inclusive ways\nAvoid referring to people in divisive ways. For example, instead of referring to people as native speakers or non-native speakers of English, consider whether your document needs to discuss this at all, and revise it to discuss the feature in terms that are relevant to anyone regardless of what languages they know.\nAvoid using socially-charged terms for technical concepts where possible. For example, avoid terms such as blacklist, native feature, and first-class citizen, even though these terms might still be widely used. Instead of first-class, consider other terms such as core feature, built-in, or top-level. Choose the best term for your context.\n\nReplace or write around non-inclusive terms\nThis section contains guidance about how to replace or write around a non-inclusive term. If a term is well established in the industry and replacing it could cause confusion, see Replace established terms. If a term occurs in code samples or keywords, see Write around non-inclusive code terms. For information about avoiding non-inclusive jargon, see Jargon.\n\nReplace established terms\nMany non-inclusive terms are in wide use in the industry, such as whitelist. If replacing an established term could cause confusion for readers, you can directly refer to the non-inclusive term on the first use, and put it in parentheses. Then use the inclusive, replacement term throughout the rest of the document.\n\n✅ Recommended: To make sure that administrators get the notification, add them to an allowlist (sometimes called a whitelist). Anyone who isn’t on the allowlist is blocked …\n✅ Recommended: In this model, a Jenkins controller (master) handles HTTP requests. The Jenkins controller is designed to …\n✅ Recommended: In cloud architecture, servers are treated as commodities (sometimes described by using the metaphor cattle, not pets).\n\nIn many cases, instead of directly replacing a word, you can rewrite to improve the clarity of a sentence. For example, instead of replacing the verb whitelist with allowlist, try rewriting the sentence.\n\n✅ Recommended: You can allow requests from a range of IP addresses by entering a CIDR block instead of a single address in the field.\n❌ Not recommended: You can allowlist a range of IP addresses by entering a CIDR block instead of a single address in the field.\n\n\n\nWrite around non-inclusive code terms\nIn some cases, non-inclusive terms are embedded in code (or similar) as names or keywords, and you can’t simply ignore those terms and use different terminology. What you can do, however, is minimize your use of the term (hence avoid propagating it as a term of art), while still providing clear documentation to your readers. Don’t use a non-inclusive name or keyword unless it’s in code font.\nFollowing are scenarios for writing around non-inclusive terms that occur in code and keywords.\nOne scenario is if you’re documenting an existing system in which an entity is already named by using a non-inclusive term. For example, there might be a configuration file that includes the following cluster name:\napiVersion: v1\nkind: Config\npreferences: {}\n\nclusters:\n\\- cluster:\n  name: master\n\\- cluster:\n  name: replica\\-1\nAnother scenario is if your documentation includes a non-inclusive term that’s an established keyword, such as the keyword SLAVE in dialects of SQL:\nSTART SLAVE UNTIL SQL\\_AFTER\\_MTS\\_GAPS;\nThe first time that you refer to a code item that uses a non-inclusive term, you can directly refer to that term, but format it in code font, and put it in parentheses if possible.\n\n✅ Recommended: The configuration file helps you create a parent node (which is named master in the file).\n✅ Recommended: Start the replica by using the START SLAVE statement.\n\nIn subsequent mentions, use the preferred term (parent node, replica). If it’s necessary to refer to the entity name or keyword, continue doing so only with code formatting.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/inclusive-language.html#avoid-bias-and-harm-when-discussing-disability-and-accessibility",
-    "href": "content/en/general-principles/inclusive-language.html#avoid-bias-and-harm-when-discussing-disability-and-accessibility",
-    "title": "Write inclusive documentation",
-    "section": "Avoid bias and harm when discussing disability and accessibility",
-    "text": "Avoid bias and harm when discussing disability and accessibility\nMany developers create products with accessibility and disability in mind. When documenting these features, and when writing about people with disabilities or about accessibility, work to eliminate unintentional bias and harm. Take the time to educate yourself about the ways that the communities that you’re writing about prefer to be identified and described before writing about them in your documentation.\nSome general guidelines in this area include the following:\n\nDon’t describe people without disabilities as normal or healthy. This contributes to othering and alienation of people with disabilities by implying that they are abnormal or sick. Instead, use terms such as nondisabled person, sighted person, hearing person, person without disabilities, or neurotypical person.\nResearch the ways that the people in the communities that you’re writing about prefer to be identified and use the terms that they prefer. In many cases, avoid terms that remove personhood or that define people by their disability. For example, avoid terms such as the disabled or a quadriplegic. Instead, use terms such as people with disabilities or a quadriplegic person.\nHowever, many members of some communities prefer identity-first language—for example, that preference is common in autistic, blind, and Deaf communities. Capitalization of identities also can vary (for some perspectives, visit Identity-First Language and Self-Identification in the Deaf Community). Whenever possible, research and choose terms that respect the ways that people in the communities identify.\nUse see to refer to links and cross-references. For more information, see see.\nAvoid terms that reflect or project feelings and judgments about a person’s disability, such as victim of, suffering from, or wheelchair-bound. Instead, use neutral terms such as experiencing, living with, or uses a wheelchair.\nAvoid euphemisms or patronizing terms such as physically challenged, special, differently abled, or handi-capable.",
-    "crumbs": [
-      "General principles",
-      "Inclusive language"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html",
-    "href": "content/en/general-principles/accessibility.html",
-    "title": "Write accessible documentation",
-    "section": "",
-    "text": "We write our developer documentation with accessibility in mind. This page is not an exhaustive reference, but describes some general guidelines and examples that illustrate best practices to follow. The World Health Organization estimates that 15% of the world’s population (more than 1 billion people) have an accessibility need. When documentation is written with accessibility in mind, it improves the overall experience for all readers.\nFor other writing best practices, see the following resources:",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#general-dos-and-donts",
-    "href": "content/en/general-principles/accessibility.html#general-dos-and-donts",
-    "title": "Write accessible documentation",
-    "section": "General dos and don’ts",
-    "text": "General dos and don’ts\n\nDon’t use ableist language. Avoid bias and harm when discussing disability and accessibility. For more information, see Writing inclusive documentation.\nEnsure that readers can reach all parts of the document (including tabs, form-submission buttons, and interactive elements) by using only a keyboard, without a mouse or trackpad.\nUse a screen reader to test your documentation. This test can help you find accessibility issues in your content and is a good way to self-edit your content. To try out a screen reader, see List of screen readers.\nIn HTML, use semantic tagging. For example, use the em element only to indicate emphasis, not to indicate italics.\nIn HTML, prefer native elements over custom styles.\nAvoid unnecessary font formatting. (Screen readers explicitly describe text modifications.)\nIf you’re documenting a product that includes specialized accessibility features, then explicitly document those features. For example, the Google Cloud CLI (gcloud CLI) includes togglable accessibility features such as percentage progress bars and ASCII box rendering.\nDon’t force line breaks (hard returns) within sentences and paragraphs. Line breaks might not work well in resized windows or with enlarged text.\nAvoid when possible camel case and all caps. Some screen readers read capitalized letters individually, and some languages are unicase. Follow capitalization guidelines.\nDepending on the screen reader (or personal settings), not all punctuation marks are read. Make sure that the same meaning is conveyed to the reader without punctuation marks. For that reason, avoid when possible the use of exclamation marks, question marks, and semicolons.\nDon’t use & instead of and in headings, text, navigation, or tables of contents. However, it’s OK to use & when referencing UI elements that use &, or in table headings and diagram labels where space constraints require abbreviation. Of course, it’s fine to use & for technical purposes in code.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#ease-of-reading",
-    "href": "content/en/general-principles/accessibility.html#ease-of-reading",
-    "title": "Write accessible documentation",
-    "section": "Ease of reading",
-    "text": "Ease of reading\n\nBreak up walls of text to aid in scannability. For example, separate paragraphs, create headings, and use lists.\nUse shorter sentences. Try to use fewer than 26 words per sentence.\nDefine acronyms and abbreviations on first usage and if they’re used infrequently.\nUse parallel writing structures for similar things. For example, start each list in the same format.\nPlace distinguishing and important information of a paragraph in the first sentence to aid in scannability.\nUse clear and direct language. Avoid the use of double negatives and exceptions for exceptions.\n\n✅ Recommended: You can continue without a path.\n❌ Not recommended: A missing path won’t prevent you from continuing.\n\nLeft-align text for readability. Don’t center or full-justify text.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#headings-and-titles",
-    "href": "content/en/general-principles/accessibility.html#headings-and-titles",
-    "title": "Write accessible documentation",
-    "section": "Headings and titles",
-    "text": "Headings and titles\nUse descriptive headings and titles because they help a reader navigate their browser and the page. It’s easier to jump between pages and sections of a page if the headings and titles are unique.\n\nUse a heading hierarchy.\nDon’t skip levels of the heading hierarchy. For example, put an h3 element only after an h2 element.\nTo change the visual formatting of a heading, use CSS rather than using a heading level that doesn’t fit the hierarchy.\nDon’t have empty headings or headings with no associated content.\nTag headings using heading elements. In HTML: h1, h2, and so on. In Markdown: #, ##, and so on.\nUse a level-1 heading for the page title or main content heading.\n\nFor more information and examples, see Headings and titles.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#links",
-    "href": "content/en/general-principles/accessibility.html#links",
-    "title": "Write accessible documentation",
-    "section": "Links",
-    "text": "Links\n\nUse meaningful link text. Links should make sense when read out of context.\nDon’t use click here or read this document. Some people who use screen readers jump from link to link to scan a page and need to understand what a link contains.\nUse see to refer to links and cross-references. For more information, see see.\nWhen a link does anything that the reader might not expect, such as downloading a file, opening in a new tab, or jumping to another section on the same page, explain that behavior when you link. For more information, see Explain unexpected link behavior.\nWhen possible, avoid adjacent links. Instead, put a character in between to separate them.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#lists",
-    "href": "content/en/general-principles/accessibility.html#lists",
-    "title": "Write accessible documentation",
-    "section": "Lists",
-    "text": "Lists\n\nIn a procedure, make each instruction a list item.\nUse lists to make it easier for the reader to follow the steps.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#images",
-    "href": "content/en/general-principles/accessibility.html#images",
-    "title": "Write accessible documentation",
-    "section": "Images",
-    "text": "Images\n\nFor every image, provide an alt attribute. For alt attributes that contain alt text, use alt text that adequately summarizes the intent of each image. If the image is purely decorative, use empty alt text.\nDon’t present new information in images. Always provide an equivalent text explanation with the image.\nDon’t repeat images unless absolutely necessary.\nDon’t use images of text, code samples, or terminal output. Use actual text.\nUse SVG instead of PNG if available. SVGs stay sharp when you zoom in on the image.\n\nFor more information, see Text associated with images.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#videos-recordings-and-gifs",
-    "href": "content/en/general-principles/accessibility.html#videos-recordings-and-gifs",
-    "title": "Write accessible documentation",
-    "section": "Videos, recordings, and GIFs",
-    "text": "Videos, recordings, and GIFs\n\nProvide captions, transcripts, or descriptions of audio and video content. For example, you can use the autocaption feature in YouTube.\nEnsure that captions can be translated into major languages.\nDon’t use flickering or flashing elements. They can cause anything from motion sickness to a seizure.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#buttons-and-icons",
-    "href": "content/en/general-principles/accessibility.html#buttons-and-icons",
-    "title": "Write accessible documentation",
-    "section": "Buttons and icons",
-    "text": "Buttons and icons\n\nFor form-submission buttons, use the native HTML button element.\nAn icon is a symbol or image that represents an object or a function. For information about using icons, see the Buttons and icons section of the “UI elements and interaction” page.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#ui-navigation",
-    "href": "content/en/general-principles/accessibility.html#ui-navigation",
-    "title": "Write accessible documentation",
-    "section": "UI navigation",
-    "text": "UI navigation\nWhen you use angle brackets (&gt;) to document menu paths, add an aria-label attribute to help screen readers interpret the brackets as “and then” instead of as “greater than” or “keyboard arrow right”. For more information and examples, see Menu bar.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#tables",
-    "href": "content/en/general-principles/accessibility.html#tables",
-    "title": "Write accessible documentation",
-    "section": "Tables",
-    "text": "Tables\n\nIntroduce tables in the text preceding the table because not all screen readers preannounce tables.\nUse table headings for the first column and the first row only. Use the th element.\nIf your tables include both row and column headings, then mark heading cells with the scope attribute.\nIf your tables have more than one row containing column headings, then use the headers attribute and make sure that the headings have unique IDs.\nAvoid when possible tables in the middle of a numbered procedure.\nDon’t merge cells. Don’t use colspan or rowspan attributes.\nDon’t use tables unless it’s the best method to present your information. Tables are challenging for screen readers. For more information, see List or table.\nDon’t present new information in tables through images or symbols alone; always provide a descriptive alt attribute for the image or symbol. For more information, see Alt text.\n\nFor more information, see Tables.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#interactive-elements",
-    "href": "content/en/general-principles/accessibility.html#interactive-elements",
-    "title": "Write accessible documentation",
-    "section": "Interactive elements",
-    "text": "Interactive elements\nIntroduce an interactive element (such as a button that expands and collapses) in the text preceding the element.\n\n✅ Recommended if practical: To see a list of requirements, expand the Requirements section.\n✅ Recommended: To see a list of requirements, click the arrow_right expander arrow.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#forms",
-    "href": "content/en/general-principles/accessibility.html#forms",
-    "title": "Write accessible documentation",
-    "section": "Forms",
-    "text": "Forms\n\nLabel every input field by using a label element.\nPlace labels outside of fields.\nWhen you’re creating an error message for form validation, clearly state what went wrong and how to fix it—for example: “Name is a required field.”",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#custom-css-and-javascript",
-    "href": "content/en/general-principles/accessibility.html#custom-css-and-javascript",
-    "title": "Write accessible documentation",
-    "section": "Custom CSS and JavaScript",
-    "text": "Custom CSS and JavaScript\nTry to use your site’s standard styles and standard JavaScript code as much as possible. However, if you do use custom styles or code, then follow these guidelines:\n\nPick colors that respect accessible color contrast ratios (4.5:1 for text).\nDon’t use visibility:hidden or display:none. Both styles hide information from screen readers.\nAvoid when possible using mouseover events. But if you do use them, then add alternate focus and blur events for keyboard users.\nEnsure that any ordering and positioning defined in styles reflects the DOM and the reading order (such as left to right and top to bottom) of your page.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#document-rendering",
-    "href": "content/en/general-principles/accessibility.html#document-rendering",
-    "title": "Write accessible documentation",
-    "section": "Document rendering",
-    "text": "Document rendering\nMake sure that your document conveys all the information that you intended when you view it in the following contexts:\n\nWithout sound\nUsing only sound\nWithout images, including animation\nWithout color\nUsing a keyboard\nWith screen magnification\nWithout punctuation\n\nDon’t use color, size, location, or other visual cues as the primary way of communicating information.\n\nIf you’re using color, an icon, or outline thickness to convey state, then also provide a secondary cue, such as a change in the text label.\nRefer to buttons and other elements by their label. For visual elements that have no text, don’t try to describe the element. Instead, use the element’s [aria-label](https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html) attribute if possible. For example:\n\n✅ Recommended: Click Save.\n✅ Recommended: Click Notifications.\n❌ Not recommended: Click the bell icon.\n\nDon’t use directional language to orient the reader, such as above, below, or right-hand side. This type of language doesn’t work well for accessibility or for localization reasons. For example, what’s on the right side for left-to-right languages appears on the left side for right-to-left languages.\nDon’t use directional language to refer to a position in a document. For example, the text isn’t below if it’s being read by a screen reader. Instead, use earlier, preceding, or following.\n\n✅ Recommended: In the preceding diagram, clients run jobs on multi-team or single-team clusters.\n❌ Not recommended: In the diagram above, clients run jobs on multi-team or single-team clusters.\n\nIf a UI element is hard to find, provide a screenshot.\n\n✅ Recommended: Click menu Menu.\n❌ Not recommended: In the left-side panel, click the button with three lines.",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/accessibility.html#more-resources",
-    "href": "content/en/general-principles/accessibility.html#more-resources",
-    "title": "Write accessible documentation",
-    "section": "More resources",
-    "text": "More resources\n\nGoogle’s main accessibility page\nWeb Content Accessibility Guidelines (WCAG) 2.0\nWeb Accessibility Initiative (WAI)\nUsing ARIA\nWeb Accessibility Tutorials",
-    "crumbs": [
-      "General principles",
-      "Accessibility"
-    ]
-  },
-  {
-    "objectID": "content/en/general-principles/future-features.html",
-    "href": "content/en/general-principles/future-features.html",
+    "objectID": "content/en/general-principles/future.html",
+    "href": "content/en/general-principles/future.html",
     "title": "Future features",
     "section": "",
     "text": "Avoid documenting future features or products, even in innocuous ways. Don’t pre-announce anything in documentation unless it has been approved by your legal counsel.\nSee also Present tense and Timeless documentation.\n\n\n\n Back to top",
     "crumbs": [
       "General principles",
       "Future features"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/timeless-documentation.html",
+    "href": "content/en/general-principles/timeless-documentation.html",
+    "title": "Timeless documentation",
+    "section": "",
+    "text": "Timeless documentation is documentation that avoids words and phrases that anchor the documentation to a point in time or assume knowledge of prior or future products and features. In general, document the current version of a product or feature.\nTimeless documentation is especially important for technical documents that might be read a long time after they are written. Words like now, new, and currently can render such documentation inaccurate, outdated, or unmeaningful. In contrast, timeless documentation focuses on how the product works right now—not on how it has changed from previous versions, and not how it might change in the future.\nIf you’re writing procedural or time-stamped content such as press releases, blog posts, or release notes, such time-based words and phrases are okay. For example, new is okay in a blog post that announces updates to a product: Dataflow includes several new features. Or, soon is okay in procedural content to emphasize a change in state after a user performs a step: The VM goes offline soon after you send the shutdown command. However, some of these words can become outdated or incorrect when used in product documentation to refer to a product’s features and capabilities, so we recommend against using such words in that context.\nWriting timeless product documentation has the following value:",
+    "crumbs": [
+      "General principles",
+      "Timeless documentation"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/timeless-documentation.html#words-and-phrases-to-avoid",
+    "href": "content/en/general-principles/timeless-documentation.html#words-and-phrases-to-avoid",
+    "title": "Timeless documentation",
+    "section": "Words and phrases to avoid",
+    "text": "Words and phrases to avoid\nThe following words and phrases can undermine timelessness in documentation:\n\nWords and phrases that make promises or project plans and strategies. In the context of describing product or feature capabilities, words and phrases such as at present, as of this writing, or eventually can prematurely disclose plans for a product or feature, or they can inappropriately imply that a product or feature might change. In those cases, don’t use such words and phrases.\nFor more information, see Documenting future features.\nWords and phrases that are implied. At Google, we assume our documentation is current unless a specific release version is specified. Thus, words and phrases such as currently and as of this writing are implied by the existence of the documentation itself.\nWords and phrases that become outdated soon after publication. Words such as soon and latest quickly become irrelevant.\nWords and phrases that assume prior knowledge of a product or feature. If you must use words like new, give a reference point such as a date or version release number—for example, The January 14, 2021 release of BigQuery includes a new resource panel.\n\nWhen describing product or feature capabilities in product and reference documentation, avoid the following words and phrases:\n\nas of this writing\ncurrently\ndoes not yet\neventually\nexisting\nfuture, in the future\nlatest\nnew, newer\nnow\nold, older\npresently, at present\nsoon",
+    "crumbs": [
+      "General principles",
+      "Timeless documentation"
+    ]
+  },
+  {
+    "objectID": "content/en/general-principles/excessive-claims.html",
+    "href": "content/en/general-principles/excessive-claims.html",
+    "title": "Avoid excessive claims",
+    "section": "",
+    "text": "In documentation, don’t make excessive claims. An excessive claim is an assertion in the documentation that does any of the following:\n\nMakes a statement about performance or cost that isn’t easily verifiable with data that’s available to the reader.\nMakes a statement about security that would be invalidated by a security incident.\nMakes a statement that might be interpreted as subjective or even disparaging, especially about third-party products.\n\nWhen you’re assessing whether some text makes an excessive claim, take into account not just what’s true today about a product’s performance, cost, security, or functionality, but what might be true in the future.\nConsider the following guidelines:\n\nWhen you describe products, avoid superlatives like best, simplest, fastest, never, and always. Similarly, be careful about words like ensure and guarantee and use them only when something can truly be ensured or guaranteed.\nIf you make specific performance claims—how fast a product is, how much storage it requires, and so on—make sure that you reference the source of your information.\nIf documentation claims that a product is secure, the documentation is invalid (and not credible) if someone succeeds in compromising the product. It’s safer to suggest that a feature “helps with security” or “is designed for security” because those statements are true even if a security incident occurs.\nA statement that you make about a competitive product might be untrue if you misinterpret how the product works, or later if the other company comes out with a new release.\n\nThe safest approach is always to write factually and objectively, limiting what you say to verifiable information that will be true over the lifespan of your documentation.\n\n✅ Recommended: Our product distributes datasets and computation in memory across a cluster, and therefore it can be faster for this scenario than ExampleCorporation’s product. For more information, see Performance comparison.\n❌ Not recommended: Our product is faster than ExampleCorp’s product.\n✅ Recommended: Using our security product is part of an overall strategy that helps prevent account takeovers from phishing attacks.\n❌ Not recommended: Our security product prevents account takeovers from phishing attacks.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "General principles",
+      "Excessive claims"
     ]
   },
   {
