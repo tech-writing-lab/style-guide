@@ -7,8 +7,8 @@ The style guide covers a lot of material, so the following page provides an over
 
 ## Tone and content
 
-- [Be conversational and friendly](https://developers.google.com/style/tone) without being frivolous.
-- [Don't pre-announce anything](https://developers.google.com/style/future) in documentation.
+- [Be conversational and friendly](../general-principles/tone.qmd) without being frivolous.
+- [Don't pre-announce anything](../general-principles/future.qmd) in documentation.
 - [Use descriptive link text](https://developers.google.com/style/cross-references#descriptive-link-text).
 - [Write accessibly](https://developers.google.com/style/accessibility).
 - [Write for a global audience](https://developers.google.com/style/translation).

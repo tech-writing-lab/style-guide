@@ -39,7 +39,7 @@ website:
             - text: "Excessive claims"
               href: content/en/general-principles/excessive-claims.qmd
             - text: "Future features"
-              href: content/en/general-principles/future-features.qmd
+              href: content/en/general-principles/future.qmd
             - text: "Global audience"
               href: content/en/general-principles/global-audience.qmd
             - text: "Inclusive language"
